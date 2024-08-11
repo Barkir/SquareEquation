@@ -4,5 +4,3 @@
 int main(void){
 
 
-    retunr 0;
-}
