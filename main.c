@@ -37,15 +37,6 @@ int main(void){
         printf("No solutions.");
     }
     
-
-
-
-
-
-
-
-
-
     return 0;
 }
 
