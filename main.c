@@ -58,7 +58,7 @@ void getdigit(int * num)
         char ch;
         
         while (ch = getchar() != '\n'){}
-        printf("NOT INTEGER!\n");
+        printf("NOT A NUMBER!\n");
     }
     
     
