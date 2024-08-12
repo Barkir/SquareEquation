@@ -21,7 +21,7 @@ int main(void){
     printf("Your equation is: %.1lfx^2%+.1lfx%+.1lf\n", a, b, c);
 
     d = pow(b, 2) - 4 * a * c;
-    if (d > 0) 
+    if (d > 0)
     {
         x1 = ((-b + sqrt(d)) / (2 * a)); x2 = ((-b - sqrt(d)) / (2 * a));
         printf("x1 = %.1lf\nx2 = %.1lf", x1, x2);
@@ -36,7 +36,7 @@ int main(void){
     {
         printf("No solutions.");
     }
-    
+
     return 0;
 }
 
@@ -47,12 +47,12 @@ void get_number(double * num)
     while (scanf("%lf", num) != 1)
     {
         char ch;
-        
+
         while (ch = getchar() != '\n'){}
         printf("NOT A NUMBER!\n");
     }
-    
-    
+
+
 }
 
 
