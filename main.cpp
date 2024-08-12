@@ -26,7 +26,7 @@ int main(void){
         x1 = ((-b + sqrt(d)) / (2 * a)); x2 = ((-b - sqrt(d)) / (2 * a));
         printf("x1 = %.1lf\nx2 = %.1lf", x1, x2);
     }
-    else if (d == 0)
+    else if (d == 0.0)
     {
         x1 = (-b / (2 * a));
         printf("x = %.1lf", x1);
