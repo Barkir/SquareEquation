@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <math.h>
-#define SIZE 100
 //THIS PROGRAM CAN SOLVE THE SQUARE EQUATION
 
 void getdigit(int * num);
@@ -11,7 +10,6 @@ int main(void){
     double a, b, c;
     double d;
     double x1, x2;
-    char square[SIZE];
     printf("|Square Equation Solver|\n");
     printf("Enter a:_____\b\b\b\b\b");
     getdigit(&a);
@@ -58,7 +56,6 @@ void getdigit(int * num)
     while (scanf("%lf", num) != 1)
     {
         char ch;
-        char prev = -1;
         
         while (ch = getchar() != '\n'){}
         printf("NOT INTEGER!\n");
