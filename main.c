@@ -12,11 +12,11 @@ int main(void){
     double x1, x2;
     printf("|Square Equation Solver|\n");
     printf("Enter a:_____\b\b\b\b\b");
-    getdigit(&a);
+    get_number(&a);
     printf("Enter b:_____\b\b\b\b\b");
-    getdigit(&b);
+    get_number(&b);
     printf("Enter c:_____\b\b\b\b\b");
-    getdigit(&c);
+    get_number(&c);
 
     printf("Your equation is: %.1lfx^2%+.1lfx%+.1lf\n", a, b, c);
 
@@ -51,7 +51,7 @@ int main(void){
 
 
 
-void getdigit(int * num)
+void get_number(double * num)
 {
     while (scanf("%lf", num) != 1)
     {
