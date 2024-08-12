@@ -3,7 +3,7 @@
 #include <math.h>
 //THIS PROGRAM CAN SOLVE THE SQUARE EQUATION
 
-void getdigit(int * num);
+void get_number(double * num);
 
 int main(void){
 
