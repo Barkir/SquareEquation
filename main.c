@@ -7,9 +7,9 @@ void get_number(double * num);
 
 int main(void){
 
-    double a, b, c;
-    double d;
-    double x1, x2;
+    double a, b, c = 0;
+    double d = 0;
+    double x1, x2 = 0;
     printf("|Square Equation Solver|\n");
     printf("Enter a:_____\b\b\b\b\b");
     get_number(&a);
