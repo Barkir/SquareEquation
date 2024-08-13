@@ -2,15 +2,15 @@
 #include <ctype.h>
 #include <math.h>
 
-#define SIZE 2
 //THIS PROGRAM CAN SOLVE THE SQUARE EQUATION
 
 void get_number(double * num);
-void equation_solver(double a, double b, double c, double * x1, double * x2);
+int equation_solver(double a, double b, double c, double * x1, double * x2);
 
 int main(void){
 
     double a = 0, b = 0, c = 0;
+    int cnt = 0;
 
     double x1 = 0, x2 = 0;
     printf("|Square Equation Solver|\n");
@@ -22,14 +22,14 @@ int main(void){
     get_number(&c);
 
     printf("Your equation is: %.1lfx^2%+.1lfx%+.1lf\n", a, b, c);
-    equation_solver(a, b, c, &x1, &x2);
-    double array[SIZE] = {x1, x2};
+    cnt = equation_solver(a, b, c, &x1, &x2);
 
-    for (int i = 0; i < SIZE; i++){
-        if (array[i] != NULL){printf("x = %.1lf\n", array[i]);}
+    if (cnt == 0) {printf("No solutions.");}
+    else if (cnt == 1) {printf("x = %.1lf", x1);}
+    else if (cnt == 2) {printf("x1 = %.1lf\nx2 = %.1lf"), x1, x2;}
 
 
-    }
+
 
 
     return 0;
@@ -51,7 +51,7 @@ void get_number(double * num)
 }
 
 
-void equation_solver(double a, double b, double c, double * x1, double * x2)
+int equation_solver(double a, double b, double c, double * x1, double * x2)
 {
     double d = 0;
 
@@ -59,16 +59,17 @@ void equation_solver(double a, double b, double c, double * x1, double * x2)
     if (d > 0)
     {
         *x1 = ((-b + sqrt(d)) / (2 * a)); *x2 = ((-b - sqrt(d)) / (2 * a));
+        return 2;
     }
     else if (d == 0)
     {
         *x1 = (-b / (2 * a));
-        *x2 = NULL;
+        return 1;
     }
 
     else if (d < 0)
     {
-        *x1 = NULL; *x2 = NULL;
+        return 0;
 
    }
 }
