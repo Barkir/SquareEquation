@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <math.h>
+
+#define SIZE 2
 //THIS PROGRAM CAN SOLVE THE SQUARE EQUATION
 
 void get_number(double * num);
@@ -47,7 +49,7 @@ double * equation_solver(double a, double b, double c)
 {
     double d = 0;
     double x1 = 0, x2 = 0;
-    static double array[2];
+    static double array[SIZE];
 
     d = pow(b, 2) - 4 * a * c;
     if (d > 0)
