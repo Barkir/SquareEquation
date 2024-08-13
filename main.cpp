@@ -4,11 +4,12 @@
 //THIS PROGRAM CAN SOLVE THE SQUARE EQUATION
 
 void get_number(double * num);
-void equation_solver(double a, double b, double c);
+double * equation_solver(double a, double b, double c);
 
 int main(void){
 
     double a = 0, b = 0, c = 0;
+    double * array;
 
     double x1 = 0, x2 = 0;
     printf("|Square Equation Solver|\n");
@@ -20,7 +21,8 @@ int main(void){
     get_number(&c);
 
     printf("Your equation is: %.1lfx^2%+.1lfx%+.1lf\n", a, b, c);
-    equation_solver(a, b, c);
+    array = equation_solver(a, b, c);
+    printf("x1 = %.1lf\nx2 = %.1lf", array[0], array[1]);
 
     return 0;
 }
@@ -41,27 +43,30 @@ void get_number(double * num)
 }
 
 
-void equation_solver(double a, double b, double c)
+double * equation_solver(double a, double b, double c)
 {
     double d = 0;
     double x1 = 0, x2 = 0;
+    static double array[2];
+
     d = pow(b, 2) - 4 * a * c;
     if (d > 0)
     {
         x1 = ((-b + sqrt(d)) / (2 * a)); x2 = ((-b - sqrt(d)) / (2 * a));
-        printf("x1 = %.1lf\nx2 = %.1lf", x1, x2);
+        array[0] = x1; array[1] = x2;
     }
     else if (d == 0)
     {
         x1 = (-b / (2 * a));
-        printf("x = %.1lf", x1);
+        array[0] = x1; array[1] = x1;
     }
 
     else if (d < 0)
     {
-        printf("No solutions.");
+        array[0] = NAN; array[1] = NAN;
     }
 
+    return array;
 }
 
 
