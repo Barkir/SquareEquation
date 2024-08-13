@@ -2,7 +2,8 @@
 #include <ctype.h>
 #include <math.h>
 
-#define SIZE 2
+#define TWO 2
+#define ONE 1
 //THIS PROGRAM CAN SOLVE THE SQUARE EQUATION
 
 void get_number(double * num);
@@ -24,7 +25,9 @@ int main(void){
 
     printf("Your equation is: %.1lfx^2%+.1lfx%+.1lf\n", a, b, c);
     array = equation_solver(a, b, c);
-    printf("x1 = %.1lf\nx2 = %.1lf", array[0], array[1]);
+    for (int i = 0; array[i] != '\0'; i++){
+        printf("x = %.1lf\n", array[i]);
+    }
 
     return 0;
 }
@@ -49,26 +52,30 @@ double * equation_solver(double a, double b, double c)
 {
     double d = 0;
     double x1 = 0, x2 = 0;
-    static double array[SIZE];
 
     d = pow(b, 2) - 4 * a * c;
     if (d > 0)
     {
+        static double array[TWO];
         x1 = ((-b + sqrt(d)) / (2 * a)); x2 = ((-b - sqrt(d)) / (2 * a));
         array[0] = x1; array[1] = x2;
+        return array;
     }
     else if (d == 0)
     {
+        static double array[ONE];
         x1 = (-b / (2 * a));
-        array[0] = x1; array[1] = x1;
+        array[0] = x1;
+        return array;
     }
 
     else if (d < 0)
     {
-        array[0] = NAN; array[1] = NAN;
-    }
+        static double array[ONE];
+        array[0] = NULL;
+        return array;
 
-    return array;
+   }
 }
 
 
