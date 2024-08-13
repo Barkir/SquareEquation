@@ -25,7 +25,7 @@ int main(void){
     equation_solver(a, b, c, &x1, &x2);
     double array[SIZE] = {x1, x2};
 
-    for (int i = 0; i < 2; i++){
+    for (int i = 0; i < SIZE; i++){
         if (array[i] != NULL){printf("x = %.1lf\n", array[i]);}
 
 
