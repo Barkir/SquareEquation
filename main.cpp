@@ -1,9 +1,5 @@
 #include <stdio.h>
-#include <ctype.h>
 #include <math.h>
-#include <stdlib.h>
-
-
 
 //THIS PROGRAM CAN SOLVE THE SQUARE EQUATION
 
@@ -27,10 +23,24 @@ int main(void){
     printf("Your equation is: %.1lfx^2%+.1lfx%+.1lf\n", a, b, c);
     cnt = equation_solver(a, b, c, &x1, &x2);
 
-    if (cnt == 0) {printf("No solutions.");}
-    else if (cnt == 1) {printf("x = %lf", x1);}
-    else if (cnt == 2) {printf("x1 = %lf\nx2 = %lf"), x1, x2;}
-    else if (cnt == -1) {printf("Infinite number of solutions.");}
+    switch(cnt)
+    {
+        case 0:
+        printf("No solutions.");
+        break;
+
+        case 1:
+        printf("x = %lf", x1);
+        break;
+
+        case 2:
+        printf("x1 = %lf\nx2 = %lf", x1, x2);
+        break;
+
+        case -1:
+        printf("Infinite number of solutions.");
+        break;
+    }
 
     return 0;
 }
@@ -52,7 +62,7 @@ void get_number(double * num)
 int equation_solver(double a, double b, double c, double * x1, double * x2)
 {
     double d = 0;
-    const int eps = 10e-8;
+    const double eps = 10e-8;
 
     if (abs(a) <= eps)
     {
