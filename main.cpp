@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <math.h>
+#include <stdlib.h>
+
+#define ABS(X) X > 0 ? X : -X
+#define EPS 1e-8
 
 //THIS PROGRAM CAN SOLVE THE SQUARE EQUATION
 
@@ -25,12 +29,8 @@ int main(void){
     cnt = equation_solver(a, b, c, &x1, &x2);
 
     if (cnt == 0) {printf("No solutions.");}
-    else if (cnt == 1) {printf("x = %.1lf", x1);}
-    else if (cnt == 2) {printf("x1 = %.1lf\nx2 = %.1lf"), x1, x2;}
-
-
-
-
+    else if (cnt == 1) {printf("x = %lf", x1);}
+    else if (cnt == 2) {printf("x1 = %lf\nx2 = %lf"), x1, x2;}
 
     return 0;
 }
@@ -39,15 +39,13 @@ int main(void){
 
 void get_number(double * num)
 {
-    while (scanf("%lf", num) != 1)
+    char ch, eof;
+    while ((eof = scanf("%lf", num)) != 1)
     {
-        char ch;
-
-        while (ch = getchar() != '\n'){}
+        if (eof == EOF){exit(1);}
+        while ((ch = getchar()) != '\n'){}
         printf("NOT A NUMBER!\n");
     }
-
-
 }
 
 
@@ -55,23 +53,35 @@ int equation_solver(double a, double b, double c, double * x1, double * x2)
 {
     double d = 0;
 
-    d = pow(b, 2) - 4 * a * c;
-    if (d > 0)
+    if ((ABS(a)) <= EPS)
     {
-        *x1 = ((-b + sqrt(d)) / (2 * a)); *x2 = ((-b - sqrt(d)) / (2 * a));
-        return 2;
+        if ((ABS(b)) <= EPS)
+        {
+            if ((ABS(c)) <= EPS){*x1 = 0;return 1;}
+            else{return 0;}
+        }
+        else{*x1 = -c / b; return 1;}
     }
-    else if (d == 0)
-    {
-        *x1 = (-b / (2 * a));
-        return 1;
+    else{
+
+        d = (b*b) - 4 * a * c;
+        if (d > 0)
+        {
+            double sqrt_d = sqrt(d);
+            *x1 = ((-b + sqrt_d) / (2 * a)); *x2 = ((-b - sqrt_d) / (2 * a));
+            return 2;
+        }
+        else if (d == 0)
+        {
+            *x1 = (-b / (2 * a));
+            return 1;
+        }
+
+        else if (d < 0)
+        {
+            return 0;
+
+        }
     }
-
-    else if (d < 0)
-    {
-        return 0;
-
-   }
+    return 0;
 }
-
-
