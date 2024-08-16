@@ -3,8 +3,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-#define ABS(X) X > 0 ? X : -X
-#define EPS 1e-8
+
 
 //THIS PROGRAM CAN SOLVE THE SQUARE EQUATION
 
@@ -31,6 +30,7 @@ int main(void){
     if (cnt == 0) {printf("No solutions.");}
     else if (cnt == 1) {printf("x = %lf", x1);}
     else if (cnt == 2) {printf("x1 = %lf\nx2 = %lf"), x1, x2;}
+    else if (cnt == -1) {printf("Infinite number of solutions.");}
 
     return 0;
 }
@@ -39,11 +39,11 @@ int main(void){
 
 void get_number(double * num)
 {
-    char ch, eof;
-    while ((eof = scanf("%lf", num)) != 1)
+    char empty = -1, eof_check = -1;
+    while ((eof_check = scanf("%lf", num)) != 1)
     {
-        if (eof == EOF){exit(1);}
-        while ((ch = getchar()) != '\n'){}
+        if (eof_check == EOF){exit(1);}
+        while ((empty = getchar()) != '\n'){}
         printf("NOT A NUMBER!\n");
     }
 }
@@ -52,36 +52,29 @@ void get_number(double * num)
 int equation_solver(double a, double b, double c, double * x1, double * x2)
 {
     double d = 0;
+    const int eps = 10e-8;
 
-    if ((ABS(a)) <= EPS)
+    if (abs(a) <= eps)
     {
-        if ((ABS(b)) <= EPS)
+        if (abs(b) <= eps)
         {
-            if ((ABS(c)) <= EPS){*x1 = 0;return 1;}
+            if (abs(c) <= eps){return -1;}
             else{return 0;}
         }
         else{*x1 = -c / b; return 1;}
     }
-    else{
 
-        d = (b*b) - 4 * a * c;
-        if (d > 0)
-        {
-            double sqrt_d = sqrt(d);
-            *x1 = ((-b + sqrt_d) / (2 * a)); *x2 = ((-b - sqrt_d) / (2 * a));
-            return 2;
-        }
-        else if (d == 0)
-        {
-            *x1 = (-b / (2 * a));
-            return 1;
-        }
-
-        else if (d < 0)
-        {
-            return 0;
-
-        }
+    d = (b*b) - 4 * a * c;
+    if (d > 0)
+    {
+        double sqrt_d = sqrt(d);
+        *x1 = ((-b + sqrt_d) / (2 * a)); *x2 = ((-b - sqrt_d) / (2 * a));
+        return 2;
     }
+
+    else if (abs(d) < eps)
+    {*x1 = (-b / (2 * a)); return 1;}
+
+    else if (d < 0){return 0;}
     return 0;
 }
