@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <math.h>
-
+#define INF_SOLUTIONS -1
 //THIS PROGRAM CAN SOLVE THE SQUARE EQUATION
 
 int get_number(double * num);
-int equation_solver(double a, double b, double c, double * x1, double * x2);
+int solve(double a, double b, double c, double * x1, double * x2);
 
 int main(void){
 
@@ -22,7 +22,7 @@ int main(void){
     if (check = get_number(&c) == EXIT_FAILURE){exit(1);}
 
     printf("Your equation is: %.1lfx^2%+.1lfx%+.1lf\n", a, b, c);
-    cnt = equation_solver(a, b, c, &x1, &x2);
+    cnt = solve(a, b, c, &x1, &x2);
 
     switch(cnt)
     {
@@ -38,7 +38,7 @@ int main(void){
         printf("x1 = %lf\nx2 = %lf", x1, x2);
         break;
 
-        case -1:
+        case INF_SOLUTIONS:
         printf("Infinite number of solutions.");
         break;
     }
@@ -61,22 +61,21 @@ int get_number(double * num)
 }
 
 
-int equation_solver(double a, double b, double c, double * x1, double * x2)
+int solve(double a, double b, double c, double * x1, double * x2)
 {
-    double d = 0;
     const double eps = 10e-8;
 
     if (abs(a) <= eps)
     {
         if (abs(b) <= eps)
         {
-            if (abs(c) <= eps){return -1;}
+            if (abs(c) <= eps){return INF_SOLUTIONS;}
             else{return 0;}
         }
         else{*x1 = -c / b; return 1;}
     }
 
-    d = (b*b) - 4 * a * c;
+    double d = (b*b) - 4 * a * c;
     if (d > 0)
     {
         double sqrt_d = sqrt(d);
@@ -87,6 +86,6 @@ int equation_solver(double a, double b, double c, double * x1, double * x2)
     else if (abs(d) < eps)
     {*x1 = (-b / (2 * a)); return 1;}
 
-    else if (d < 0){return 0;}
+    else {return 0;}
     return 0;
 }
