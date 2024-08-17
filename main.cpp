@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 //THIS PROGRAM CAN SOLVE THE SQUARE EQUATION
 
 const int INF_SOLUTIONS = -1;
@@ -15,7 +16,7 @@ int main(void){
     double x1 = 0, x2 = 0;
     printf("|Square Equation Solver|\n");
     printf("Enter a:_____\b\b\b\b\b");
-    if (check = get_number(&a) == EXIT_FAILURE){exit(1);}
+    if ((check = get_number(&a)) == EXIT_FAILURE){exit(1);}
     printf("Enter b:_____\b\b\b\b\b");
     if (check = get_number(&b) == EXIT_FAILURE){exit(1);}
     printf("Enter c:_____\b\b\b\b\b");
