@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <math.h>
-#define INF_SOLUTIONS -1
 //THIS PROGRAM CAN SOLVE THE SQUARE EQUATION
 
+const int INF_SOLUTIONS = -1;
 int get_number(double * num);
 int solve(double a, double b, double c, double * x1, double * x2);
 
@@ -40,6 +40,10 @@ int main(void){
 
         case INF_SOLUTIONS:
         printf("Infinite number of solutions.");
+        break;
+
+        default:
+        printf("Wrong value.");
         break;
     }
 
