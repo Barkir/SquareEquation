@@ -47,7 +47,7 @@ int main(void){
         break;
 
         default:
-        printf("Wrong value.");
+        printf("Abort on line %d in file %s", __LINE__, __FILE__);
         abort();
         break;
     }
