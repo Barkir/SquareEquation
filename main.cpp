@@ -5,8 +5,10 @@
 //THIS PROGRAM CAN SOLVE THE SQUARE EQUATION
 
 const int INF_SOLUTIONS = -1;
+const double eps = 10e-8;
 int get_number(double * num);
-int solve_equation(double a, double b, double c, double * x1, double * x2);
+int solve_square_equation(double a, double b, double c, double * x1, double * x2);
+int solve_linear_equation(double a, double b, double * x1);
 
 int main(void){
 
@@ -24,7 +26,7 @@ int main(void){
     if (check = get_number(&c) == EXIT_FAILURE){exit(EXIT_FAILURE);}
 
     printf("Your equation is: %.1lfx^2%+.1lfx%+.1lf\n", a, b, c);
-    cnt = solve_equation(a, b, c, &x1, &x2);
+    cnt = solve_square_equation(a, b, c, &x1, &x2);
 
     switch(cnt)
     {
@@ -77,22 +79,12 @@ int get_number(double * num)
 }
 
 
-int solve_equation(double a, double b, double c, double * x1, double * x2)
+int solve_square_equation(double a, double b, double c, double * x1, double * x2)
 {
-    const double eps = 10e-8;
 
     if (abs(a) <= eps)
     {
-        if (abs(b) <= eps)
-        {
-            if (abs(c) <= eps) {return INF_SOLUTIONS;}
-            else {return 0;}
-        }
-        else
-        {
-            *x1 = -c / b;
-            return 1;
-        }
+        return solve_linear_equation(b, c, x1);
     }
 
     double d = (b*b) - 4 * a * c;
@@ -112,4 +104,19 @@ int solve_equation(double a, double b, double c, double * x1, double * x2)
 
     else {return 0;}
     return 0;
+}
+
+
+int solve_linear_equation(double a, double b, double * x)
+{
+    if (abs(a) < eps)
+    {
+        if (abs(b) < eps) {return INF_SOLUTIONS;}
+        else {return 0;}
+    }
+    else
+    {
+        *x = -b/a;
+        return 1;
+    }
 }
