@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
+#include <cstdlib>
 //THIS PROGRAM CAN SOLVE THE SQUARE EQUATION
 
 const int INF_SOLUTIONS = -1;
 int get_number(double * num);
-int solve(double a, double b, double c, double * x1, double * x2);
+int solve_equation(double a, double b, double c, double * x1, double * x2);
 
 int main(void){
 
@@ -16,14 +17,14 @@ int main(void){
     double x1 = 0, x2 = 0;
     printf("|Square Equation Solver|\n");
     printf("Enter a:_____\b\b\b\b\b");
-    if ((check = get_number(&a)) == EXIT_FAILURE){exit(1);}
+    if ((check = get_number(&a)) == EXIT_FAILURE){exit(EXIT_FAILURE);}
     printf("Enter b:_____\b\b\b\b\b");
-    if (check = get_number(&b) == EXIT_FAILURE){exit(1);}
+    if (check = get_number(&b) == EXIT_FAILURE){exit(EXIT_FAILURE);}
     printf("Enter c:_____\b\b\b\b\b");
-    if (check = get_number(&c) == EXIT_FAILURE){exit(1);}
+    if (check = get_number(&c) == EXIT_FAILURE){exit(EXIT_FAILURE);}
 
     printf("Your equation is: %.1lfx^2%+.1lfx%+.1lf\n", a, b, c);
-    cnt = solve(a, b, c, &x1, &x2);
+    cnt = solve_equation(a, b, c, &x1, &x2);
 
     switch(cnt)
     {
@@ -45,6 +46,7 @@ int main(void){
 
         default:
         printf("Wrong value.");
+        abort();
         break;
     }
 
@@ -62,11 +64,20 @@ int get_number(double * num)
         while ((empty = getchar()) != '\n'){}
         printf("NOT A NUMBER!\n");
     }
+    if (eof_check)
+    {
+        if (empty = getchar() != '\n')
+        {
+            printf("NOT A NUMBER!\n");
+            get_number(num);
+        }
+    }
+
     return 0;
 }
 
 
-int solve(double a, double b, double c, double * x1, double * x2)
+int solve_equation(double a, double b, double c, double * x1, double * x2)
 {
     const double eps = 10e-8;
 
@@ -74,22 +85,30 @@ int solve(double a, double b, double c, double * x1, double * x2)
     {
         if (abs(b) <= eps)
         {
-            if (abs(c) <= eps){return INF_SOLUTIONS;}
-            else{return 0;}
+            if (abs(c) <= eps) {return INF_SOLUTIONS;}
+            else {return 0;}
         }
-        else{*x1 = -c / b; return 1;}
+        else
+        {
+            *x1 = -c / b;
+            return 1;
+        }
     }
 
     double d = (b*b) - 4 * a * c;
     if (d > 0)
     {
         double sqrt_d = sqrt(d);
-        *x1 = ((-b + sqrt_d) / (2 * a)); *x2 = ((-b - sqrt_d) / (2 * a));
+        *x1 = ((-b + sqrt_d) / (2 * a));
+        *x2 = ((-b - sqrt_d) / (2 * a));
         return 2;
     }
 
     else if (abs(d) < eps)
-    {*x1 = (-b / (2 * a)); return 1;}
+    {
+        *x1 = (-b / (2 * a));
+        return 1;
+    }
 
     else {return 0;}
     return 0;
