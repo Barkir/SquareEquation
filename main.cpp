@@ -9,26 +9,37 @@ const int INF_SOLUTIONS = -1;
 const double eps = 10e-8;
 
 int get_number(double * num);
-int solve_square_equation(double a, double b, double c, double * x1, double * x2);
-int solve_linear_equation(double a, double b, double * x1);
+int solve_square_equation(struct equation * coefs, struct solution * roots);
+int solve_linear_equation(struct equation * coefs, struct solution * roots);
 int is_null(double num);
 double discriminant(double a, double b, double c);
-void root(int root_number, double x1, double x2);
-void enter_numbers(double * a, double * b, double * c);
+void root(struct solution coefs);
+void enter_numbers(struct equation * coefs);
+
+struct equation
+{
+    double a, b, c;
+};
+
+
+struct solution
+{
+    double x1, x2;
+    int root_amount;
+};
+
 
 int main(void){
 
-    double a = NAN, b = NAN, c = NAN;
-    int root_number = 0;
+    struct equation coefs;
+    struct solution roots;
 
-    double x1 = 0, x2 = 0;
+    enter_numbers(&coefs);
 
-    enter_numbers(&a, &b, &c);
+    printf("Your equation is: %.1lfx^2%+.1lfx%+.1lf\n", coefs.a, coefs.b, coefs.c);
+    roots.root_amount = solve_square_equation(&coefs, &roots);
 
-    printf("Your equation is: %.1lfx^2%+.1lfx%+.1lf\n", a, b, c);
-    root_number = solve_square_equation(a, b, c, &x1, &x2);
-
-    root(root_number, x1, x2);
+    root(roots);
 
     return 0;
 }
@@ -36,6 +47,8 @@ int main(void){
 
 int get_number(double * num)
 {
+    //GETS A NUMBER AND RETURNS IT INTO NUM BY ADDRESS
+
     assert(num != NULL);
     char empty = -1, eof_check = -1;
     while ((eof_check = scanf("%lf", num)) != 1)
@@ -57,45 +70,53 @@ int get_number(double * num)
 }
 
 
-int solve_square_equation(double a, double b, double c, double * x1, double * x2)
+int solve_square_equation(struct equation * coefs, struct solution * roots)
 {
 
-    assert(x1 != NULL);
-    assert(x2 != NULL);
+    // SOLVES A SQUARE EQUATION
 
-    if (is_null(a))
+    assert(&roots -> x1 != NULL);
+    assert(&roots -> x2 != NULL);
+
+    if (is_null(coefs -> a))
     {
-        return solve_linear_equation(b, c, x1);
+        return solve_linear_equation(coefs, roots);
     }
 
-    double d = discriminant(a, b, c);
+    double d = discriminant(coefs -> a, coefs -> b, coefs -> c);
     if (d > 0)
     {
         double sqrt_d = sqrt(d);
-        *x1 = ((-b + sqrt_d) / (2 * a));
-        *x2 = ((-b - sqrt_d) / (2 * a));
+
+        double k1 = -(coefs -> b) / (2 * coefs -> a);
+        double k2 = (sqrt_d) / (2 * coefs -> a);
+
+        roots -> x1 = k1 + k2;
+        roots -> x2 = k1 - k2;
         return 2;
     }
     else if (is_null(d))
     {
-        *x1 = (-b / (2 * a));
+        roots -> x1 = (-coefs -> b / (2 * coefs -> a));
         return 1;
     }
     return 0;
 }
 
 
-int solve_linear_equation(double a, double b, double * x)
+int solve_linear_equation(struct equation * coefs, struct solution * roots)
 {
 
-    assert(x != NULL);
-    if (is_null(a))
+    // SOLVES A LINEAR EQUATION
+
+    assert(&roots -> x1 != NULL);
+    if (is_null(coefs -> a))
     {
-        if (is_null(b)) {return INF_SOLUTIONS;}
+        if (is_null(coefs -> b)) {return INF_SOLUTIONS;}
         return 0;
     }
 
-    *x = -b/a;
+    roots -> x1 = -(coefs -> b)/(coefs -> a);
     return 1;
 }
 
@@ -111,23 +132,23 @@ double discriminant(double a, double b, double c)
 }
 
 
-void root(int root_number, double x1, double x2)
+void root(struct solution roots)
 {
-    assert(isfinite(x1));
-    assert(isfinite(x2));
+    assert(isfinite(roots.x1));
+    assert(isfinite(roots.x2));
 
-     switch(root_number)
+     switch(roots.root_amount)
     {
         case 0:
         printf("No solutions.");
         break;
 
         case 1:
-        printf("x = %lf", x1);
+        printf("x = %lf", roots.x1);
         break;
 
         case 2:
-        printf("x1 = %lf\nx2 = %lf", x1, x2);
+        printf("x1 = %lf\nx2 = %lf", roots.x1, roots.x2);
         break;
 
         case INF_SOLUTIONS:
@@ -140,14 +161,14 @@ void root(int root_number, double x1, double x2)
     }
 }
 
-void enter_numbers(double * a, double * b, double * c)
+void enter_numbers(struct equation * coefs)
 {
     char check = 0;
     printf("|Square Equation Solver|\n");
     printf("Enter a:_____\b\b\b\b\b");
-    if ((check = get_number(a)) == EXIT_FAILURE){exit(EXIT_FAILURE);}
+    if (check = get_number(&(coefs -> a)) == EXIT_FAILURE){exit(EXIT_FAILURE);}
     printf("Enter b:_____\b\b\b\b\b");
-    if (check = get_number(b) == EXIT_FAILURE){exit(EXIT_FAILURE);}
+    if (check = get_number(&(coefs -> b)) == EXIT_FAILURE){exit(EXIT_FAILURE);}
     printf("Enter c:_____\b\b\b\b\b");
-    if (check = get_number(c) == EXIT_FAILURE){exit(EXIT_FAILURE);}
+    if (check = get_number(&(coefs -> c)) == EXIT_FAILURE){exit(EXIT_FAILURE);}
 }

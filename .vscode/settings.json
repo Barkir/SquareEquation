@@ -1,7 +1,9 @@
 {
     "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe",
     "files.associations": {
-        "cstdlib": "cpp"
+        "*.cpp": "cpp",
+        "cstdlib": "cpp",
+        "cmath": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }
