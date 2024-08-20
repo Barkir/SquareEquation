@@ -7,27 +7,23 @@
 
 const int INF_SOLUTIONS = -1;
 const double eps = 10e-8;
+
 int get_number(double * num);
 int solve_square_equation(double a, double b, double c, double * x1, double * x2);
 int solve_linear_equation(double a, double b, double * x1);
 int is_null(double num);
 double discriminant(double a, double b, double c);
 void root(int root_number, double x1, double x2);
+void enter_numbers(double * a, double * b, double * c);
 
 int main(void){
 
-    double a = 0, b = 0, c = 0;
+    double a = NAN, b = NAN, c = NAN;
     int root_number = 0;
-    char check;
 
     double x1 = 0, x2 = 0;
-    printf("|Square Equation Solver|\n");
-    printf("Enter a:_____\b\b\b\b\b");
-    if ((check = get_number(&a)) == EXIT_FAILURE){exit(EXIT_FAILURE);}
-    printf("Enter b:_____\b\b\b\b\b");
-    if (check = get_number(&b) == EXIT_FAILURE){exit(EXIT_FAILURE);}
-    printf("Enter c:_____\b\b\b\b\b");
-    if (check = get_number(&c) == EXIT_FAILURE){exit(EXIT_FAILURE);}
+
+    enter_numbers(&a, &b, &c);
 
     printf("Your equation is: %.1lfx^2%+.1lfx%+.1lf\n", a, b, c);
     root_number = solve_square_equation(a, b, c, &x1, &x2);
@@ -36,7 +32,6 @@ int main(void){
 
     return 0;
 }
-
 
 
 int get_number(double * num)
@@ -143,4 +138,16 @@ void root(int root_number, double x1, double x2)
         assert(0);
         break;
     }
+}
+
+void enter_numbers(double * a, double * b, double * c)
+{
+    char check = 0;
+    printf("|Square Equation Solver|\n");
+    printf("Enter a:_____\b\b\b\b\b");
+    if ((check = get_number(a)) == EXIT_FAILURE){exit(EXIT_FAILURE);}
+    printf("Enter b:_____\b\b\b\b\b");
+    if (check = get_number(b) == EXIT_FAILURE){exit(EXIT_FAILURE);}
+    printf("Enter c:_____\b\b\b\b\b");
+    if (check = get_number(c) == EXIT_FAILURE){exit(EXIT_FAILURE);}
 }
