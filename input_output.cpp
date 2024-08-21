@@ -2,6 +2,8 @@
 #include <math.h>
 #include <stdlib.h>
 #include <assert.h>
+#include <string.h>
+#include "cmd_flags.h"
 #include "input_output.h"
 #include "constants_structures.h"
 #include "colors.h"
@@ -11,7 +13,7 @@ int get_number(double * num)
 {
     assert(num != NULL);
 
-    char empty = -1, eof_check = -1;
+    int empty = -1, eof_check = -1;
 
     while ((eof_check = scanf("%lf", num)) != 1)
     {
@@ -26,7 +28,7 @@ int get_number(double * num)
         if (empty != '\n')
         {
             printf("NOT A NUMBER!\n");
-            while (empty = getchar() != '\n'){}
+            while ((empty = getchar()) != '\n'){}
             get_number(num);
         }
     }
@@ -38,14 +40,14 @@ int get_number(double * num)
 struct equation enter_numbers()
 {
     struct equation coefs;
-    char check = 0;
+    int check = -1;
     printf(YELLOW "|Square Equation Solver|" RESET "\n");
     printf(CYAN "Enter a:_____\b\b\b\b\b" RESET);
-    if (check = get_number(&(coefs.a)) == EXIT_FAILURE){exit(EXIT_FAILURE);}
+    if ((check = get_number(&(coefs.a))) == EXIT_FAILURE){exit(EXIT_FAILURE);}
     printf(CYAN "Enter b:_____\b\b\b\b\b" RESET);
-    if (check = get_number(&(coefs.b)) == EXIT_FAILURE){exit(EXIT_FAILURE);}
+    if ((check = get_number(&(coefs.b))) == EXIT_FAILURE){exit(EXIT_FAILURE);}
     printf(CYAN "Enter c:_____\b\b\b\b\b" RESET);
-    if (check = get_number(&(coefs.c)) == EXIT_FAILURE){exit(EXIT_FAILURE);}
+    if ((check = get_number(&(coefs.c))) == EXIT_FAILURE){exit(EXIT_FAILURE);}
 
     return coefs;
 }
@@ -78,4 +80,37 @@ void print_roots(struct solution roots)
             assert(0);
             break;
     }
+}
+
+
+int cmd(int argc, char * argv[])
+{
+    for (int i = 1; i < argc; i++)
+    {
+        enum operation cmd;
+        if (strcmp(argv[i], "--doc") == 0){cmd = CMD_DOC;}
+        if (strcmp(argv[i], "--help") == 0){cmd = CMD_HELP;}
+        if (strcmp(argv[i], "--out") == 0){cmd = CMD_OUT;}
+
+        switch (cmd)
+        {
+            case CMD_DOC:
+              printf("%s", doc);
+              break;
+
+            case CMD_HELP:
+              printf("%s", help);
+              break;
+
+            case CMD_OUT:
+              printf("OUUUT");
+              break;
+
+            default:
+            break;
+        }
+
+    }
+    if (argc > 1){return 1;}
+    else{return 0;}
 }

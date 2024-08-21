@@ -4,6 +4,7 @@
 int get_number(double * num);
 void print_roots(struct solution roots);
 struct equation enter_numbers();
+int cmd(int argc, char * argv[]);
 
 #endif
 

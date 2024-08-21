@@ -21,4 +21,13 @@ struct solution
     int root_amount;
 };
 
+
+enum operation
+{
+    CMD_HELP,
+    CMD_DOC,
+    CMD_OUT
+
+};
+
 #endif

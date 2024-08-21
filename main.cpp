@@ -7,21 +7,10 @@
 #include "solve_equation.h"
 #include "testing.h"
 #include "colors.h"
-#include "cmd_flags.h"
+#include "TXLib.h"
 
 int main(int argc, char *argv[]){
-
-    if (argc == 2 && strcmp(argv[1], "--doc") == 0)
-    {
-    printf("%s", doc);
-    return 0;
-    }
-
-    if (argc == 2 && strcmp(argv[1], "--help") == 0)
-    {
-    printf("%s", help);
-    return 0;
-    }
+    if (cmd(argc, argv)){return 0;}
 
 
 
