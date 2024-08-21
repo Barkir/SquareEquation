@@ -28,7 +28,7 @@ int test_init(int test_n, struct equation coefs, struct solution roots_exp)
 int all_test_init()
 {
     int right = 1;
-    for (int i = 0; i < LENGTH; i++)
+    for (int i = 0; i < TESTS_NUMBER; i++)
     {
         if (test_init(i + 1, all_coefs[i], all_roots[i])){right = 0;}
     }

@@ -8,7 +8,7 @@ const int NO_ROOTS = 0;
 const int ONE_ROOT = 1;
 const int TWO_ROOTS = 2;
 const double eps = 10e-5;
-const int LENGTH = 30;
+const int TESTS_NUMBER = 30;
 
 struct equation
 {

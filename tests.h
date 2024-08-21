@@ -1,7 +1,7 @@
 #ifndef TESTS_H
 #define TESTS_H
 
-const struct equation all_coefs[LENGTH] =
+const struct equation all_coefs[TESTS_NUMBER] =
 {
     {0, 0, 0},
     {0, 0, 1},
@@ -35,7 +35,7 @@ const struct equation all_coefs[LENGTH] =
     {-2, -7, -3}
 };
 
-const struct solution all_roots[LENGTH] =
+const struct solution all_roots[TESTS_NUMBER] =
 {
     {0, 0, INF_SOLUTIONS},
     {0, 0, NO_ROOTS},
