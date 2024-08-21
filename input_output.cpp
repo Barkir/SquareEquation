@@ -2,9 +2,9 @@
 #include <math.h>
 #include <stdlib.h>
 #include <assert.h>
-
 #include "input_output.h"
 #include "constants_structures.h"
+#include "colors.h"
 
 // GETS A NUMBER AND RETURNS IT INTO NUM BY ADDRESS
 int get_number(double * num)
@@ -39,12 +39,12 @@ struct equation enter_numbers()
 {
     struct equation coefs;
     char check = 0;
-    printf("|Square Equation Solver|\n");
-    printf("Enter a:_____\b\b\b\b\b");
+    printf(YELLOW "|Square Equation Solver|" RESET "\n");
+    printf(CYAN "Enter a:_____\b\b\b\b\b" RESET);
     if (check = get_number(&(coefs.a)) == EXIT_FAILURE){exit(EXIT_FAILURE);}
-    printf("Enter b:_____\b\b\b\b\b");
+    printf(CYAN "Enter b:_____\b\b\b\b\b" RESET);
     if (check = get_number(&(coefs.b)) == EXIT_FAILURE){exit(EXIT_FAILURE);}
-    printf("Enter c:_____\b\b\b\b\b");
+    printf(CYAN "Enter c:_____\b\b\b\b\b" RESET);
     if (check = get_number(&(coefs.c)) == EXIT_FAILURE){exit(EXIT_FAILURE);}
 
     return coefs;
@@ -59,19 +59,19 @@ void print_roots(struct solution roots)
     switch(roots.root_amount)
     {
         case 0:
-            printf("No solutions.");
+            printf(MAGENTA "No solutions." RESET);
             break;
 
         case 1:
-            printf("x = %lf", roots.x1);
+            printf(MAGENTA "x = %lf" RESET, roots.x1);
             break;
 
         case 2:
-            printf("x1 = %lf\nx2 = %lf", roots.x1, roots.x2);
+            printf(MAGENTA "x1 = %lf\nx2 = %lf" RESET, roots.x1, roots.x2);
             break;
 
         case INF_SOLUTIONS:
-            printf("Infinite number of solutions.");
+            printf(MAGENTA "Infinite number of solutions." RESET);
             break;
 
         default:

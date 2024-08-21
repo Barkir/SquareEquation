@@ -5,6 +5,8 @@
 #include "solve_equation.h"
 #include "constants_structures.h"
 #include "tests.h"
+#include "colors.h"
+#include "input_output.h"
 
 int test_init(int test_n, struct equation coefs, struct solution roots_exp)
 {
@@ -17,6 +19,7 @@ int test_init(int test_n, struct equation coefs, struct solution roots_exp)
                 roots_exp.x1, roots_exp.x2, roots_exp.root_amount);
         return test_n;
     }
+    printf(GREEN "Test %d passed!" RESET "\n", test_n);
     return 0;
 
 
@@ -31,7 +34,7 @@ int all_test_init()
     }
     if (right)
     {
-        printf("TESTS PASSED!\n");
+        printf(GREEN "TESTS PASSED!" RESET "\n");
         return right;
     }
     return right;
