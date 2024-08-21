@@ -1,8 +1,14 @@
 #ifndef CONSTANTS_STRUCTURES_H
 #define CONSTANTS_STRUCTURES_H
 
+#include <math.h>
+
 const int INF_SOLUTIONS = -1;
-const double eps = 10e-8;
+const int NO_ROOTS = 0;
+const int ONE_ROOT = 1;
+const int TWO_ROOTS = 2;
+const double eps = 10e-5;
+const int LENGTH = 30;
 
 struct equation
 {
