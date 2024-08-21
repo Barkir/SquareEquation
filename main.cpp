@@ -7,6 +7,7 @@
 #include "solve_equation.h"
 #include "testing.h"
 #include "colors.h"
+
 #include "TXLib.h"
 
 int main(int argc, char *argv[]){

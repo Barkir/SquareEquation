@@ -72,7 +72,7 @@ BLUE "III" RESET "            When you finish entering the coefs, the program wi
 "                                   or has two equal square solutions\n\n"
 "                                   " GREEN "two solutions" RESET " if there are two of them\n\n"
 "                                   " GREEN "\"Infinite number of solutions\"" RESET "\n"
-"                                   when a == b == c == 0";
+"                                   when a == b == c == 0\n";
 
 
 #endif

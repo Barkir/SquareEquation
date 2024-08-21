@@ -112,5 +112,5 @@ int cmd(int argc, char * argv[])
 
     }
     if (argc > 1){return 1;}
-    else{return 0;}
+    return 0;
 }
