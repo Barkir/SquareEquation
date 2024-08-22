@@ -2,8 +2,8 @@
 #include <math.h>
 #include <assert.h>
 
-#include "solve_equation.h"
-#include "constants_structures.h"
+#include "header/solve_equation.h"
+#include "header/constants_structures.h"
 
 double discriminant(double a, double b, double c)
 {

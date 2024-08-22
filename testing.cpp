@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <math.h>
 
-#include "testing.h"
-#include "solve_equation.h"
-#include "constants_structures.h"
-#include "tests.h"
-#include "colors.h"
-#include "input_output.h"
+#include "header/testing.h"
+#include "header/solve_equation.h"
+#include "header/constants_structures.h"
+#include "header/tests.h"
+#include "header/colors.h"
+#include "header/input_output.h"
 
 int test_init(int test_n, struct equation coefs, struct solution roots_exp)
 {

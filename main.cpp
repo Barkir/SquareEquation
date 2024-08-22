@@ -3,12 +3,13 @@
 #include <string.h>
 
 #include "TXLib.h"
-#include "constants_structures.h"
-#include "input_output.h"
-#include "solve_equation.h"
-#include "testing.h"
-#include "colors.h"
-#include "cmd_flag_structure.h"
+#include "header/constants_structures.h"
+#include "header/input_output.h"
+#include "header/solve_equation.h"
+#include "header/testing.h"
+#include "header/colors.h"
+#include "header/cmd_flag_structure.h"
+#include "header/cmd.h"
 
 int main(int argc, char *argv[]){
 
