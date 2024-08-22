@@ -1,3 +1,5 @@
+/** @file **/
+
 #ifndef SOLVE_EQUATION_H
 #define SOLVE_EQUATION_H
 

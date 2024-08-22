@@ -1,3 +1,5 @@
+/** @file **/
+
 #ifndef CONSTANTS_STRUCTURES_H
 #define CONSTANTS_STRUCTURES_H
 
@@ -26,9 +28,9 @@ struct flag
 
 enum roots{
     INF_SOLUTIONS = -1,
-    NO_ROOTS = 0,
-    ONE_ROOT = 1,
-    TWO_ROOTS = 2
+    NO_ROOTS,
+    ONE_ROOT,
+    TWO_ROOTS
 };
 
 enum operation
@@ -41,7 +43,8 @@ enum operation
 enum analyze_output
 {
     EXIT,
-    CONTINUE
+    CONTINUE,
+    RET
 };
 
 #endif

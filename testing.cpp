@@ -1,3 +1,5 @@
+/** @file **/
+
 #include <stdio.h>
 #include <math.h>
 
@@ -8,6 +10,8 @@
 #include "header/colors.h"
 #include "header/input_output.h"
 
+
+// INIT OF A SINGLE TEST
 int test_init(int test_n, struct equation coefs, struct solution roots_exp)
 {
     struct solution roots = solve_square_equation(coefs);
@@ -25,6 +29,7 @@ int test_init(int test_n, struct equation coefs, struct solution roots_exp)
 
 }
 
+// INIT OF ALL TESTS
 int all_test_init()
 {
     int right = 1;

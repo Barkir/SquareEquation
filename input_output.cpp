@@ -1,3 +1,5 @@
+/** @file **/
+
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -36,7 +38,7 @@ int get_number(double * num)
     return 0;
 }
 
-
+// ENTER A NUMBER
 struct equation enter_numbers()
 {
     struct equation coefs;
@@ -52,7 +54,7 @@ struct equation enter_numbers()
     return coefs;
 }
 
-
+// PRINTS ALL ROOTS
 void print_roots(struct solution roots)
 {
     assert(isfinite(roots.x1));

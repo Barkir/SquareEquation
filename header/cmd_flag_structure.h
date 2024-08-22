@@ -1,3 +1,5 @@
+/** @file **/
+
 #ifndef CMD_FLAG_STRUCTURE_H
 #define CMD_FLAG_STRUCTURE_H
 

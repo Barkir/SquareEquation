@@ -1,3 +1,5 @@
+/** @file **/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -13,28 +15,26 @@
 
 int main(int argc, char *argv[]){
 
-    int ret = -1;
+    int ret = RET;
 
     for (int i = 1; i < argc; i++)
     {
         switch (ret = output_cmd(parse_cmd_args(argv[i], flag_array, flag_array_size)))
         {
             case EXIT:
-            return EXIT;
+                return EXIT;
 
             case CONTINUE:
-            break;
+                break;
 
             default:
-            break;
+                break;
 
         }
 
     }
 
-    if (!ret) {return 0;}
-
-
+    if (ret == CONTINUE) {return 0;}
 
     if (all_test_init())
     {

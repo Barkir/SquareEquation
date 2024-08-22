@@ -1,3 +1,5 @@
+/** @file **/
+
 #include <stdio.h>
 #include <math.h>
 #include <assert.h>
@@ -89,6 +91,7 @@ struct solution solve_linear_equation(struct equation coefs)
     return roots;
 }
 
+// INTERCHANGE THE VALUE OF X1 and X2
 void interchange(double * x1, double * x2)
 {
     double temp = 0;

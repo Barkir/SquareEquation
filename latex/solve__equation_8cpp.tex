@@ -1,0 +1,61 @@
+\doxysection{solve\+\_\+equation.\+cpp File Reference}
+\hypertarget{solve__equation_8cpp}{}\label{solve__equation_8cpp}\index{solve\_equation.cpp@{solve\_equation.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include "{}header/solve\+\_\+equation.\+h"{}}\newline
+{\ttfamily \#include "{}header/constants\+\_\+structures.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{solve__equation_8cpp_a2876dcc4846e2235854a720d47131b88}{discriminant}} (double a, double b, double c)
+\item 
+int \mbox{\hyperlink{solve__equation_8cpp_a247978824ef960d655ab771781bbbcfa}{is\+\_\+null}} (double a)
+\item 
+int \mbox{\hyperlink{solve__equation_8cpp_a5cf9cf5e86c145a2bc103e94d0eb54db}{is\+\_\+equal}} (double num1, double num2)
+\item 
+struct solution \mbox{\hyperlink{solve__equation_8cpp_adb544ab94d3a5fa092f9e9eab7480cb9}{solve\+\_\+square\+\_\+equation}} (struct equation coefs)
+\item 
+struct solution \mbox{\hyperlink{solve__equation_8cpp_a68e3792d06ce7da11a042243ec03916f}{solve\+\_\+linear\+\_\+equation}} (struct equation coefs)
+\item 
+void \mbox{\hyperlink{solve__equation_8cpp_ac44fe699bcba20ea6e1d9610de04ec15}{interchange}} (double \texorpdfstring{$\ast$}{*}x1, double \texorpdfstring{$\ast$}{*}x2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{solve__equation_8cpp_a2876dcc4846e2235854a720d47131b88}\index{solve\_equation.cpp@{solve\_equation.cpp}!discriminant@{discriminant}}
+\index{discriminant@{discriminant}!solve\_equation.cpp@{solve\_equation.cpp}}
+\doxysubsubsection{\texorpdfstring{discriminant()}{discriminant()}}
+{\footnotesize\ttfamily \label{solve__equation_8cpp_a2876dcc4846e2235854a720d47131b88} 
+double discriminant (\begin{DoxyParamCaption}\item[{double}]{a}{, }\item[{double}]{b}{, }\item[{double}]{c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{solve__equation_8cpp_ac44fe699bcba20ea6e1d9610de04ec15}\index{solve\_equation.cpp@{solve\_equation.cpp}!interchange@{interchange}}
+\index{interchange@{interchange}!solve\_equation.cpp@{solve\_equation.cpp}}
+\doxysubsubsection{\texorpdfstring{interchange()}{interchange()}}
+{\footnotesize\ttfamily \label{solve__equation_8cpp_ac44fe699bcba20ea6e1d9610de04ec15} 
+void interchange (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{x1}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{x2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{solve__equation_8cpp_a5cf9cf5e86c145a2bc103e94d0eb54db}\index{solve\_equation.cpp@{solve\_equation.cpp}!is\_equal@{is\_equal}}
+\index{is\_equal@{is\_equal}!solve\_equation.cpp@{solve\_equation.cpp}}
+\doxysubsubsection{\texorpdfstring{is\_equal()}{is\_equal()}}
+{\footnotesize\ttfamily \label{solve__equation_8cpp_a5cf9cf5e86c145a2bc103e94d0eb54db} 
+int is\+\_\+equal (\begin{DoxyParamCaption}\item[{double}]{num1}{, }\item[{double}]{num2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{solve__equation_8cpp_a247978824ef960d655ab771781bbbcfa}\index{solve\_equation.cpp@{solve\_equation.cpp}!is\_null@{is\_null}}
+\index{is\_null@{is\_null}!solve\_equation.cpp@{solve\_equation.cpp}}
+\doxysubsubsection{\texorpdfstring{is\_null()}{is\_null()}}
+{\footnotesize\ttfamily \label{solve__equation_8cpp_a247978824ef960d655ab771781bbbcfa} 
+int is\+\_\+null (\begin{DoxyParamCaption}\item[{double}]{a}{}\end{DoxyParamCaption})}
+
+\Hypertarget{solve__equation_8cpp_a68e3792d06ce7da11a042243ec03916f}\index{solve\_equation.cpp@{solve\_equation.cpp}!solve\_linear\_equation@{solve\_linear\_equation}}
+\index{solve\_linear\_equation@{solve\_linear\_equation}!solve\_equation.cpp@{solve\_equation.cpp}}
+\doxysubsubsection{\texorpdfstring{solve\_linear\_equation()}{solve\_linear\_equation()}}
+{\footnotesize\ttfamily \label{solve__equation_8cpp_a68e3792d06ce7da11a042243ec03916f} 
+struct solution solve\+\_\+linear\+\_\+equation (\begin{DoxyParamCaption}\item[{struct equation}]{coefs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{solve__equation_8cpp_adb544ab94d3a5fa092f9e9eab7480cb9}\index{solve\_equation.cpp@{solve\_equation.cpp}!solve\_square\_equation@{solve\_square\_equation}}
+\index{solve\_square\_equation@{solve\_square\_equation}!solve\_equation.cpp@{solve\_equation.cpp}}
+\doxysubsubsection{\texorpdfstring{solve\_square\_equation()}{solve\_square\_equation()}}
+{\footnotesize\ttfamily \label{solve__equation_8cpp_adb544ab94d3a5fa092f9e9eab7480cb9} 
+struct solution solve\+\_\+square\+\_\+equation (\begin{DoxyParamCaption}\item[{struct equation}]{coefs}{}\end{DoxyParamCaption})}
+
