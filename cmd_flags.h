@@ -2,6 +2,7 @@
 #define HELP_H
 
 #include "colors.h"
+#include "constants_structures.h"
 
 const char * doc =
 "Instructions for SquareSolver: ... \n"
@@ -74,5 +75,12 @@ BLUE "III" RESET "            When you finish entering the coefs, the program wi
 "                                   " GREEN "\"Infinite number of solutions\"" RESET "\n"
 "                                   when a == b == c == 0\n";
 
+
+const char * out = YELLOW  "OUT\n" RESET
+                   GREEN   "OUT\n" RESET
+                   MAGENTA "OUT\n" RESET
+                   BLUE    "OUT\n" RESET
+                   CYAN    "OUT\n" RESET
+                   RED     "OUT\n" RESET;
 
 #endif

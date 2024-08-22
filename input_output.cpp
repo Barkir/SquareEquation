@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <string.h>
+
 #include "cmd_flags.h"
 #include "input_output.h"
 #include "constants_structures.h"
@@ -83,34 +84,33 @@ void print_roots(struct solution roots)
 }
 
 
-int cmd(int argc, char * argv[])
+int parse_cmd_args(char * w_flag, struct flag * flag_array, int flag_array_size)
 {
-    for (int i = 1; i < argc; i++)
+    for (int i = 0; i < flag_array_size; i++)
     {
-        enum operation cmd;
-        if (strcmp(argv[i], "--doc") == 0){cmd = CMD_DOC;}
-        if (strcmp(argv[i], "--help") == 0){cmd = CMD_HELP;}
-        if (strcmp(argv[i], "--out") == 0){cmd = CMD_OUT;}
-
-        switch (cmd)
-        {
-            case CMD_DOC:
-              printf("%s", doc);
-              break;
-
-            case CMD_HELP:
-              printf("%s", help);
-              break;
-
-            case CMD_OUT:
-              printf("OUUUT");
-              break;
-
-            default:
-            break;
-        }
-
+        if (strcmp(w_flag, flag_array[i].name) == 0) {return flag_array[i].code;}
     }
-    if (argc > 1){return 1;}
-    return 0;
+}
+
+ int output_cmd(int code)
+{
+    switch (code)
+    {
+        case CMD_HELP:
+        printf("%s", help);
+        return EXIT;
+
+        case CMD_DOC:
+        printf("%s", doc);
+        return EXIT;
+
+        case CMD_OUT:
+        printf("%s", out);
+        return CONTINUE;
+
+
+        default:
+        break;
+    }
+
 }

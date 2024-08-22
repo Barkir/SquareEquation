@@ -68,14 +68,17 @@ struct solution solve_square_equation(struct equation coefs)
 // SOLVES A LINEAR EQUATION
 struct solution solve_linear_equation(struct equation coefs)
 {
-
-
     struct solution roots;
 
     assert(&roots.x1 != NULL);
     if (is_null(coefs.b))
     {
-        if (is_null(coefs.c)) {roots.root_amount = INF_SOLUTIONS;}
+        if (is_null(coefs.c))
+        {
+            roots.x1 = 0;
+            roots.x2 = 0;
+            roots.root_amount = INF_SOLUTIONS;
+        }
         else{roots.root_amount = NO_ROOTS;}
     }
     else
