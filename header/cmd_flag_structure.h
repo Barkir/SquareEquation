@@ -1,4 +1,7 @@
-/** @file **/
+/**
+* @file cmd_flag_structure.h
+* @brief a file for storing flag_array structure, cmd flags and their enum codes
+*/
 
 #ifndef CMD_FLAG_STRUCTURE_H
 #define CMD_FLAG_STRUCTURE_H

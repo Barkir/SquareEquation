@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['parse_5fcmd_5fargs_0',['parse_cmd_args',['../cmd_8cpp.html#a37e232c07e3282bfa463a4d7f9518f63',1,'cmd.cpp']]],
-  ['print_5froots_1',['print_roots',['../input__output_8cpp.html#aa5f56d0fd83a5325aeed43be76980694',1,'input_output.cpp']]]
+  ['solve_5flinear_5fequation_0',['solve_linear_equation',['../solve__equation_8h.html#a68e3792d06ce7da11a042243ec03916f',1,'solve_linear_equation(struct equation coefs):&#160;solve_equation.cpp'],['../solve__equation_8cpp.html#a68e3792d06ce7da11a042243ec03916f',1,'solve_linear_equation(struct equation coefs):&#160;solve_equation.cpp']]],
+  ['solve_5fsquare_5fequation_1',['solve_square_equation',['../solve__equation_8h.html#adb544ab94d3a5fa092f9e9eab7480cb9',1,'solve_square_equation(struct equation coefs):&#160;solve_equation.cpp'],['../solve__equation_8cpp.html#adb544ab94d3a5fa092f9e9eab7480cb9',1,'solve_square_equation(struct equation coefs):&#160;solve_equation.cpp']]]
 ];

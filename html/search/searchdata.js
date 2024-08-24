@@ -1,21 +1,30 @@
 var indexSectionsWithContent =
 {
-  0: "acdegimopst",
-  1: "cimst",
-  2: "adegimopst"
+  0: "acdefgimoprst",
+  1: "efs",
+  2: "cimst",
+  3: "adegiopst",
+  4: "e",
+  5: "aor"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "files",
-  2: "functions"
+  1: "classes",
+  2: "files",
+  3: "functions",
+  4: "variables",
+  5: "enums"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Files",
-  2: "Functions"
+  1: "Classes",
+  2: "Files",
+  3: "Functions",
+  4: "Variables",
+  5: "Enumerations"
 };
 

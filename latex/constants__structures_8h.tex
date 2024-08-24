@@ -1,0 +1,136 @@
+\doxysection{header/constants\+\_\+structures.h File Reference}
+\hypertarget{constants__structures_8h}{}\label{constants__structures_8h}\index{header/constants\_structures.h@{header/constants\_structures.h}}
+
+
+a header file with all constants and structures  
+
+
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for constants\+\_\+structures.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structequation}{equation}}
+\begin{DoxyCompactList}\small\item\em structure for storing coefs (a, b, c) \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structsolution}{solution}}
+\begin{DoxyCompactList}\small\item\em structure for storing roots and their amount \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structflag}{flag}}
+\begin{DoxyCompactList}\small\item\em flag a structure for storing flags \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{constants__structures_8h_ac6a66a418b6646df5aa3c82d9fb39d3c}{roots}} \{ {\bfseries INF\+\_\+\+SOLUTIONS} = -\/1
+, {\bfseries NO\+\_\+\+ROOTS}
+, {\bfseries ONE\+\_\+\+ROOT}
+, {\bfseries TWO\+\_\+\+ROOTS}
+ \}
+\begin{DoxyCompactList}\small\item\em enum for storing number of roots \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{constants__structures_8h_ad34e7fb3c33543e9f3a1e48486fa7692}{operation}} \{ {\bfseries CMD\+\_\+\+DOC}
+, {\bfseries CMD\+\_\+\+HELP}
+, {\bfseries CMD\+\_\+\+OUT}
+ \}
+\begin{DoxyCompactList}\small\item\em enum for storing cmd flags \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{constants__structures_8h_a5a6ba29a41c09c48f2188eaac366e90f}{analyze\+\_\+output}} \{ {\bfseries EXIT}
+, {\bfseries CONTINUE}
+, {\bfseries RET}
+ \}
+\begin{DoxyCompactList}\small\item\em enum for cmd flag analyzing \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const double \mbox{\hyperlink{constants__structures_8h_a3d8c24629d725b9ef8c238cf27c9b158}{eps}} = 10e-\/5
+\item 
+\Hypertarget{constants__structures_8h_aebe95caad69b594383f9bee25984fe13}\label{constants__structures_8h_aebe95caad69b594383f9bee25984fe13} 
+const int {\bfseries TESTS\+\_\+\+NUMBER} = 30
+\item 
+\Hypertarget{constants__structures_8h_a86a7b44473c252f166f7e98da2645e27}\label{constants__structures_8h_a86a7b44473c252f166f7e98da2645e27} 
+const int {\bfseries flag\+\_\+array\+\_\+size} = 3
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+a header file with all constants and structures 
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{constants__structures_8h_a5a6ba29a41c09c48f2188eaac366e90f}\index{constants\_structures.h@{constants\_structures.h}!analyze\_output@{analyze\_output}}
+\index{analyze\_output@{analyze\_output}!constants\_structures.h@{constants\_structures.h}}
+\doxysubsubsection{\texorpdfstring{analyze\_output}{analyze\_output}}
+{\footnotesize\ttfamily \label{constants__structures_8h_a5a6ba29a41c09c48f2188eaac366e90f} 
+enum \mbox{\hyperlink{constants__structures_8h_a5a6ba29a41c09c48f2188eaac366e90f}{analyze\+\_\+output}}}
+
+
+
+enum for cmd flag analyzing 
+
+
+\begin{DoxyParams}{Parameters}
+{\em EXIT} & flag for exit (program exit after --doc, --help or other flag) \\
+\hline
+{\em CONTINUE} & value for flags that can be written before other flags \\
+\hline
+{\em RET} & start value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{constants__structures_8h_ad34e7fb3c33543e9f3a1e48486fa7692}\index{constants\_structures.h@{constants\_structures.h}!operation@{operation}}
+\index{operation@{operation}!constants\_structures.h@{constants\_structures.h}}
+\doxysubsubsection{\texorpdfstring{operation}{operation}}
+{\footnotesize\ttfamily \label{constants__structures_8h_ad34e7fb3c33543e9f3a1e48486fa7692} 
+enum \mbox{\hyperlink{constants__structures_8h_ad34e7fb3c33543e9f3a1e48486fa7692}{operation}}}
+
+
+
+enum for storing cmd flags 
+
+
+\begin{DoxyParams}{Parameters}
+{\em CMD\+\_\+\+DOC} & value for --doc flag \\
+\hline
+{\em CMD\+\_\+\+HELP} & value for --help flag \\
+\hline
+{\em CMD\+\_\+\+OUT} & value for --out flag \\
+\hline
+\end{DoxyParams}
+\Hypertarget{constants__structures_8h_ac6a66a418b6646df5aa3c82d9fb39d3c}\index{constants\_structures.h@{constants\_structures.h}!roots@{roots}}
+\index{roots@{roots}!constants\_structures.h@{constants\_structures.h}}
+\doxysubsubsection{\texorpdfstring{roots}{roots}}
+{\footnotesize\ttfamily \label{constants__structures_8h_ac6a66a418b6646df5aa3c82d9fb39d3c} 
+enum \mbox{\hyperlink{constants__structures_8h_ac6a66a418b6646df5aa3c82d9fb39d3c}{roots}}}
+
+
+
+enum for storing number of roots 
+
+
+\begin{DoxyParams}{Parameters}
+{\em INF\+\_\+\+SOLUTIONS} & value for infinite solutions \\
+\hline
+{\em NO\+\_\+\+ROOTS} & value for no solutions \\
+\hline
+{\em ONE\+\_\+\+ROOT} & value for one root \\
+\hline
+{\em TWO\+\_\+\+ROOTS} & value for two roots \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{constants__structures_8h_a3d8c24629d725b9ef8c238cf27c9b158}\index{constants\_structures.h@{constants\_structures.h}!eps@{eps}}
+\index{eps@{eps}!constants\_structures.h@{constants\_structures.h}}
+\doxysubsubsection{\texorpdfstring{eps}{eps}}
+{\footnotesize\ttfamily \label{constants__structures_8h_a3d8c24629d725b9ef8c238cf27c9b158} 
+const double eps = 10e-\/5}
+
+
+\begin{DoxyParams}{Parameters}
+{\em eps} & a very small value (used for working with double) \\
+\hline
+{\em TESTS\+\_\+\+NUMBER} & a number of unit\+\_\+tests \\
+\hline
+{\em flag\+\_\+array\+\_\+size} & a size of flag\+\_\+array structure array \\
+\hline
+\end{DoxyParams}

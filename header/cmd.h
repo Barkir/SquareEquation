@@ -1,4 +1,7 @@
-/** @file **/
+/**
+* @file cmd.h
+* @brief a header file for cmd.cpp
+*/
 
 #ifndef CMD_H
 #define CMD_H

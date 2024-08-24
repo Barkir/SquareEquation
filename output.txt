@@ -1,0 +1,35 @@
+[32mTest 1 passed!
+[0m[32mTest 2 passed!
+[0m[32mTest 3 passed!
+[0m[32mTest 4 passed!
+[0m[32mTest 5 passed!
+[0m[32mTest 6 passed!
+[0m[32mTest 7 passed!
+[0m[32mTest 8 passed!
+[0m[32mTest 9 passed!
+[0m[32mTest 10 passed!
+[0m[32mTest 11 passed!
+[0m[32mTest 12 passed!
+[0m[32mTest 13 passed!
+[0m[32mTest 14 passed!
+[0m[32mTest 15 passed!
+[0m[32mTest 16 passed!
+[0m[32mTest 17 passed!
+[0m[32mTest 18 passed!
+[0m[32mTest 19 passed!
+[0m[32mTest 20 passed!
+[0m[32mTest 21 passed!
+[0m[32mTest 22 passed!
+[0m[32mTest 23 passed!
+[0m[32mTest 24 passed!
+[0m[32mTest 25 passed!
+[0m[32mTest 26 passed!
+[0m[32mTest 27 passed!
+[0m[32mTest 28 passed!
+[0m[32mTest 29 passed!
+[0m[32mTest 30 passed!
+[0m[32mTESTS PASSED!
+[0m[33m|Square Equation Solver|
+[0m[36mEnter a:_____[0m[36mEnter b:_____[0m[36mEnter c:_____[0m[36mYour equation is: 1.0x^2+21.0x+42.0
+[0m[35mx1 = -18.761356
+x2 = -2.238644[0m

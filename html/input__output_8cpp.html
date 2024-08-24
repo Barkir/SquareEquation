@@ -11,6 +11,8 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -25,9 +27,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">SquareEquation<span id="projectnumber">&#160;0.0.0</span>
+   <div id="projectname">SquareEquation<span id="projectnumber">&#160;v1.0.1</span>
    </div>
-   <div id="projectbrief">Program for solving square equations</div>
+   <div id="projectbrief">Program for solving a square equation</div>
   </td>
  </tr>
  </tbody>
@@ -50,17 +52,29 @@ $(function() { codefold.init(0); });
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Search',false);
+  initMenu('',true,false,'search.php','Search',true);
   $(function() { init_search(); });
 });
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){ initResizable(false); });
+$(function(){initNavTree('input__output_8cpp.html',''); initResizable(true); });
 /* @license-end */
 </script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -82,33 +96,44 @@ $(function(){ initResizable(false); });
 </div>
 </div>
 
-</div><!-- top -->
-<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">input_output.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>.cpp file with functions for user input/output while running a program  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-<code>#include &quot;header/input_output.h&quot;</code><br />
-<code>#include &quot;header/constants_structures.h&quot;</code><br />
-<code>#include &quot;header/colors.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="input__output_8h_source.html">header/input_output.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="constants__structures_8h_source.html">header/constants_structures.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="colors_8h_source.html">header/colors.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for input_output.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="input__output_8cpp__incl.png" border="0" usemap="#ainput__output_8cpp" alt=""/></div>
+</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa0a28338715c34f353f610273e667954" id="r_aa0a28338715c34f353f610273e667954"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0a28338715c34f353f610273e667954">get_number</a> (double *num)</td></tr>
+<tr class="memdesc:aa0a28338715c34f353f610273e667954"><td class="mdescLeft">&#160;</td><td class="mdescRight">function for getting a number from user  <br /></td></tr>
 <tr class="separator:aa0a28338715c34f353f610273e667954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49d40089c68931f47c9da00ea858b025" id="r_a49d40089c68931f47c9da00ea858b025"><td class="memItemLeft" align="right" valign="top">struct equation&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49d40089c68931f47c9da00ea858b025">enter_numbers</a> ()</td></tr>
+<tr class="memitem:a49d40089c68931f47c9da00ea858b025" id="r_a49d40089c68931f47c9da00ea858b025"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structequation.html">equation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49d40089c68931f47c9da00ea858b025">enter_numbers</a> ()</td></tr>
+<tr class="memdesc:a49d40089c68931f47c9da00ea858b025"><td class="mdescLeft">&#160;</td><td class="mdescRight">a function for entering coefs  <br /></td></tr>
 <tr class="separator:a49d40089c68931f47c9da00ea858b025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5f56d0fd83a5325aeed43be76980694" id="r_aa5f56d0fd83a5325aeed43be76980694"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5f56d0fd83a5325aeed43be76980694">print_roots</a> (struct solution roots)</td></tr>
+<tr class="memitem:aa5f56d0fd83a5325aeed43be76980694" id="r_aa5f56d0fd83a5325aeed43be76980694"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5f56d0fd83a5325aeed43be76980694">print_roots</a> (struct <a class="el" href="structsolution.html">solution</a> <a class="el" href="constants__structures_8h.html#ac6a66a418b6646df5aa3c82d9fb39d3c">roots</a>)</td></tr>
+<tr class="memdesc:aa5f56d0fd83a5325aeed43be76980694"><td class="mdescLeft">&#160;</td><td class="mdescRight">function for printing roots  <br /></td></tr>
 <tr class="separator:aa5f56d0fd83a5325aeed43be76980694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>.cpp file with functions for user input/output while running a program </p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a49d40089c68931f47c9da00ea858b025" name="a49d40089c68931f47c9da00ea858b025"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49d40089c68931f47c9da00ea858b025">&#9670;&#160;</a></span>enter_numbers()</h2>
 
@@ -116,13 +141,21 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct equation enter_numbers </td>
+          <td class="memname">struct <a class="el" href="structequation.html">equation</a> enter_numbers </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>a function for entering coefs </p>
+<dl class="section return"><dt>Returns</dt><dd>structure with coefs (a, b, c) </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="input__output_8cpp_a49d40089c68931f47c9da00ea858b025_cgraph.png" border="0" usemap="#ainput__output_8cpp_a49d40089c68931f47c9da00ea858b025_cgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
@@ -141,6 +174,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>function for getting a number from user </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>pointer for coef (a, b, c) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>EXIT_FAILURE if EOF 0 if success </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="input__output_8cpp_aa0a28338715c34f353f610273e667954_cgraph.png" border="0" usemap="#ainput__output_8cpp_aa0a28338715c34f353f610273e667954_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="input__output_8cpp_aa0a28338715c34f353f610273e667954_icgraph.png" border="0" usemap="#ainput__output_8cpp_aa0a28338715c34f353f610273e667954_icgraph" alt=""/></div>
+</div>
+
 </div>
 </div>
 <a id="aa5f56d0fd83a5325aeed43be76980694" name="aa5f56d0fd83a5325aeed43be76980694"></a>
@@ -152,19 +204,30 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void print_roots </td>
           <td>(</td>
-          <td class="paramtype">struct solution</td>          <td class="paramname"><span class="paramname"><em>roots</em></span></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="structsolution.html">solution</a></td>          <td class="paramname"><span class="paramname"><em>roots</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>function for printing roots </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">roots</td><td>structure with roots </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 </div><!-- contents -->
-<!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
-</small></address>
 </div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="input__output_8cpp.html">input_output.cpp</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
 </body>
 </html>

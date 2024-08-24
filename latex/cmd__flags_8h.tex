@@ -1,0 +1,76 @@
+\doxysection{header/cmd\+\_\+flags.h File Reference}
+\hypertarget{cmd__flags_8h}{}\label{cmd__flags_8h}\index{header/cmd\_flags.h@{header/cmd\_flags.h}}
+
+
+a file for storing output for flags (e.\+g\+: --help, --doc, --out)  
+
+
+{\ttfamily \#include "{}colors.\+h"{}}\newline
+{\ttfamily \#include "{}constants\+\_\+structures.\+h"{}}\newline
+Include dependency graph for cmd\+\_\+flags.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{cmd__flags_8h_a5092a1bd79826902df03502891db05ce}\label{cmd__flags_8h_a5092a1bd79826902df03502891db05ce} 
+const char \texorpdfstring{$\ast$}{*} {\bfseries doc}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{cmd__flags_8h_ad7ec84b4d1c84a2d1af0c0de9ea5b86f}{help}}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{cmd__flags_8h_a8905de849f303a8598c0f7c3d37d46ed}{out}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+a file for storing output for flags (e.\+g\+: --help, --doc, --out) 
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{cmd__flags_8h_ad7ec84b4d1c84a2d1af0c0de9ea5b86f}\index{cmd\_flags.h@{cmd\_flags.h}!help@{help}}
+\index{help@{help}!cmd\_flags.h@{cmd\_flags.h}}
+\doxysubsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily \label{cmd__flags_8h_ad7ec84b4d1c84a2d1af0c0de9ea5b86f} 
+const char\texorpdfstring{$\ast$}{*} help}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{BLUE\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ This\ is\ a\ help\ instruction\ for\ using\ Square\ Equation\ Solver"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{BLUE\ \textcolor{stringliteral}{"{}I."{}}\ RESET\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ The\ first\ step\ is\ to\ start\ the\ program.\(\backslash\)n"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ To\ do\ this,\ open\ cmd\ and\ move\ to\ directory\ where\ this\ project\ is\ located.\(\backslash\)n"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Then\ enter\ this\ "{}}\ YELLOW\ \textcolor{stringliteral}{"{}\(\backslash\)"{}g++\ -\/o\ a.exe\ main.cpp\ solve\_equation.cpp\ testing.cpp\ input\_output.cpp\(\backslash\)"{}"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ To\ run\ the\ program\ type\ "{}}\ YELLOW\ \textcolor{stringliteral}{"{}\(\backslash\)"{}a\(\backslash\)"{}"{}}\ RESET\ \textcolor{stringliteral}{"{}\ in\ cmd\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{BLUE\ \textcolor{stringliteral}{"{}II."{}}\ RESET\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ You\ will\ be\ suggested\ to\ enter\ the\ coefs\ of\ a\ square\ equation\ "{}}\ CYAN\ \textcolor{stringliteral}{"{}(a,\ b,\ c)"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Please\ enter\ them\ one\ by\ one,\ when\ you\ tap\ "{}}\ CYAN\ \textcolor{stringliteral}{"{}Enter"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ the\ program\ will\ suggest\ you\ to\ enter\ the\ next\ coef.\(\backslash\)n"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ If\ you\ enter\ the\ coef\ incorrectly,\ the\ program\(\backslash\)n"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ will\ warn\ you\ using\ this\ message:\ "{}}\ RED\ \textcolor{stringliteral}{"{}\(\backslash\)"{}NOT\ A\ NUMBER!\(\backslash\)"{}"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{BLUE\ \textcolor{stringliteral}{"{}III"{}}\ RESET\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ When\ you\ finish\ entering\ the\ coefs,\ the\ program\ will\ automatically\(\backslash\)n"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ find\ the\ solutions\ of\ the\ equation\ and\ you\ will\ see\ the\ result.\(\backslash\)n"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ The\ program\ prints:\ "{}}\ GREEN\ \textcolor{stringliteral}{"{}\(\backslash\)"{}No\ solutions.\(\backslash\)"{}"{}}\ RESET\ \textcolor{stringliteral}{"{},\ if\ there\ are\ no\ solutions.\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}}\ GREEN\ \textcolor{stringliteral}{"{}one\ solution"{}}\ RESET\ \textcolor{stringliteral}{"{}\ if\ the\ equation\ is\ linear\(\backslash\)n"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ or\ has\ two\ equal\ square\ solutions\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}}\ GREEN\ \textcolor{stringliteral}{"{}two\ solutions"{}}\ RESET\ \textcolor{stringliteral}{"{}\ if\ there\ are\ two\ of\ them\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}}\ GREEN\ \textcolor{stringliteral}{"{}\(\backslash\)"{}Infinite\ number\ of\ solutions\(\backslash\)"{}"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ when\ a\ ==\ b\ ==\ c\ ==\ 0\(\backslash\)n"{}}}
+
+\end{DoxyCode}
+\Hypertarget{cmd__flags_8h_a8905de849f303a8598c0f7c3d37d46ed}\index{cmd\_flags.h@{cmd\_flags.h}!out@{out}}
+\index{out@{out}!cmd\_flags.h@{cmd\_flags.h}}
+\doxysubsubsection{\texorpdfstring{out}{out}}
+{\footnotesize\ttfamily \label{cmd__flags_8h_a8905de849f303a8598c0f7c3d37d46ed} 
+const char\texorpdfstring{$\ast$}{*} out}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ YELLOW\ \ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GREEN\ \ \ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MAGENTA\ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BLUE\ \ \ \ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ CYAN\ \ \ \ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ RED\ \ \ \ \ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET}
+
+\end{DoxyCode}

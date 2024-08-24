@@ -1,0 +1,58 @@
+\doxysection{header/cmd.h File Reference}
+\hypertarget{cmd_8h}{}\label{cmd_8h}\index{header/cmd.h@{header/cmd.h}}
+
+
+a header file for \doxylink{cmd_8cpp}{cmd.\+cpp}  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{cmd_8h_a4d2a2f895114a92ec970a68642454dcc}{output\+\_\+cmd}} (int code)
+\begin{DoxyCompactList}\small\item\em output\+\_\+cmd performs a flag using switch case \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{cmd_8h_a37e232c07e3282bfa463a4d7f9518f63}{parse\+\_\+cmd\+\_\+args}} (char \texorpdfstring{$\ast$}{*}w\+\_\+flag, struct \mbox{\hyperlink{structflag}{flag}} \texorpdfstring{$\ast$}{*}flag\+\_\+array, int size)
+\begin{DoxyCompactList}\small\item\em function for parsing command line arguments (converts a flag into enum) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+a header file for \doxylink{cmd_8cpp}{cmd.\+cpp} 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{cmd_8h_a4d2a2f895114a92ec970a68642454dcc}\index{cmd.h@{cmd.h}!output\_cmd@{output\_cmd}}
+\index{output\_cmd@{output\_cmd}!cmd.h@{cmd.h}}
+\doxysubsubsection{\texorpdfstring{output\_cmd()}{output\_cmd()}}
+{\footnotesize\ttfamily \label{cmd_8h_a4d2a2f895114a92ec970a68642454dcc} 
+int output\+\_\+cmd (\begin{DoxyParamCaption}\item[{int}]{code}{}\end{DoxyParamCaption})}
+
+
+
+output\+\_\+cmd performs a flag using switch case 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & enum code of a flag (CMD\+\_\+\+HELP, CMD\+\_\+\+DOC etc.) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{cmd_8h_a37e232c07e3282bfa463a4d7f9518f63}\index{cmd.h@{cmd.h}!parse\_cmd\_args@{parse\_cmd\_args}}
+\index{parse\_cmd\_args@{parse\_cmd\_args}!cmd.h@{cmd.h}}
+\doxysubsubsection{\texorpdfstring{parse\_cmd\_args()}{parse\_cmd\_args()}}
+{\footnotesize\ttfamily \label{cmd_8h_a37e232c07e3282bfa463a4d7f9518f63} 
+int parse\+\_\+cmd\+\_\+args (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{w\+\_\+flag}{, }\item[{struct \mbox{\hyperlink{structflag}{flag}} \texorpdfstring{$\ast$}{*}}]{flag\+\_\+array}{, }\item[{int}]{size}{}\end{DoxyParamCaption})}
+
+
+
+function for parsing command line arguments (converts a flag into enum) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w\+\_\+flag} & a single flag \\
+\hline
+{\em flag\+\_\+array} & a structure with defined flags (such as --help or --out) \\
+\hline
+{\em size} & a size of flag\+\_\+array \\
+\hline
+\end{DoxyParams}

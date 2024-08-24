@@ -1,0 +1,78 @@
+\doxysection{header/input\+\_\+output.h File Reference}
+\hypertarget{input__output_8h}{}\label{input__output_8h}\index{header/input\_output.h@{header/input\_output.h}}
+
+
+a header file for \doxylink{input__output_8cpp}{input\+\_\+output.\+cpp}  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{input__output_8h_aa0a28338715c34f353f610273e667954}{get\+\_\+number}} (double \texorpdfstring{$\ast$}{*}num)
+\begin{DoxyCompactList}\small\item\em function for getting a number from user \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{input__output_8h_aa5f56d0fd83a5325aeed43be76980694}{print\+\_\+roots}} (struct \mbox{\hyperlink{structsolution}{solution}} \mbox{\hyperlink{constants__structures_8h_ac6a66a418b6646df5aa3c82d9fb39d3c}{roots}})
+\begin{DoxyCompactList}\small\item\em function for printing roots \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structequation}{equation}} \mbox{\hyperlink{input__output_8h_a49d40089c68931f47c9da00ea858b025}{enter\+\_\+numbers}} ()
+\begin{DoxyCompactList}\small\item\em a function for entering coefs \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+a header file for \doxylink{input__output_8cpp}{input\+\_\+output.\+cpp} 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{input__output_8h_a49d40089c68931f47c9da00ea858b025}\index{input\_output.h@{input\_output.h}!enter\_numbers@{enter\_numbers}}
+\index{enter\_numbers@{enter\_numbers}!input\_output.h@{input\_output.h}}
+\doxysubsubsection{\texorpdfstring{enter\_numbers()}{enter\_numbers()}}
+{\footnotesize\ttfamily \label{input__output_8h_a49d40089c68931f47c9da00ea858b025} 
+struct \mbox{\hyperlink{structequation}{equation}} enter\+\_\+numbers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+a function for entering coefs 
+
+\begin{DoxyReturn}{Returns}
+structure with coefs (a, b, c) 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 1
+\Hypertarget{input__output_8h_aa0a28338715c34f353f610273e667954}\index{input\_output.h@{input\_output.h}!get\_number@{get\_number}}
+\index{get\_number@{get\_number}!input\_output.h@{input\_output.h}}
+\doxysubsubsection{\texorpdfstring{get\_number()}{get\_number()}}
+{\footnotesize\ttfamily \label{input__output_8h_aa0a28338715c34f353f610273e667954} 
+int get\+\_\+number (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{num}{}\end{DoxyParamCaption})}
+
+
+
+function for getting a number from user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & pointer for coef (a, b, c) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+EXIT\+\_\+\+FAILURE if EOF 0 if success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{input__output_8h_aa5f56d0fd83a5325aeed43be76980694}\index{input\_output.h@{input\_output.h}!print\_roots@{print\_roots}}
+\index{print\_roots@{print\_roots}!input\_output.h@{input\_output.h}}
+\doxysubsubsection{\texorpdfstring{print\_roots()}{print\_roots()}}
+{\footnotesize\ttfamily \label{input__output_8h_aa5f56d0fd83a5325aeed43be76980694} 
+void print\+\_\+roots (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structsolution}{solution}}}]{roots}{}\end{DoxyParamCaption})}
+
+
+
+function for printing roots 
+
+
+\begin{DoxyParams}{Parameters}
+{\em roots} & structure with roots \\
+\hline
+\end{DoxyParams}

@@ -1,25 +1,40 @@
 \doxysection{solve\+\_\+equation.\+cpp File Reference}
 \hypertarget{solve__equation_8cpp}{}\label{solve__equation_8cpp}\index{solve\_equation.cpp@{solve\_equation.cpp}}
+
+
+a file for solving a square equation  
+
+
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$math.\+h$>$}\newline
 {\ttfamily \#include $<$assert.\+h$>$}\newline
 {\ttfamily \#include "{}header/solve\+\_\+equation.\+h"{}}\newline
 {\ttfamily \#include "{}header/constants\+\_\+structures.\+h"{}}\newline
+Include dependency graph for solve\+\_\+equation.\+cpp\+:
+% FIG 0
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 double \mbox{\hyperlink{solve__equation_8cpp_a2876dcc4846e2235854a720d47131b88}{discriminant}} (double a, double b, double c)
-\item 
-int \mbox{\hyperlink{solve__equation_8cpp_a247978824ef960d655ab771781bbbcfa}{is\+\_\+null}} (double a)
-\item 
-int \mbox{\hyperlink{solve__equation_8cpp_a5cf9cf5e86c145a2bc103e94d0eb54db}{is\+\_\+equal}} (double num1, double num2)
-\item 
-struct solution \mbox{\hyperlink{solve__equation_8cpp_adb544ab94d3a5fa092f9e9eab7480cb9}{solve\+\_\+square\+\_\+equation}} (struct equation coefs)
-\item 
-struct solution \mbox{\hyperlink{solve__equation_8cpp_a68e3792d06ce7da11a042243ec03916f}{solve\+\_\+linear\+\_\+equation}} (struct equation coefs)
-\item 
-void \mbox{\hyperlink{solve__equation_8cpp_ac44fe699bcba20ea6e1d9610de04ec15}{interchange}} (double \texorpdfstring{$\ast$}{*}x1, double \texorpdfstring{$\ast$}{*}x2)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em a function for solving discriminant \end{DoxyCompactList}\item 
+\Hypertarget{solve__equation_8cpp_a247978824ef960d655ab771781bbbcfa}\label{solve__equation_8cpp_a247978824ef960d655ab771781bbbcfa} 
+int {\bfseries is\+\_\+null} (double a)
+\begin{DoxyCompactList}\small\item\em a function for comparing double number with null \end{DoxyCompactList}\item 
+\Hypertarget{solve__equation_8cpp_a5cf9cf5e86c145a2bc103e94d0eb54db}\label{solve__equation_8cpp_a5cf9cf5e86c145a2bc103e94d0eb54db} 
+int {\bfseries is\+\_\+equal} (double num1, double num2)
+\begin{DoxyCompactList}\small\item\em a function for comparing two dobule numbers (equal or not?) \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structsolution}{solution}} \mbox{\hyperlink{solve__equation_8cpp_adb544ab94d3a5fa092f9e9eab7480cb9}{solve\+\_\+square\+\_\+equation}} (struct \mbox{\hyperlink{structequation}{equation}} coefs)
+\begin{DoxyCompactList}\small\item\em a function for solving square equation \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structsolution}{solution}} \mbox{\hyperlink{solve__equation_8cpp_a68e3792d06ce7da11a042243ec03916f}{solve\+\_\+linear\+\_\+equation}} (struct \mbox{\hyperlink{structequation}{equation}} coefs)
+\begin{DoxyCompactList}\small\item\em a function for solving a linear equation \end{DoxyCompactList}\item 
+\Hypertarget{solve__equation_8cpp_ac44fe699bcba20ea6e1d9610de04ec15}\label{solve__equation_8cpp_ac44fe699bcba20ea6e1d9610de04ec15} 
+void {\bfseries interchange} (double \texorpdfstring{$\ast$}{*}x1, double \texorpdfstring{$\ast$}{*}x2)
+\begin{DoxyCompactList}\small\item\em a function for interchanging the values of two numbers \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+a file for solving a square equation 
+
 
 
 \doxysubsection{Function Documentation}
@@ -29,33 +44,65 @@ void \mbox{\hyperlink{solve__equation_8cpp_ac44fe699bcba20ea6e1d9610de04ec15}{in
 {\footnotesize\ttfamily \label{solve__equation_8cpp_a2876dcc4846e2235854a720d47131b88} 
 double discriminant (\begin{DoxyParamCaption}\item[{double}]{a}{, }\item[{double}]{b}{, }\item[{double}]{c}{}\end{DoxyParamCaption})}
 
-\Hypertarget{solve__equation_8cpp_ac44fe699bcba20ea6e1d9610de04ec15}\index{solve\_equation.cpp@{solve\_equation.cpp}!interchange@{interchange}}
-\index{interchange@{interchange}!solve\_equation.cpp@{solve\_equation.cpp}}
-\doxysubsubsection{\texorpdfstring{interchange()}{interchange()}}
-{\footnotesize\ttfamily \label{solve__equation_8cpp_ac44fe699bcba20ea6e1d9610de04ec15} 
-void interchange (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{x1}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{x2}{}\end{DoxyParamCaption})}
 
-\Hypertarget{solve__equation_8cpp_a5cf9cf5e86c145a2bc103e94d0eb54db}\index{solve\_equation.cpp@{solve\_equation.cpp}!is\_equal@{is\_equal}}
-\index{is\_equal@{is\_equal}!solve\_equation.cpp@{solve\_equation.cpp}}
-\doxysubsubsection{\texorpdfstring{is\_equal()}{is\_equal()}}
-{\footnotesize\ttfamily \label{solve__equation_8cpp_a5cf9cf5e86c145a2bc103e94d0eb54db} 
-int is\+\_\+equal (\begin{DoxyParamCaption}\item[{double}]{num1}{, }\item[{double}]{num2}{}\end{DoxyParamCaption})}
 
-\Hypertarget{solve__equation_8cpp_a247978824ef960d655ab771781bbbcfa}\index{solve\_equation.cpp@{solve\_equation.cpp}!is\_null@{is\_null}}
-\index{is\_null@{is\_null}!solve\_equation.cpp@{solve\_equation.cpp}}
-\doxysubsubsection{\texorpdfstring{is\_null()}{is\_null()}}
-{\footnotesize\ttfamily \label{solve__equation_8cpp_a247978824ef960d655ab771781bbbcfa} 
-int is\+\_\+null (\begin{DoxyParamCaption}\item[{double}]{a}{}\end{DoxyParamCaption})}
+a function for solving discriminant 
 
+
+\begin{DoxyParams}{Parameters}
+{\em a} & first coef \\
+\hline
+{\em b} & second coef \\
+\hline
+{\em c} & third coef \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+discriminant 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+% FIG 1
 \Hypertarget{solve__equation_8cpp_a68e3792d06ce7da11a042243ec03916f}\index{solve\_equation.cpp@{solve\_equation.cpp}!solve\_linear\_equation@{solve\_linear\_equation}}
 \index{solve\_linear\_equation@{solve\_linear\_equation}!solve\_equation.cpp@{solve\_equation.cpp}}
 \doxysubsubsection{\texorpdfstring{solve\_linear\_equation()}{solve\_linear\_equation()}}
 {\footnotesize\ttfamily \label{solve__equation_8cpp_a68e3792d06ce7da11a042243ec03916f} 
-struct solution solve\+\_\+linear\+\_\+equation (\begin{DoxyParamCaption}\item[{struct equation}]{coefs}{}\end{DoxyParamCaption})}
+struct \mbox{\hyperlink{structsolution}{solution}} solve\+\_\+linear\+\_\+equation (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structequation}{equation}}}]{coefs}{}\end{DoxyParamCaption})}
 
+
+
+a function for solving a linear equation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coefs} & a structure with coefs (a = 0, b, c) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a structure with a root and root amount (x1, x2 = 0, root\+\_\+amount) 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
 \Hypertarget{solve__equation_8cpp_adb544ab94d3a5fa092f9e9eab7480cb9}\index{solve\_equation.cpp@{solve\_equation.cpp}!solve\_square\_equation@{solve\_square\_equation}}
 \index{solve\_square\_equation@{solve\_square\_equation}!solve\_equation.cpp@{solve\_equation.cpp}}
 \doxysubsubsection{\texorpdfstring{solve\_square\_equation()}{solve\_square\_equation()}}
 {\footnotesize\ttfamily \label{solve__equation_8cpp_adb544ab94d3a5fa092f9e9eab7480cb9} 
-struct solution solve\+\_\+square\+\_\+equation (\begin{DoxyParamCaption}\item[{struct equation}]{coefs}{}\end{DoxyParamCaption})}
+struct \mbox{\hyperlink{structsolution}{solution}} solve\+\_\+square\+\_\+equation (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structequation}{equation}}}]{coefs}{}\end{DoxyParamCaption})}
 
+
+
+a function for solving square equation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coefs} & a stucture with coefs (a, b, c) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a structure with roots and root amount (x1, x2, root\+\_\+amount) 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5

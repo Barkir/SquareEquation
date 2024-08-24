@@ -1,10 +1,21 @@
-/** @file **/
+/**
+* @file cmd_flags.h
+* @brief a file for storing output for flags (e.g: --help, --doc, --out)
+*/
 
 #ifndef HELP_H
 #define HELP_H
 
-#include "colors.h"
 #include "constants_structures.h"
+#include "color_print.h"
+
+#define RED     "\x1b[31m"
+#define GREEN   "\x1b[32m"
+#define YELLOW  "\x1b[33m"
+#define BLUE    "\x1b[34m"
+#define MAGENTA "\x1b[35m"
+#define CYAN    "\x1b[36m"
+#define RESET   "\x1b[0m"
 
 const char * doc =
 "Instructions for SquareSolver: ... \n"
@@ -65,7 +76,7 @@ const char * doc =
 
 
 const char * help =
-BLUE "               This is a help instruction for using Square Equation Solver" RESET "\n\n"
+"               This is a help instruction for using Square Equation Solver" RESET "\n\n"
 BLUE "I." RESET "             The first step is to start the program.\n"
 "               To do this, open cmd and move to directory where this project is located.\n"
 "               Then enter this " YELLOW "\"g++ -o a.exe main.cpp solve_equation.cpp testing.cpp input_output.cpp\"" RESET "\n"

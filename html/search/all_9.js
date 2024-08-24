@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['solve_5fequation_2ecpp_0',['solve_equation.cpp',['../solve__equation_8cpp.html',1,'']]],
-  ['solve_5flinear_5fequation_1',['solve_linear_equation',['../solve__equation_8cpp.html#a68e3792d06ce7da11a042243ec03916f',1,'solve_equation.cpp']]],
-  ['solve_5fsquare_5fequation_2',['solve_square_equation',['../solve__equation_8cpp.html#adb544ab94d3a5fa092f9e9eab7480cb9',1,'solve_equation.cpp']]]
+  ['parse_5fcmd_5fargs_0',['parse_cmd_args',['../cmd_8cpp.html#a37e232c07e3282bfa463a4d7f9518f63',1,'parse_cmd_args(char *w_flag, struct flag *flag_array, int size):&#160;cmd.cpp'],['../cmd_8h.html#a37e232c07e3282bfa463a4d7f9518f63',1,'parse_cmd_args(char *w_flag, struct flag *flag_array, int size):&#160;cmd.cpp']]],
+  ['print_5froots_1',['print_roots',['../input__output_8h.html#aa5f56d0fd83a5325aeed43be76980694',1,'print_roots(struct solution roots):&#160;input_output.cpp'],['../input__output_8cpp.html#aa5f56d0fd83a5325aeed43be76980694',1,'print_roots(struct solution roots):&#160;input_output.cpp']]]
 ];

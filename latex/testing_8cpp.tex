@@ -1,5 +1,10 @@
 \doxysection{testing.\+cpp File Reference}
 \hypertarget{testing_8cpp}{}\label{testing_8cpp}\index{testing.cpp@{testing.cpp}}
+
+
+a file with functions to do unit-\/tests  
+
+
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$math.\+h$>$}\newline
 {\ttfamily \#include "{}header/testing.\+h"{}}\newline
@@ -8,13 +13,20 @@
 {\ttfamily \#include "{}header/tests.\+h"{}}\newline
 {\ttfamily \#include "{}header/colors.\+h"{}}\newline
 {\ttfamily \#include "{}header/input\+\_\+output.\+h"{}}\newline
+Include dependency graph for testing.\+cpp\+:
+% FIG 0
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{testing_8cpp_a08b2026795d206b857c96e7453965963}{test\+\_\+init}} (int test\+\_\+n, struct equation coefs, struct solution roots\+\_\+exp)
-\item 
+int \mbox{\hyperlink{testing_8cpp_a08b2026795d206b857c96e7453965963}{test\+\_\+init}} (int test\+\_\+n, struct \mbox{\hyperlink{structequation}{equation}} coefs, struct \mbox{\hyperlink{structsolution}{solution}} roots\+\_\+exp)
+\begin{DoxyCompactList}\small\item\em a function for running a single test \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{testing_8cpp_a467f6d1a31e17fe00c1946fbe04ee36d}{all\+\_\+test\+\_\+init}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em a function for running all tests \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+a file with functions to do unit-\/tests 
+
 
 
 \doxysubsection{Function Documentation}
@@ -24,9 +36,38 @@ int \mbox{\hyperlink{testing_8cpp_a467f6d1a31e17fe00c1946fbe04ee36d}{all\+\_\+te
 {\footnotesize\ttfamily \label{testing_8cpp_a467f6d1a31e17fe00c1946fbe04ee36d} 
 int all\+\_\+test\+\_\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
+
+
+a function for running all tests 
+
+\begin{DoxyReturn}{Returns}
+1 if all tests passed, 0 if failed 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 1
 \Hypertarget{testing_8cpp_a08b2026795d206b857c96e7453965963}\index{testing.cpp@{testing.cpp}!test\_init@{test\_init}}
 \index{test\_init@{test\_init}!testing.cpp@{testing.cpp}}
 \doxysubsubsection{\texorpdfstring{test\_init()}{test\_init()}}
 {\footnotesize\ttfamily \label{testing_8cpp_a08b2026795d206b857c96e7453965963} 
-int test\+\_\+init (\begin{DoxyParamCaption}\item[{int}]{test\+\_\+n}{, }\item[{struct equation}]{coefs}{, }\item[{struct solution}]{roots\+\_\+exp}{}\end{DoxyParamCaption})}
+int test\+\_\+init (\begin{DoxyParamCaption}\item[{int}]{test\+\_\+n}{, }\item[{struct \mbox{\hyperlink{structequation}{equation}}}]{coefs}{, }\item[{struct \mbox{\hyperlink{structsolution}{solution}}}]{roots\+\_\+exp}{}\end{DoxyParamCaption})}
 
+
+
+a function for running a single test 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+\_\+n} & a number of a test \\
+\hline
+{\em coefs} & a stucture with coefs (a, b, c) \\
+\hline
+{\em roots\+\_\+exp} & a structure with expected roots \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+test\+\_\+n if failed, 0 if success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3

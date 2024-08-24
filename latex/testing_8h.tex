@@ -1,0 +1,65 @@
+\doxysection{header/testing.h File Reference}
+\hypertarget{testing_8h}{}\label{testing_8h}\index{header/testing.h@{header/testing.h}}
+
+
+a header file for \doxylink{testing_8cpp}{testing.\+cpp}  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{testing_8h_a08b2026795d206b857c96e7453965963}{test\+\_\+init}} (int test\+\_\+n, struct \mbox{\hyperlink{structequation}{equation}} coefs, struct \mbox{\hyperlink{structsolution}{solution}} roots\+\_\+exp)
+\begin{DoxyCompactList}\small\item\em a function for running a single test \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{testing_8h_a467f6d1a31e17fe00c1946fbe04ee36d}{all\+\_\+test\+\_\+init}} ()
+\begin{DoxyCompactList}\small\item\em a function for running all tests \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+a header file for \doxylink{testing_8cpp}{testing.\+cpp} 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{testing_8h_a467f6d1a31e17fe00c1946fbe04ee36d}\index{testing.h@{testing.h}!all\_test\_init@{all\_test\_init}}
+\index{all\_test\_init@{all\_test\_init}!testing.h@{testing.h}}
+\doxysubsubsection{\texorpdfstring{all\_test\_init()}{all\_test\_init()}}
+{\footnotesize\ttfamily \label{testing_8h_a467f6d1a31e17fe00c1946fbe04ee36d} 
+int all\+\_\+test\+\_\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+a function for running all tests 
+
+\begin{DoxyReturn}{Returns}
+1 if all tests passed, 0 if failed 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 1
+\Hypertarget{testing_8h_a08b2026795d206b857c96e7453965963}\index{testing.h@{testing.h}!test\_init@{test\_init}}
+\index{test\_init@{test\_init}!testing.h@{testing.h}}
+\doxysubsubsection{\texorpdfstring{test\_init()}{test\_init()}}
+{\footnotesize\ttfamily \label{testing_8h_a08b2026795d206b857c96e7453965963} 
+int test\+\_\+init (\begin{DoxyParamCaption}\item[{int}]{test\+\_\+n}{, }\item[{struct \mbox{\hyperlink{structequation}{equation}}}]{coefs}{, }\item[{struct \mbox{\hyperlink{structsolution}{solution}}}]{roots\+\_\+exp}{}\end{DoxyParamCaption})}
+
+
+
+a function for running a single test 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+\_\+n} & a number of a test \\
+\hline
+{\em coefs} & a stucture with coefs (a, b, c) \\
+\hline
+{\em roots\+\_\+exp} & a structure with expected roots \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+test\+\_\+n if failed, 0 if success 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
