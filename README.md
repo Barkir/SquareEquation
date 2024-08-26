@@ -14,17 +14,20 @@
 ## Next steps
 The program will ask you to enter three coefficients (must be a double number) (e.g:  ```Enter a:_____```) <br />
 When you enter the coefficients the program will run this [function](https://github.com/Barkir/SquareEquation/blob/main/solve_equation.cpp) <br />
-```
+```C++
 struct solution solve_linear_equation(struct equation coefs);
 ```
 This function creates a struct of roots out of coefs structure solving the square equation <sub> (or a linear equation if a = 0) </sub> <br />
 Then the program writes the roots of the equation using this [function](https://github.com/Barkir/SquareEquation/blob/main/input_output.cpp) <br />
-``` void print_roots(struct solution roots); ```
+```C++ 
+void print_roots(struct solution roots);
+```
 
 <sup>👏👏👏</sup>
 
 # Unit-testing 📝
-I wrote a python [script](https://github.com/Barkir/SquareEquation/blob/main/test_generator.py) ```test_generator.py``` <br />
+I wrote a python [script](https://github.com/Barkir/SquareEquation/blob/main/test_generator.py) 
+```test_generator.py``` <br />
 It writes tests into a file in this format: _[a, b, c, x1_exp, x2_exp, root_amount]_ <br />
 ```system("python test_generator.py");``` <br />
 This line in main() inits a python script and generates new random tests 🐍 <br />
@@ -34,12 +37,12 @@ In this program you can also see such files as [color_print.cpp](https://github.
 Judging by filenames we can guess that it's our own color print module and assert module. <br />
 
 ### color_print.cpp
-```
+```C++
 void color_print(FILE * stream, int color, const char * text, ...);
 const char * choose_color(int val);
 ```
 **color_print()** works the same as **fprintf()** but in the second argument you enter enum value of color.
-```
+```C++
 enum enum_colors
 {
     COLOR_PRINT_RED,
@@ -53,7 +56,7 @@ enum enum_colors
 ```
 
 ### red_assert.cpp
-```
+```C++
 #define red_assert(COND, LINE, ...)                                     \
     color_print(stderr, COLOR_PRINT_RED, "%s\n", #COND);                \
     red_assert_func(COND, __FILE__, __func__, __LINE__, LINE __VA_ARGS__)
