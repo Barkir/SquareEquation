@@ -66,6 +66,6 @@ It will print you everything in red.
 
 ### Command Line Flags
 For now there are two flags available (you can see them in this [file](https://github.com/Barkir/SquareEquation/blob/main/header/cmd_flags.h)) <br />
-Command line processing [here](https://github.com/Barkir/SquareEquation/blob/main/cmd.cpp)
+Command line processing [here](https://github.com/Barkir/SquareEquation/blob/main/cmd.cpp) <br />
 ```--help``` - this flag introduces you a brief info about program and how to use it. <br />
 ```--doc``` - this flag prints docs in command line and opens a doxygen .html file where you can learn about the program more. ✌️<br />
