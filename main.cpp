@@ -39,7 +39,6 @@ int main(int argc, char *argv[]){
         }
 
     }
-    assert(0);
     if (ret == CONTINUE) {return 0;}
     system("python test_generator.py");
     if (all_test_init("rnd_tests.txt"))

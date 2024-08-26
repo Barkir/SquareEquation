@@ -1,0 +1,155 @@
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Kirill\Documents\GitHub\SquareEquation\release.exe, файл: main.cpp, строка: 42, функция: int main(int, char**),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "0".
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x0044171C (32-bit), Flags: Cmdre0, Thread: 0x1AB8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Windows\SysWOW64\TX\TXLib.h
+Compiled:	Aug 26 2024 17:24:10, GNU g++ 6.3.0, std=201402L, MinGW Runtime 5.0, 32-bit, Debug
+Started:	Aug 26 2024 17:24:15
+
+Run file:	C:\Users\Kirill\Documents\GitHub\SquareEquation\release.exe
+Directory:	C:\Users\Kirill\Documents\GitHub\SquareEquation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Kirill\Documents\GitHub\SquareEquation\release.exe, файл: main.cpp, строка: 42, функция: int main(int, char**),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "0".
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x0044171C (32-bit), Flags: Cmdre0, Thread: 0x4DD8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Windows\SysWOW64\TX\TXLib.h
+Compiled:	Aug 26 2024 17:24:49, GNU g++ 6.3.0, std=201402L, MinGW Runtime 5.0, 32-bit, Debug
+Started:	Aug 26 2024 17:24:53
+
+Run file:	C:\Users\Kirill\Documents\GitHub\SquareEquation\release.exe
+Directory:	C:\Users\Kirill\Documents\GitHub\SquareEquation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Kirill\Documents\GitHub\SquareEquation\release.exe, файл: main.cpp, строка: 42, функция: int main(int, char**),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "0".
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x0044171C (32-bit), Flags: Cmdre0, Thread: 0x2908 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Windows\SysWOW64\TX\TXLib.h
+Compiled:	Aug 26 2024 17:24:49, GNU g++ 6.3.0, std=201402L, MinGW Runtime 5.0, 32-bit, Debug
+Started:	Aug 26 2024 17:26:12
+
+Run file:	C:\Users\Kirill\Documents\GitHub\SquareEquation\release.exe
+Directory:	C:\Users\Kirill\Documents\GitHub\SquareEquation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Kirill\Documents\GitHub\SquareEquation\release.exe, файл: main.cpp, строка: 42, функция: int main(int, char**),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "0".
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x0044171C (32-bit), Flags: Cmdre0, Thread: 0x43A0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Windows\SysWOW64\TX\TXLib.h
+Compiled:	Aug 26 2024 17:27:24, GNU g++ 6.3.0, std=201402L, MinGW Runtime 5.0, 32-bit, Debug
+Started:	Aug 26 2024 17:27:28
+
+Run file:	C:\Users\Kirill\Documents\GitHub\SquareEquation\release.exe
+Directory:	C:\Users\Kirill\Documents\GitHub\SquareEquation
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Kirill\Documents\GitHub\SquareEquation\release.exe, файл: main.cpp, строка: 42, функция: int main(int, char**),
+
+Сообщение: ВНЕЗАПНО: Логическая ошибка: Неверно, что "0".
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x0045371C (32-bit), Flags: Cmdre0, Thread: 0x22E0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Windows\SysWOW64\TX\TXLib.h
+Compiled:	Aug 26 2024 17:27:43, GNU g++ 6.3.0, std=201402L, MinGW Runtime 5.0, 32-bit, DEBUG
+Started:	Aug 26 2024 17:29:30
+
+Run file:	C:\Users\Kirill\Documents\GitHub\SquareEquation\release.exe
+Directory:	C:\Users\Kirill\Documents\GitHub\SquareEquation
+
+--------------------------------------------------

@@ -29,21 +29,21 @@ def square(a, b, c):
 
 def random_write(file):
     if randint(0, 2):
-        a, b, c = round(uniform(-10, 10), 4), round(uniform(-10, 10), 4), round(uniform(-10, 10), 4)
+        a, b, c = round(uniform(-10, 10), 3), round(uniform(-10, 10), 3), round(uniform(-10, 10), 3)
     else:
         a, b, c = round(randint(-10, 10), 3), randint(-10, 10), randint(-10, 10)
     arr = square(a, b, c)
-    file.write("\t")
+    file.write("      ")
     file.write(str(a))
-    file.write("\t")
+    file.write("      ")
     file.write(str(b))
-    file.write("\t")
+    file.write("      ")
     file.write(str(c))
-    file.write("\t")
+    file.write("      ")
     file.write(str(round(arr[0], 3)))
-    file.write("\t")
+    file.write("      ")
     file.write(str(round(arr[1], 3)))
-    file.write("\t")
+    file.write("      ")
     file.write(str(arr[2]))
     file.write("\n")
 

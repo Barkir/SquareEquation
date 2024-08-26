@@ -21,6 +21,7 @@
 * @param source_line line where program aborted
 * @param line a message for assert
  */
+
 void red_assert_func(int cond, const char * source_file, const char * source_func,  int source_line, const char * line, ...)
 {
 
