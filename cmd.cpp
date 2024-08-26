@@ -44,20 +44,20 @@ int output_cmd(int code)
     {
         case CMD_HELP:
             printf("%s", help);
-            return EXIT;
+            return CMD_EXIT;
 
         case CMD_DOC:
             printf("%s", doc);
             system("html\\index.html");
-            return EXIT;
+            return CMD_EXIT;
 
         case CMD_OUT:
             printf("%s", out);
-            return CONTINUE;
+            return CMD_CONTINUE;
 
 
         default:
-            break;
+            return CMD_ERROR;
     }
 
     return 0;

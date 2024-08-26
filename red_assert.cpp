@@ -22,18 +22,17 @@
 * @param line a message for assert
  */
 
+// TODO: color vprintf
 void red_assert_func(int cond, const char * source_file, const char * source_func,  int source_line, const char * line, ...)
 {
 
-    color_print(stderr, COLOR_PRINT_RED, "FILE: %s, FUNCTION: %s, LINE: %d\n", source_file, source_func, source_line);
+    color_printf(stderr, COLOR_PRINT_RED, "FILE: %s, FUNCTION: %s, LINE: %d\n", source_file, source_func, source_line);
     va_list ptr;
     va_start(ptr, line);
     if (!cond){
-        color_print(stderr, COLOR_PRINT_RED, "Assertion failed!\n");
+        color_printf(stderr, COLOR_PRINT_RED, "Assertion failed!\n");
         va_start(ptr, line);
-        printf("%s", choose_color(COLOR_PRINT_RED));
-        vprintf(line, ptr);
-        printf("%s", choose_color(COLOR_PRINT_RESET));
+        color_vprintf(COLOR_PRINT_RED, line, ptr);
         va_end(ptr);
         abort();
     }

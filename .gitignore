@@ -1,6 +1,7 @@
 
 *.exe
 *.o
-
+*.exe.log
+*.exe.log.dmp
 Doxyfile
 rnd_tests.txt

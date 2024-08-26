@@ -45,7 +45,7 @@ int get_number(double * num)
         while(empty == ' '){empty = getchar();}
         if (empty != '\n')
         {
-            color_print(stderr, COLOR_PRINT_RED, "NOT A NUMBER!\n");
+            color_printf(stderr, COLOR_PRINT_RED, "NOT A NUMBER!\n");
             while ((empty = getchar()) != '\n'){}
             get_number(num);
         }
@@ -64,12 +64,12 @@ struct equation enter_numbers()
 {
     struct equation coefs;
     int check = -1;
-    color_print(stdout, COLOR_PRINT_YELLOW, "|Square Equation Solver|\n");
-    color_print(stdout, COLOR_PRINT_CYAN, "Enter a:_____\b\b\b\b\b");
+    color_printf(stdout, COLOR_PRINT_YELLOW, "|Square Equation Solver|\n");
+    color_printf(stdout, COLOR_PRINT_CYAN, "Enter a:_____\b\b\b\b\b");
     if ((check = get_number(&(coefs.a))) == EXIT_FAILURE){exit(EXIT_FAILURE);}
-    color_print(stdout, COLOR_PRINT_CYAN, "Enter b:_____\b\b\b\b\b");
+    color_printf(stdout, COLOR_PRINT_CYAN, "Enter b:_____\b\b\b\b\b");
     if ((check = get_number(&(coefs.b))) == EXIT_FAILURE){exit(EXIT_FAILURE);}
-    color_print(stdout, COLOR_PRINT_CYAN, "Enter c:_____\b\b\b\b\b");
+    color_printf(stdout, COLOR_PRINT_CYAN, "Enter c:_____\b\b\b\b\b");
     if ((check = get_number(&(coefs.c))) == EXIT_FAILURE){exit(EXIT_FAILURE);}
 
     return coefs;
@@ -89,19 +89,19 @@ void print_roots(struct solution roots)
     switch(roots.root_amount)
     {
         case 0:
-            color_print(stdout, COLOR_PRINT_MAGENTA ,"No solutions.");
+            color_printf(stdout, COLOR_PRINT_MAGENTA ,"No solutions.");
             break;
 
         case 1:
-            color_print(stdout, COLOR_PRINT_MAGENTA, "x = %lf", roots.x1);
+            color_printf(stdout, COLOR_PRINT_MAGENTA, "x = %lf", roots.x1);
             break;
 
         case 2:
-            color_print(stdout, COLOR_PRINT_MAGENTA, "x1 = %lf\nx2 = %lf", roots.x1, roots.x2);
+            color_printf(stdout, COLOR_PRINT_MAGENTA, "x1 = %lf\nx2 = %lf", roots.x1, roots.x2);
             break;
 
         case INF_SOLUTIONS:
-            color_print(stdout, COLOR_PRINT_MAGENTA, "Infinite number of solutions.");
+            color_printf(stdout, COLOR_PRINT_MAGENTA, "Infinite number of solutions.");
             break;
 
         default:

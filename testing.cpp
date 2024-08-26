@@ -29,14 +29,14 @@ int test_init(int test_n, struct equation coefs, struct solution roots_exp)
     struct solution roots = solve_square_equation(coefs);
     if ((!is_equal(roots_exp.x1, roots.x1)) || (!is_equal(roots_exp.x2, roots.x2)) || (roots_exp.root_amount != roots.root_amount))
     {
-        color_print(stdout, COLOR_PRINT_RED, "Test %d. a = %lg, b = %lg, c = %lg, x1 = %lg, x2 = %lg, root_amount = %d\n"
+        color_printf(stdout, COLOR_PRINT_RED, "Test %d. a = %lg, b = %lg, c = %lg, x1 = %lg, x2 = %lg, root_amount = %d\n"
                 "Expected: x1 = %lg, x2 = %lg, root_amount = %d\n",
                 test_n, coefs.a, coefs.b, coefs.c, roots.x1, roots.x2, roots.root_amount,
                 roots_exp.x1, roots_exp.x2, roots_exp.root_amount);
         return test_n;
     }
-    color_print(stdout, COLOR_PRINT_GREEN, "Test %d passed!\n", test_n);
-    color_print(stdout, COLOR_PRINT_GREEN, "a = %lg, b = %lg, c = %lg "
+    color_printf(stdout, COLOR_PRINT_GREEN, "Test %d passed!\n", test_n);
+    color_printf(stdout, COLOR_PRINT_GREEN, "a = %lg, b = %lg, c = %lg "
                                             "x1 = %lg, x2 = %lg, root_amount = %d\n",
                                             coefs.a, coefs.b, coefs.c,
                                             roots.x1, roots.x2, roots.root_amount);
@@ -77,7 +77,7 @@ int all_test_init(const char * file_name)
     } while(check = getc(file) != EOF);
     if (right)
     {
-        color_print(stdout, COLOR_PRINT_GREEN, "TESTS PASSED!\n");
+        color_printf(stdout, COLOR_PRINT_GREEN, "TESTS PASSED!\n");
         return right;
     }
 

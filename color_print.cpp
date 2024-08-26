@@ -1,7 +1,11 @@
 /**
-* @file color_print.cpp
+* @file color_printf.cpp
 * @brief a module with function for writing colorful text
  */
+
+#if !defined WIN32
+#error "This code works only on Windows OS"
+#endif
 
 #include <stdio.h>
 #include <stdarg.h>
@@ -18,7 +22,7 @@
 * @param text you want to print
  */
 
-void color_print(FILE * stream, int color, const char * text, ...)
+void color_printf(FILE * stream, int color, const char * text, ...)
 {
     const char * string_color = choose_color(color);
     va_list ptr;
@@ -37,6 +41,14 @@ void color_print(FILE * stream, int color, const char * text, ...)
         fprintf(stream, "%s", choose_color(COLOR_PRINT_RESET));
         va_end(ptr);
     }
+
+}
+
+void color_vprintf(int color, const char * format, va_list local_argv)
+{
+    printf("%s", choose_color(color));
+    vprintf(format, local_argv);
+    printf("%s", choose_color(COLOR_PRINT_RESET));
 
 }
 

@@ -94,8 +94,9 @@ enum operation
 
 enum analyze_output
 {
-    EXIT,
-    CONTINUE,
+    CMD_EXIT,
+    CMD_CONTINUE,
+    CMD_ERROR,
     RET
 };
 
