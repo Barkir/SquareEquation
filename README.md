@@ -13,55 +13,24 @@
   5. Done! The program is running.
 ## Next steps
 The program will ask you to enter three coefficients (must be a double number) (e.g:  ```Enter a:_____```) <br />
-When you enter the coefficients the program will run this code <br />
+When you enter the coefficients the program will run this [function](https://github.com/Barkir/SquareEquation/blob/main/solve_equation.cpp) <br />
 ```
-struct solution solve_linear_equation(struct equation coefs)
-{
-
-    struct solution roots;
-
-    assert(&roots.x1 != NULL);
-    assert(&roots.x2 != NULL);
-
-    if (is_null(coefs.a))
-    {
-        return solve_linear_equation(coefs);
-    }
-
-    double d = discriminant(coefs.a, coefs.b, coefs.c);
-    if (d > 0)
-    {
-        double sqrt_d = sqrt(d);
-
-        double k1 = -(coefs.b) / (2 * coefs.a);
-        double k2 = (sqrt_d) / (2 * coefs.a);
-
-        roots.x1 = k1 - k2;
-        roots.x2 = k1 + k2;
-
-        if (roots.x1 > roots.x2) {interchange(&roots.x1, &roots.x2);}
-        roots.root_amount = TWO_ROOTS;
-    }
-    else if (is_null(d))
-    {
-        roots.x1 = (-coefs.b / (2 * coefs.a));
-        roots.x2 = 0;
-        roots.root_amount = ONE_ROOT;
-    }
-    else
-    {
-        roots.x1 = 0;
-        roots.x2 = 0;
-        roots.root_amount = NO_ROOTS;
-    }
-    return roots;
-}
+struct solution solve_linear_equation(struct equation coefs);
 ```
 This function creates a struct of roots out of coefs structure solving the square equation <sub> (or a linear equation if a = 0) </sub> <br />
-Then the program writes the roots of the equation! <sup>👏👏👏</sup>
+Then the program writes the roots of the equation using this [function](https://github.com/Barkir/SquareEquation/blob/main/input_output.cpp) <br />
+``` void print_roots(struct solution roots); ```
 
-# Other interesting features
-In this program you can also see such files as ```color_print.cpp``` or ```red_assert.cpp``` <br />
+<sup>👏👏👏</sup>
+
+# Unit-testing 📝
+I wrote a python [script](https://github.com/Barkir/SquareEquation/blob/main/test_generator.py) ```test_generator.py``` <br />
+It writes tests into a file in this format: _[a, b, c, x1_exp, x2_exp, root_amount]_ <br />
+```system("python test_generator.py");``` <br />
+This line in main() inits a python script and generates new random tests 🐍 <br />
+
+# Other interesting features 🪶
+In this program you can also see such files as [color_print.cpp](https://github.com/Barkir/SquareEquation/blob/main/color_print.cpp) or [red_assert.cpp](https://github.com/Barkir/SquareEquation/blob/main/red_assert.cpp) <br />
 Judging by filenames we can guess that it's our own color print module and assert module. <br />
 
 ### color_print.cpp
@@ -95,3 +64,8 @@ This assert differs from a regular one. You can write a message about an error i
 It will also print **condition, file, function, line.** <br />
 It will print you everything in red.
 
+### Command Line Flags
+For now there are two flags available (you can see them in this [file](https://github.com/Barkir/SquareEquation/blob/main/header/cmd_flags.h)) <br />
+Command line processing [here](https://github.com/Barkir/SquareEquation/blob/main/cmd.cpp)
+```--help``` - this flag introduces you a brief info about program and how to use it. <br />
+```--doc``` - this flag prints docs in command line and opens a doxygen .html file where you can learn about the program more. ✌️<br />
