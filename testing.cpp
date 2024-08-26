@@ -36,6 +36,10 @@ int test_init(int test_n, struct equation coefs, struct solution roots_exp)
         return test_n;
     }
     color_print(stdout, COLOR_PRINT_GREEN, "Test %d passed!\n", test_n);
+    color_print(stdout, COLOR_PRINT_GREEN, "a = %lg, b = %lg, c = %lg "
+                                            "x1 = %lg, x2 = %lg, root_amount = %d\n",
+                                            coefs.a, coefs.b, coefs.c,
+                                            roots.x1, roots.x2, roots.root_amount);
     return 0;
 
 

@@ -41,7 +41,8 @@ int main(int argc, char *argv[]){
     }
 
     if (ret == CONTINUE) {return 0;}
-    if (all_test_init("tests.txt"))
+    system("python test_generator.py");
+    if (all_test_init("rnd_tests.txt"))
     {
         struct equation coefs = enter_numbers();
         color_print(stdout, COLOR_PRINT_CYAN, "Your equation is: %.1lfx^2%+.1lfx%+.1lf\n", coefs.a, coefs.b, coefs.c);

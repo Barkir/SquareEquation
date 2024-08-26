@@ -16,7 +16,7 @@
 */
 
 #define print_color(COLOR, STRING, ...) printf(COLOR STRING RESET, __VA_ARGS__)
-const double eps = 10e-3;
+const double eps = 10e-6;
 const int TESTS_NUMBER = 30;
 const int flag_array_size = 3;
 
