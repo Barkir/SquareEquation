@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['test_5finit_0',['test_init',['../testing_8h.html#a08b2026795d206b857c96e7453965963',1,'test_init(int test_n, struct equation coefs, struct solution roots_exp):&#160;testing.cpp'],['../testing_8cpp.html#a08b2026795d206b857c96e7453965963',1,'test_init(int test_n, struct equation coefs, struct solution roots_exp):&#160;testing.cpp']]]
+  ['red_5fassert_5ffunc_0',['red_assert_func',['../red__assert_8cpp.html#ad68a1e0c659184ca10b20b6bf883c138',1,'red_assert.cpp']]]
 ];

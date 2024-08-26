@@ -6,7 +6,7 @@ def square(a, b, c):
         d = b * b - 4 * a * c
         if d > 0:
             x1 = (-b - (d ** 0.5)) / (2 * a)
-            x2 = (- b + (d ** 0.5)) / (2 * a)
+            x2 = (-b + (d ** 0.5)) / (2 * a)
             return sorted([x1, x2]) + [2]
         if d == 0:
             x = -b / (2 * a)
@@ -29,7 +29,7 @@ def square(a, b, c):
 
 def random_write(file):
     if randint(0, 2):
-        a, b, c = round(uniform(-10, 10), 3), round(uniform(-10, 10), 3), round(uniform(-10, 10), 3)
+        a, b, c = round(uniform(-10, 10), 4), round(uniform(-10, 10), 4), round(uniform(-10, 10), 4)
     else:
         a, b, c = round(randint(-10, 10), 3), randint(-10, 10), randint(-10, 10)
     arr = square(a, b, c)

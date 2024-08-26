@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['flag_0',['flag',['../structflag.html',1,'']]]
+  ['get_5fnumber_0',['get_number',['../input__output_8cpp.html#aa0a28338715c34f353f610273e667954',1,'input_output.cpp']]]
 ];

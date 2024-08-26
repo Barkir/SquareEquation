@@ -12,7 +12,7 @@
 {\ttfamily \#include $<$string.\+h$>$}\newline
 {\ttfamily \#include "{}header/input\+\_\+output.\+h"{}}\newline
 {\ttfamily \#include "{}header/constants\+\_\+structures.\+h"{}}\newline
-{\ttfamily \#include "{}header/colors.\+h"{}}\newline
+{\ttfamily \#include "{}header/color\+\_\+print.\+h"{}}\newline
 Include dependency graph for input\+\_\+output.\+cpp\+:
 % FIG 0
 \doxysubsubsection*{Functions}
@@ -20,9 +20,9 @@ Include dependency graph for input\+\_\+output.\+cpp\+:
 \item 
 int \mbox{\hyperlink{input__output_8cpp_aa0a28338715c34f353f610273e667954}{get\+\_\+number}} (double \texorpdfstring{$\ast$}{*}num)
 \begin{DoxyCompactList}\small\item\em function for getting a number from user \end{DoxyCompactList}\item 
-struct \mbox{\hyperlink{structequation}{equation}} \mbox{\hyperlink{input__output_8cpp_a49d40089c68931f47c9da00ea858b025}{enter\+\_\+numbers}} ()
+struct equation \mbox{\hyperlink{input__output_8cpp_a49d40089c68931f47c9da00ea858b025}{enter\+\_\+numbers}} ()
 \begin{DoxyCompactList}\small\item\em a function for entering coefs \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{input__output_8cpp_aa5f56d0fd83a5325aeed43be76980694}{print\+\_\+roots}} (struct \mbox{\hyperlink{structsolution}{solution}} \mbox{\hyperlink{constants__structures_8h_ac6a66a418b6646df5aa3c82d9fb39d3c}{roots}})
+void \mbox{\hyperlink{input__output_8cpp_aa5f56d0fd83a5325aeed43be76980694}{print\+\_\+roots}} (struct solution roots)
 \begin{DoxyCompactList}\small\item\em function for printing roots \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -36,7 +36,7 @@ void \mbox{\hyperlink{input__output_8cpp_aa5f56d0fd83a5325aeed43be76980694}{prin
 \index{enter\_numbers@{enter\_numbers}!input\_output.cpp@{input\_output.cpp}}
 \doxysubsubsection{\texorpdfstring{enter\_numbers()}{enter\_numbers()}}
 {\footnotesize\ttfamily \label{input__output_8cpp_a49d40089c68931f47c9da00ea858b025} 
-struct \mbox{\hyperlink{structequation}{equation}} enter\+\_\+numbers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+struct equation enter\+\_\+numbers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
@@ -73,7 +73,7 @@ Here is the caller graph for this function\+:
 \index{print\_roots@{print\_roots}!input\_output.cpp@{input\_output.cpp}}
 \doxysubsubsection{\texorpdfstring{print\_roots()}{print\_roots()}}
 {\footnotesize\ttfamily \label{input__output_8cpp_aa5f56d0fd83a5325aeed43be76980694} 
-void print\+\_\+roots (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structsolution}{solution}}}]{roots}{}\end{DoxyParamCaption})}
+void print\+\_\+roots (\begin{DoxyParamCaption}\item[{struct solution}]{roots}{}\end{DoxyParamCaption})}
 
 
 
@@ -84,3 +84,5 @@ function for printing roots
 {\em roots} & structure with roots \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 4

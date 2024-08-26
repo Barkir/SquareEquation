@@ -11,5 +11,5 @@ digraph "solve_linear_equation"
   Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="test_init",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$testing_8cpp.html#a08b2026795d206b857c96e7453965963",tooltip="a function for running a single test"];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="all_test_init",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$testing_8cpp.html#a467f6d1a31e17fe00c1946fbe04ee36d",tooltip="a function for running all tests"];
+  Node4 [id="Node000004",label="all_test_init",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$testing_8cpp.html#a0f9f3a4240f0444b5a0dc1a157b85f4e",tooltip="a function for running all tests"];
 }

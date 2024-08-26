@@ -1,0 +1,68 @@
+\doxysection{color\+\_\+print.\+cpp File Reference}
+\hypertarget{color__print_8cpp}{}\label{color__print_8cpp}\index{color\_print.cpp@{color\_print.cpp}}
+
+
+a module with function for writing colorful text  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include "{}header/color\+\_\+print.\+h"{}}\newline
+{\ttfamily \#include "{}header/constants\+\_\+structures.\+h"{}}\newline
+Include dependency graph for color\+\_\+print.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{color__print_8cpp_ad5d295e1f3a06baa2bc267f06f329bc2}{color\+\_\+print}} (FILE \texorpdfstring{$\ast$}{*}stream, int color, const char \texorpdfstring{$\ast$}{*}text,...)
+\begin{DoxyCompactList}\small\item\em main function for printing colorful text (works like fprintf() but has a color as an arg) \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{color__print_8cpp_a931e0d552b91322e02167b6261de8596}{choose\+\_\+color}} (int val)
+\begin{DoxyCompactList}\small\item\em a function for converting enum color value to string (esc sequence) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+a module with function for writing colorful text 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{color__print_8cpp_a931e0d552b91322e02167b6261de8596}\index{color\_print.cpp@{color\_print.cpp}!choose\_color@{choose\_color}}
+\index{choose\_color@{choose\_color}!color\_print.cpp@{color\_print.cpp}}
+\doxysubsubsection{\texorpdfstring{choose\_color()}{choose\_color()}}
+{\footnotesize\ttfamily \label{color__print_8cpp_a931e0d552b91322e02167b6261de8596} 
+const char \texorpdfstring{$\ast$}{*} choose\+\_\+color (\begin{DoxyParamCaption}\item[{int}]{val}{}\end{DoxyParamCaption})}
+
+
+
+a function for converting enum color value to string (esc sequence) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & enum color value \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{color__print_8cpp_ad5d295e1f3a06baa2bc267f06f329bc2}\index{color\_print.cpp@{color\_print.cpp}!color\_print@{color\_print}}
+\index{color\_print@{color\_print}!color\_print.cpp@{color\_print.cpp}}
+\doxysubsubsection{\texorpdfstring{color\_print()}{color\_print()}}
+{\footnotesize\ttfamily \label{color__print_8cpp_ad5d295e1f3a06baa2bc267f06f329bc2} 
+void color\+\_\+print (\begin{DoxyParamCaption}\item[{FILE \texorpdfstring{$\ast$}{*}}]{stream}{, }\item[{int}]{color}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{text}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
+
+
+
+main function for printing colorful text (works like fprintf() but has a color as an arg) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & stream where you want to print your text(stdout, stderr etc.) \\
+\hline
+{\em color} & enum value of a color (e.\+g COLOR\+\_\+\+PRINT\+\_\+\+RED) \\
+\hline
+{\em text} & you want to print \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3

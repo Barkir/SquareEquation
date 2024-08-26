@@ -8,6 +8,7 @@ a file for solving a square equation
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$math.\+h$>$}\newline
 {\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$float.\+h$>$}\newline
 {\ttfamily \#include "{}header/solve\+\_\+equation.\+h"{}}\newline
 {\ttfamily \#include "{}header/constants\+\_\+structures.\+h"{}}\newline
 Include dependency graph for solve\+\_\+equation.\+cpp\+:
@@ -23,9 +24,15 @@ int {\bfseries is\+\_\+null} (double a)
 \Hypertarget{solve__equation_8cpp_a5cf9cf5e86c145a2bc103e94d0eb54db}\label{solve__equation_8cpp_a5cf9cf5e86c145a2bc103e94d0eb54db} 
 int {\bfseries is\+\_\+equal} (double num1, double num2)
 \begin{DoxyCompactList}\small\item\em a function for comparing two dobule numbers (equal or not?) \end{DoxyCompactList}\item 
-struct \mbox{\hyperlink{structsolution}{solution}} \mbox{\hyperlink{solve__equation_8cpp_adb544ab94d3a5fa092f9e9eab7480cb9}{solve\+\_\+square\+\_\+equation}} (struct \mbox{\hyperlink{structequation}{equation}} coefs)
+\Hypertarget{solve__equation_8cpp_a19c5bb7f33d1cf98a4cc58bf992eaefa}\label{solve__equation_8cpp_a19c5bb7f33d1cf98a4cc58bf992eaefa} 
+int {\bfseries is\+\_\+nan} (double a)
+\item 
+\Hypertarget{solve__equation_8cpp_a145cb6ecf05113f5e0234ad56584d22a}\label{solve__equation_8cpp_a145cb6ecf05113f5e0234ad56584d22a} 
+int {\bfseries is\+\_\+finite} (double a)
+\item 
+struct solution \mbox{\hyperlink{solve__equation_8cpp_adb544ab94d3a5fa092f9e9eab7480cb9}{solve\+\_\+square\+\_\+equation}} (struct equation coefs)
 \begin{DoxyCompactList}\small\item\em a function for solving square equation \end{DoxyCompactList}\item 
-struct \mbox{\hyperlink{structsolution}{solution}} \mbox{\hyperlink{solve__equation_8cpp_a68e3792d06ce7da11a042243ec03916f}{solve\+\_\+linear\+\_\+equation}} (struct \mbox{\hyperlink{structequation}{equation}} coefs)
+struct solution \mbox{\hyperlink{solve__equation_8cpp_a68e3792d06ce7da11a042243ec03916f}{solve\+\_\+linear\+\_\+equation}} (struct equation coefs)
 \begin{DoxyCompactList}\small\item\em a function for solving a linear equation \end{DoxyCompactList}\item 
 \Hypertarget{solve__equation_8cpp_ac44fe699bcba20ea6e1d9610de04ec15}\label{solve__equation_8cpp_ac44fe699bcba20ea6e1d9610de04ec15} 
 void {\bfseries interchange} (double \texorpdfstring{$\ast$}{*}x1, double \texorpdfstring{$\ast$}{*}x2)
@@ -66,7 +73,7 @@ Here is the caller graph for this function\+:
 \index{solve\_linear\_equation@{solve\_linear\_equation}!solve\_equation.cpp@{solve\_equation.cpp}}
 \doxysubsubsection{\texorpdfstring{solve\_linear\_equation()}{solve\_linear\_equation()}}
 {\footnotesize\ttfamily \label{solve__equation_8cpp_a68e3792d06ce7da11a042243ec03916f} 
-struct \mbox{\hyperlink{structsolution}{solution}} solve\+\_\+linear\+\_\+equation (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structequation}{equation}}}]{coefs}{}\end{DoxyParamCaption})}
+struct solution solve\+\_\+linear\+\_\+equation (\begin{DoxyParamCaption}\item[{struct equation}]{coefs}{}\end{DoxyParamCaption})}
 
 
 
@@ -88,7 +95,7 @@ Here is the caller graph for this function\+:
 \index{solve\_square\_equation@{solve\_square\_equation}!solve\_equation.cpp@{solve\_equation.cpp}}
 \doxysubsubsection{\texorpdfstring{solve\_square\_equation()}{solve\_square\_equation()}}
 {\footnotesize\ttfamily \label{solve__equation_8cpp_adb544ab94d3a5fa092f9e9eab7480cb9} 
-struct \mbox{\hyperlink{structsolution}{solution}} solve\+\_\+square\+\_\+equation (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structequation}{equation}}}]{coefs}{}\end{DoxyParamCaption})}
+struct solution solve\+\_\+square\+\_\+equation (\begin{DoxyParamCaption}\item[{struct equation}]{coefs}{}\end{DoxyParamCaption})}
 
 
 

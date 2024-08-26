@@ -7,20 +7,21 @@ a file with functions to do unit-\/tests
 
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
 {\ttfamily \#include "{}header/testing.\+h"{}}\newline
 {\ttfamily \#include "{}header/solve\+\_\+equation.\+h"{}}\newline
 {\ttfamily \#include "{}header/constants\+\_\+structures.\+h"{}}\newline
 {\ttfamily \#include "{}header/tests.\+h"{}}\newline
-{\ttfamily \#include "{}header/colors.\+h"{}}\newline
 {\ttfamily \#include "{}header/input\+\_\+output.\+h"{}}\newline
+{\ttfamily \#include "{}header/color\+\_\+print.\+h"{}}\newline
 Include dependency graph for testing.\+cpp\+:
 % FIG 0
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{testing_8cpp_a08b2026795d206b857c96e7453965963}{test\+\_\+init}} (int test\+\_\+n, struct \mbox{\hyperlink{structequation}{equation}} coefs, struct \mbox{\hyperlink{structsolution}{solution}} roots\+\_\+exp)
+int \mbox{\hyperlink{testing_8cpp_a08b2026795d206b857c96e7453965963}{test\+\_\+init}} (int test\+\_\+n, struct equation coefs, struct solution roots\+\_\+exp)
 \begin{DoxyCompactList}\small\item\em a function for running a single test \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{testing_8cpp_a467f6d1a31e17fe00c1946fbe04ee36d}{all\+\_\+test\+\_\+init}} ()
+int \mbox{\hyperlink{testing_8cpp_a0f9f3a4240f0444b5a0dc1a157b85f4e}{all\+\_\+test\+\_\+init}} (const char \texorpdfstring{$\ast$}{*}file\+\_\+name)
 \begin{DoxyCompactList}\small\item\em a function for running all tests \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -30,11 +31,11 @@ a file with functions to do unit-\/tests
 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{testing_8cpp_a467f6d1a31e17fe00c1946fbe04ee36d}\index{testing.cpp@{testing.cpp}!all\_test\_init@{all\_test\_init}}
+\Hypertarget{testing_8cpp_a0f9f3a4240f0444b5a0dc1a157b85f4e}\index{testing.cpp@{testing.cpp}!all\_test\_init@{all\_test\_init}}
 \index{all\_test\_init@{all\_test\_init}!testing.cpp@{testing.cpp}}
 \doxysubsubsection{\texorpdfstring{all\_test\_init()}{all\_test\_init()}}
-{\footnotesize\ttfamily \label{testing_8cpp_a467f6d1a31e17fe00c1946fbe04ee36d} 
-int all\+\_\+test\+\_\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{testing_8cpp_a0f9f3a4240f0444b5a0dc1a157b85f4e} 
+int all\+\_\+test\+\_\+init (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{file\+\_\+name}{}\end{DoxyParamCaption})}
 
 
 
@@ -49,7 +50,7 @@ Here is the call graph for this function\+:
 \index{test\_init@{test\_init}!testing.cpp@{testing.cpp}}
 \doxysubsubsection{\texorpdfstring{test\_init()}{test\_init()}}
 {\footnotesize\ttfamily \label{testing_8cpp_a08b2026795d206b857c96e7453965963} 
-int test\+\_\+init (\begin{DoxyParamCaption}\item[{int}]{test\+\_\+n}{, }\item[{struct \mbox{\hyperlink{structequation}{equation}}}]{coefs}{, }\item[{struct \mbox{\hyperlink{structsolution}{solution}}}]{roots\+\_\+exp}{}\end{DoxyParamCaption})}
+int test\+\_\+init (\begin{DoxyParamCaption}\item[{int}]{test\+\_\+n}{, }\item[{struct equation}]{coefs}{, }\item[{struct solution}]{roots\+\_\+exp}{}\end{DoxyParamCaption})}
 
 
 

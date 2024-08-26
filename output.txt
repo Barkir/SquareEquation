@@ -1,35 +1,204 @@
-[32mTest 1 passed!
-[0m[32mTest 2 passed!
-[0m[32mTest 3 passed!
-[0m[32mTest 4 passed!
-[0m[32mTest 5 passed!
-[0m[32mTest 6 passed!
-[0m[32mTest 7 passed!
-[0m[32mTest 8 passed!
-[0m[32mTest 9 passed!
-[0m[32mTest 10 passed!
-[0m[32mTest 11 passed!
-[0m[32mTest 12 passed!
-[0m[32mTest 13 passed!
-[0m[32mTest 14 passed!
-[0m[32mTest 15 passed!
-[0m[32mTest 16 passed!
-[0m[32mTest 17 passed!
-[0m[32mTest 18 passed!
-[0m[32mTest 19 passed!
-[0m[32mTest 20 passed!
-[0m[32mTest 21 passed!
-[0m[32mTest 22 passed!
-[0m[32mTest 23 passed!
-[0m[32mTest 24 passed!
-[0m[32mTest 25 passed!
-[0m[32mTest 26 passed!
-[0m[32mTest 27 passed!
-[0m[32mTest 28 passed!
-[0m[32mTest 29 passed!
-[0m[32mTest 30 passed!
-[0m[32mTESTS PASSED!
-[0m[33m|Square Equation Solver|
-[0m[36mEnter a:_____[0m[36mEnter b:_____[0m[36mEnter c:_____[0m[36mYour equation is: 1.0x^2+21.0x+42.0
-[0m[35mx1 = -18.761356
-x2 = -2.238644[0m
+Test 1 passed!
+a = 5, b = 8, c = 3 x1 = -1, x2 = -0.6, root_amount = 2
+Test 2 passed!
+a = -7, b = -9, c = -10 x1 = 0, x2 = 0, root_amount = 0
+Test 3 passed!
+a = 3.24, b = -0.908, c = 6.534 x1 = 0, x2 = 0, root_amount = 0
+Test 4 passed!
+a = 5.809, b = 4.812, c = -3.331 x1 = -1.2773, x2 = 0.448931, root_amount = 2
+Test 5 passed!
+a = -4, b = -8, c = 3 x1 = -2.32288, x2 = 0.322876, root_amount = 2
+Test 6 passed!
+a = 9.539, b = 3.29, c = 4.652 x1 = 0, x2 = 0, root_amount = 0
+Test 7 passed!
+a = 4.09, b = 6.243, c = -5.467 x1 = -2.14854, x2 = 0.622132, root_amount = 2
+Test 8 passed!
+a = 5.215, b = -4.406, c = 6.479 x1 = 0, x2 = 0, root_amount = 0
+Test 9 passed!
+a = 6.023, b = -4.437, c = -4.19 x1 = -0.54344, x2 = 1.28012, root_amount = 2
+Test 10 passed!
+a = 6.598, b = 9.667, c = -8.398 x1 = -2.07774, x2 = 0.612595, root_amount = 2
+Test 11 passed!
+a = 4.608, b = -9.302, c = -6.338 x1 = -0.537984, x2 = 2.55665, root_amount = 2
+Test 12 passed!
+a = 8, b = -3, c = -8 x1 = -0.829926, x2 = 1.20493, root_amount = 2
+Test 13 passed!
+a = 3.524, b = 4.008, c = -5.368 x1 = -1.92759, x2 = 0.790246, root_amount = 2
+Test 14 passed!
+a = 3, b = -10, c = 3 x1 = 0.333333, x2 = 3, root_amount = 2
+Test 15 passed!
+a = -6, b = 2, c = 9 x1 = -1.06937, x2 = 1.4027, root_amount = 2
+Test 16 passed!
+a = 5.737, b = 7.638, c = 3.529 x1 = 0, x2 = 0, root_amount = 0
+Test 17 passed!
+a = 3.996, b = 4, c = 8.328 x1 = 0, x2 = 0, root_amount = 0
+Test 18 passed!
+a = 3.133, b = -6.864, c = -6.241 x1 = -0.691181, x2 = 2.88205, root_amount = 2
+Test 19 passed!
+a = 9, b = 9, c = 8 x1 = 0, x2 = 0, root_amount = 0
+Test 20 passed!
+a = 3.198, b = -4.788, c = -2.14 x1 = -0.360262, x2 = 1.85745, root_amount = 2
+Test 21 passed!
+a = 8.626, b = 3.752, c = 4.145 x1 = 0, x2 = 0, root_amount = 0
+Test 22 passed!
+a = 1.927, b = 3.73, c = 1.99 x1 = 0, x2 = 0, root_amount = 0
+Test 23 passed!
+a = 8.652, b = 1.293, c = 9.824 x1 = 0, x2 = 0, root_amount = 0
+Test 24 passed!
+a = -7, b = -4, c = 2 x1 = -0.891806, x2 = 0.320377, root_amount = 2
+Test 25 passed!
+a = 6.341, b = -2.14, c = -4.595 x1 = -0.699084, x2 = 1.03657, root_amount = 2
+Test 26 passed!
+a = 8.465, b = 3.258, c = 1.313 x1 = 0, x2 = 0, root_amount = 0
+Test 27 passed!
+a = 2.289, b = -2.764, c = 7.825 x1 = 0, x2 = 0, root_amount = 0
+Test 28 passed!
+a = 7.066, b = 6.042, c = 5.132 x1 = 0, x2 = 0, root_amount = 0
+Test 29 passed!
+a = -3, b = 3, c = -6 x1 = 0, x2 = 0, root_amount = 0
+Test 30 passed!
+a = 1.852, b = -2.106, c = 4.036 x1 = 0, x2 = 0, root_amount = 0
+Test 31 passed!
+a = 5.09, b = 7.909, c = 6.114 x1 = 0, x2 = 0, root_amount = 0
+Test 32 passed!
+a = 9.848, b = -6.998, c = -8.603 x1 = -0.644608, x2 = 1.35521, root_amount = 2
+Test 33 passed!
+a = 3.607, b = -3.047, c = -8.468 x1 = -1.16698, x2 = 2.01173, root_amount = 2
+Test 34 passed!
+a = -8, b = 1, c = -8 x1 = 0, x2 = 0, root_amount = 0
+Test 35 passed!
+a = 3, b = -1, c = 6 x1 = 0, x2 = 0, root_amount = 0
+Test 36 passed!
+a = 3.739, b = -3.914, c = 6.618 x1 = 0, x2 = 0, root_amount = 0
+Test 37 passed!
+a = 7.249, b = 5.248, c = -9.19 x1 = -1.54469, x2 = 0.820724, root_amount = 2
+Test 38 passed!
+a = 2.226, b = 1.78, c = -1.114 x1 = -1.21241, x2 = 0.412772, root_amount = 2
+Test 39 passed!
+a = 4.144, b = 2.401, c = -8.031 x1 = -1.71163, x2 = 1.13224, root_amount = 2
+Test 40 passed!
+a = 3.011, b = 7.763, c = 3.421 x1 = -2.01411, x2 = -0.564104, root_amount = 2
+Test 41 passed!
+a = 3.311, b = 1.236, c = -3.995 x1 = -1.30084, x2 = 0.927541, root_amount = 2
+Test 42 passed!
+a = 2.578, b = -1.249, c = -2.786 x1 = -0.825168, x2 = 1.30965, root_amount = 2
+Test 43 passed!
+a = 6.387, b = 8.859, c = 0.077 x1 = -1.37829, x2 = -0.00874689, root_amount = 2
+Test 44 passed!
+a = 1.848, b = 3.006, c = 0.154 x1 = -1.57367, x2 = -0.0529548, root_amount = 2
+Test 45 passed!
+a = 7, b = 2, c = 2 x1 = 0, x2 = 0, root_amount = 0
+Test 46 passed!
+a = -9, b = -10, c = -5 x1 = 0, x2 = 0, root_amount = 0
+Test 47 passed!
+a = -4, b = -2, c = 8 x1 = -1.68614, x2 = 1.18614, root_amount = 2
+Test 48 passed!
+a = 6, b = 9, c = 1 x1 = -1.37915, x2 = -0.120847, root_amount = 2
+Test 49 passed!
+a = 9.565, b = 8.634, c = -7.126 x1 = -1.42535, x2 = 0.522684, root_amount = 2
+Test 50 passed!
+a = -4, b = -3, c = 4 x1 = -1.443, x2 = 0.693, root_amount = 2
+Test 51 passed!
+a = 9.581, b = -3.28, c = -9.021 x1 = -0.814146, x2 = 1.15649, root_amount = 2
+Test 52 passed!
+a = 2, b = 10, c = -4 x1 = -5.37228, x2 = 0.372281, root_amount = 2
+Test 53 passed!
+a = 3, b = -10, c = 1 x1 = 0.103195, x2 = 3.23014, root_amount = 2
+Test 54 passed!
+a = 9.437, b = 0.087, c = 8.178 x1 = 0, x2 = 0, root_amount = 0
+Test 55 passed!
+a = 2.449, b = 7.185, c = 8.236 x1 = 0, x2 = 0, root_amount = 0
+Test 56 passed!
+a = 4.048, b = 4.65, c = -9.288 x1 = -2.19434, x2 = 1.04563, root_amount = 2
+Test 57 passed!
+a = 1.433, b = -6.668, c = -0.938 x1 = -0.136658, x2 = 4.78983, root_amount = 2
+Test 58 passed!
+a = -7, b = 5, c = 4 x1 = -0.478907, x2 = 1.19319, root_amount = 2
+Test 59 passed!
+a = 8.915, b = 6.507, c = 1.741 x1 = 0, x2 = 0, root_amount = 0
+Test 60 passed!
+a = 8.909, b = -9.031, c = -7.873 x1 = -0.561145, x2 = 1.57484, root_amount = 2
+Test 61 passed!
+a = 4.152, b = 1.609, c = -5.115 x1 = -1.32047, x2 = 0.93295, root_amount = 2
+Test 62 passed!
+a = 5.904, b = -7.613, c = 0.271 x1 = 0.036638, x2 = 1.25283, root_amount = 2
+Test 63 passed!
+a = 7.232, b = 0.237, c = -8.423 x1 = -1.09572, x2 = 1.06294, root_amount = 2
+Test 64 passed!
+a = 1.806, b = -8.154, c = 5.407 x1 = 0.807549, x2 = 3.7074, root_amount = 2
+Test 65 passed!
+a = 5, b = 7, c = -6 x1 = -2, x2 = 0.6, root_amount = 2
+Test 66 passed!
+a = 8.011, b = 0.407, c = -2.623 x1 = -0.598177, x2 = 0.547371, root_amount = 2
+Test 67 passed!
+a = 5.277, b = 7.332, c = -7.978 x1 = -2.10697, x2 = 0.717544, root_amount = 2
+Test 68 passed!
+a = 7, b = 9, c = 7 x1 = 0, x2 = 0, root_amount = 0
+Test 69 passed!
+a = 2.018, b = -2.09, c = 5.99 x1 = 0, x2 = 0, root_amount = 0
+Test 70 passed!
+a = 7.167, b = -4.535, c = -4.103 x1 = -0.50373, x2 = 1.13649, root_amount = 2
+Test 71 passed!
+a = 3.382, b = -6.669, c = 0.261 x1 = 0.0399455, x2 = 1.93196, root_amount = 2
+Test 72 passed!
+a = 2.45, b = -7.552, c = 7.222 x1 = 0, x2 = 0, root_amount = 0
+Test 73 passed!
+a = 2.918, b = 4.212, c = 0.586 x1 = -1.28747, x2 = -0.155982, root_amount = 2
+Test 74 passed!
+a = 3.836, b = -1.46, c = 7.885 x1 = 0, x2 = 0, root_amount = 0
+Test 75 passed!
+a = 8.666, b = -6.193, c = -8.886 x1 = -0.716491, x2 = 1.43112, root_amount = 2
+Test 76 passed!
+a = 4.496, b = 8.082, c = 8.104 x1 = 0, x2 = 0, root_amount = 0
+Test 77 passed!
+a = 4.307, b = 3.348, c = 3.768 x1 = 0, x2 = 0, root_amount = 0
+Test 78 passed!
+a = 8.949, b = 9.96, c = 3.689 x1 = 0, x2 = 0, root_amount = 0
+Test 79 passed!
+a = 2, b = -7, c = -5 x1 = -0.608495, x2 = 4.1085, root_amount = 2
+Test 80 passed!
+a = 1.912, b = -3.475, c = 4.803 x1 = 0, x2 = 0, root_amount = 0
+Test 81 passed!
+a = 1.005, b = -8.264, c = 8.275 x1 = 1.16693, x2 = 7.05595, root_amount = 2
+Test 82 passed!
+a = 8, b = 0, c = -1 x1 = -0.353553, x2 = 0.353553, root_amount = 2
+Test 83 passed!
+a = 4.352, b = 7.813, c = -8.758 x1 = -2.57637, x2 = 0.781102, root_amount = 2
+Test 84 passed!
+a = 6, b = -6, c = 9 x1 = 0, x2 = 0, root_amount = 0
+Test 85 passed!
+a = 2.341, b = -9.194, c = -5.225 x1 = -0.503703, x2 = 4.43108, root_amount = 2
+Test 86 passed!
+a = 4.08, b = -9.787, c = -1.587 x1 = -0.152463, x2 = 2.55124, root_amount = 2
+Test 87 passed!
+a = 9.4, b = -3.637, c = -4.293 x1 = -0.509485, x2 = 0.8964, root_amount = 2
+Test 88 passed!
+a = 5.007, b = 2.93, c = -0.558 x1 = -0.736497, x2 = 0.151316, root_amount = 2
+Test 89 passed!
+a = 4.769, b = -4.925, c = 2.394 x1 = 0, x2 = 0, root_amount = 0
+Test 90 passed!
+a = 1.077, b = -4.592, c = 7.678 x1 = 0, x2 = 0, root_amount = 0
+Test 91 passed!
+a = -5, b = 0, c = 0 x1 = 0, x2 = 0, root_amount = 1
+Test 92 passed!
+a = 2.928, b = -4.297, c = 2.992 x1 = 0, x2 = 0, root_amount = 0
+Test 93 passed!
+a = 10, b = -1, c = 2 x1 = 0, x2 = 0, root_amount = 0
+Test 94 passed!
+a = 6.637, b = 3.573, c = 8.584 x1 = 0, x2 = 0, root_amount = 0
+Test 95 passed!
+a = -1, b = 2, c = 6 x1 = -1.64575, x2 = 3.64575, root_amount = 2
+Test 96 passed!
+a = 1.902, b = -2.867, c = -8.22 x1 = -1.45761, x2 = 2.96497, root_amount = 2
+Test 97 passed!
+a = 6, b = -1, c = -5 x1 = -0.833333, x2 = 1, root_amount = 2
+Test 98 passed!
+a = 8.658, b = -6.006, c = -9.304 x1 = -0.746275, x2 = 1.43997, root_amount = 2
+Test 99 passed!
+a = 2.479, b = -5.074, c = -7.013 x1 = -0.945437, x2 = 2.99223, root_amount = 2
+Test 100 passed!
+a = 9.643, b = -4.478, c = 4.163 x1 = 0, x2 = 0, root_amount = 0
+TESTS PASSED!
+|Square Equation Solver|
+Enter a:_____Enter b:_____Enter c:_____Your equation is: 0.0x^2+0.0x+0.0
+Infinite number of solutions.

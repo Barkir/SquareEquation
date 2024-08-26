@@ -1,0 +1,54 @@
+\doxysection{red\+\_\+assert.\+cpp File Reference}
+\hypertarget{red__assert_8cpp}{}\label{red__assert_8cpp}\index{red\_assert.cpp@{red\_assert.cpp}}
+
+
+assert with a message about ane error  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include "{}header/red\+\_\+assert.\+h"{}}\newline
+{\ttfamily \#include "{}header/color\+\_\+print.\+h"{}}\newline
+{\ttfamily \#include "{}header/constants\+\_\+structures.\+h"{}}\newline
+Include dependency graph for red\+\_\+assert.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{red__assert_8cpp_ad68a1e0c659184ca10b20b6bf883c138}{red\+\_\+assert\+\_\+func}} (int cond, const char \texorpdfstring{$\ast$}{*}source\+\_\+file, const char \texorpdfstring{$\ast$}{*}source\+\_\+func, int source\+\_\+line, const char \texorpdfstring{$\ast$}{*}line,...)
+\begin{DoxyCompactList}\small\item\em red\+\_\+assert function (used in red\+\_\+assert macro) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+assert with a message about ane error 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{red__assert_8cpp_ad68a1e0c659184ca10b20b6bf883c138}\index{red\_assert.cpp@{red\_assert.cpp}!red\_assert\_func@{red\_assert\_func}}
+\index{red\_assert\_func@{red\_assert\_func}!red\_assert.cpp@{red\_assert.cpp}}
+\doxysubsubsection{\texorpdfstring{red\_assert\_func()}{red\_assert\_func()}}
+{\footnotesize\ttfamily \label{red__assert_8cpp_ad68a1e0c659184ca10b20b6bf883c138} 
+void red\+\_\+assert\+\_\+func (\begin{DoxyParamCaption}\item[{int}]{cond}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{source\+\_\+file}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{source\+\_\+func}{, }\item[{int}]{source\+\_\+line}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{line}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
+
+
+
+red\+\_\+assert function (used in red\+\_\+assert macro) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em condition} & (assert if 0, continue if 1) \\
+\hline
+{\em source\+\_\+file} & file name where program aborted \\
+\hline
+{\em source\+\_\+func} & function name where program aborted \\
+\hline
+{\em source\+\_\+line} & line where program aborted \\
+\hline
+{\em line} & a message for assert \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 1

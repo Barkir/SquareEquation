@@ -1,3 +1,8 @@
+/**
+* @file color_print.h
+* @brief a header file for color_print.cpp
+ */
+
 #ifndef MY_PRINT_H
 #define MY_PRINT_H
 
