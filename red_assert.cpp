@@ -22,7 +22,6 @@
 * @param line a message for assert
  */
 
-// TODO: color vprintf
 void red_assert_func(int cond, const char * source_file, const char * source_func,  int source_line, const char * line, ...)
 {
 

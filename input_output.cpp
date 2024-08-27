@@ -12,6 +12,7 @@
 #include "header/input_output.h"
 #include "header/constants_structures.h"
 #include "header/color_printf.h"
+#include "red_assert.h"
 
 /**
 * @brief function for getting a number from user
@@ -88,24 +89,22 @@ void print_roots(struct solution roots)
 
     switch(roots.root_amount)
     {
-        case 0:
+        case NO_ROOTS:
             color_printf(stdout, COLOR_PRINT_MAGENTA ,"No solutions.");
             break;
 
-        case 1:
+        case ONE_ROOT:
             color_printf(stdout, COLOR_PRINT_MAGENTA, "x = %lf", roots.x1);
             break;
 
-        case 2:
+        case TWO_ROOTS:
             color_printf(stdout, COLOR_PRINT_MAGENTA, "x1 = %lf\nx2 = %lf", roots.x1, roots.x2);
             break;
-
         case INF_SOLUTIONS:
             color_printf(stdout, COLOR_PRINT_MAGENTA, "Infinite number of solutions.");
             break;
 
         default:
-            assert(0);
-            break;
+            red_assert(0, "Error in default condition swtich case\n");
     }
 }
