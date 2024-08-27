@@ -7,49 +7,63 @@
 \DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ CONSTANTS\_STRUCTURES\_H}}
 \DoxyCodeLine{00009\ }
 \DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <math.h>}}
-\DoxyCodeLine{00017\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{constants__structures_8h_a3d8c24629d725b9ef8c238cf27c9b158}{eps}}\ =\ 10e-\/5;}
-\DoxyCodeLine{00018\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ TESTS\_NUMBER\ =\ 30;}
-\DoxyCodeLine{00019\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ flag\_array\_size\ =\ 3;}
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00028\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structequation}{equation}}}
-\DoxyCodeLine{00029\ \{}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{double}\ a,\ b,\ c;}
-\DoxyCodeLine{00031\ \};}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00040\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structsolution}{solution}}}
-\DoxyCodeLine{00041\ \{}
-\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{double}\ x1,\ x2;}
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{int}\ root\_amount;}
-\DoxyCodeLine{00044\ \};}
-\DoxyCodeLine{00045\ }
-\DoxyCodeLine{00052\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structflag}{flag}}}
-\DoxyCodeLine{00053\ \{}
-\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ name;}
-\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{int}\ code;}
-\DoxyCodeLine{00056\ \};}
-\DoxyCodeLine{00064\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{constants__structures_8h_ac6a66a418b6646df5aa3c82d9fb39d3c}{roots}}\{}
-\DoxyCodeLine{00065\ \ \ \ \ INF\_SOLUTIONS\ =\ -\/1,}
-\DoxyCodeLine{00066\ \ \ \ \ NO\_ROOTS,}
-\DoxyCodeLine{00067\ \ \ \ \ ONE\_ROOT,}
-\DoxyCodeLine{00068\ \ \ \ \ TWO\_ROOTS}
-\DoxyCodeLine{00069\ \};}
-\DoxyCodeLine{00070\ }
-\DoxyCodeLine{00078\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{constants__structures_8h_ad34e7fb3c33543e9f3a1e48486fa7692}{operation}}}
-\DoxyCodeLine{00079\ \{}
-\DoxyCodeLine{00080\ \ \ \ \ CMD\_DOC,}
-\DoxyCodeLine{00081\ \ \ \ \ CMD\_HELP,}
-\DoxyCodeLine{00082\ \ \ \ \ CMD\_OUT}
-\DoxyCodeLine{00083\ \};}
-\DoxyCodeLine{00084\ }
-\DoxyCodeLine{00092\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{constants__structures_8h_a5a6ba29a41c09c48f2188eaac366e90f}{analyze\_output}}}
-\DoxyCodeLine{00093\ \{}
-\DoxyCodeLine{00094\ \ \ \ \ EXIT,}
-\DoxyCodeLine{00095\ \ \ \ \ CONTINUE,}
-\DoxyCodeLine{00096\ \ \ \ \ RET}
-\DoxyCodeLine{00097\ \};}
-\DoxyCodeLine{00098\ }
-\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00100\ }
-\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ print\_color(COLOR,\ STRING,\ ...)\ printf(COLOR\ STRING\ RESET,\ \_\_VA\_ARGS\_\_)}}
+\DoxyCodeLine{00019\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ eps\ =\ 10e-\/3;}
+\DoxyCodeLine{00020\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ TESTS\_NUMBER\ =\ 30;}
+\DoxyCodeLine{00021\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ flag\_array\_size\ =\ 3;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structequation}{equation}}}
+\DoxyCodeLine{00032\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{double}\ a,\ b,\ c;}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structsolution}{solution}}}
+\DoxyCodeLine{00044\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{double}\ x1,\ x2;}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{int}\ root\_amount;}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structflag}{flag}}}
+\DoxyCodeLine{00056\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ name;}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ code;}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00067\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{constants__structures_8h_ac6a66a418b6646df5aa3c82d9fb39d3c}{roots}}\{}
+\DoxyCodeLine{00068\ \ \ \ \ INF\_SOLUTIONS\ =\ -\/1,}
+\DoxyCodeLine{00069\ \ \ \ \ NO\_ROOTS,}
+\DoxyCodeLine{00070\ \ \ \ \ ONE\_ROOT,}
+\DoxyCodeLine{00071\ \ \ \ \ TWO\_ROOTS}
+\DoxyCodeLine{00072\ \};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00081\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{constants__structures_8h_ad34e7fb3c33543e9f3a1e48486fa7692}{operation}}}
+\DoxyCodeLine{00082\ \{}
+\DoxyCodeLine{00083\ \ \ \ \ CMD\_DOC,}
+\DoxyCodeLine{00084\ \ \ \ \ CMD\_HELP,}
+\DoxyCodeLine{00085\ \ \ \ \ CMD\_OUT}
+\DoxyCodeLine{00086\ \};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00095\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{constants__structures_8h_a5a6ba29a41c09c48f2188eaac366e90f}{analyze\_output}}}
+\DoxyCodeLine{00096\ \{}
+\DoxyCodeLine{00097\ \ \ \ \ CMD\_EXIT,}
+\DoxyCodeLine{00098\ \ \ \ \ CMD\_CONTINUE,}
+\DoxyCodeLine{00099\ \ \ \ \ CMD\_ERROR,}
+\DoxyCodeLine{00100\ \ \ \ \ RET}
+\DoxyCodeLine{00101\ \};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{keyword}{enum}\ enum\_colors}
+\DoxyCodeLine{00104\ \{}
+\DoxyCodeLine{00105\ \ \ \ \ COLOR\_PRINT\_RED,}
+\DoxyCodeLine{00106\ \ \ \ \ COLOR\_PRINT\_GREEN,}
+\DoxyCodeLine{00107\ \ \ \ \ COLOR\_PRINT\_YELLOW,}
+\DoxyCodeLine{00108\ \ \ \ \ COLOR\_PRINT\_BLUE,}
+\DoxyCodeLine{00109\ \ \ \ \ COLOR\_PRINT\_MAGENTA,}
+\DoxyCodeLine{00110\ \ \ \ \ COLOR\_PRINT\_CYAN,}
+\DoxyCodeLine{00111\ \ \ \ \ COLOR\_PRINT\_RESET}
+\DoxyCodeLine{00112\ \};}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ }
 
 \end{DoxyCode}

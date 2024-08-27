@@ -12,15 +12,16 @@ digraph "testing.cpp"
   Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="assert.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="header/testing.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node5 [id="Node000005",label="header/testing.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$testing_8h.html",tooltip="a header file for testing.cpp"];
   Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="header/solve_equation.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node6 [id="Node000006",label="header/solve_equation.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$solve__equation_8h.html",tooltip="a header file for solve_equation.cpp"];
   Node1 -> Node7 [id="edge6_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="header/constants_structures.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
-  Node1 -> Node8 [id="edge7_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
-  Node8 [id="Node000008",label="header/tests.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
-  Node1 -> Node9 [id="edge8_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" "];
-  Node9 [id="Node000009",label="header/input_output.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
-  Node1 -> Node10 [id="edge9_Node000001_Node000010",color="steelblue1",style="solid",tooltip=" "];
-  Node10 [id="Node000010",label="header/color_print.h",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node7 [id="Node000007",label="header/constants_structures.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$constants__structures_8h.html",tooltip="a header file with all constants and structures"];
+  Node7 -> Node3 [id="edge7_Node000007_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node8 [id="edge8_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="header/tests.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$tests_8h.html",tooltip="A file with test examples."];
+  Node1 -> Node9 [id="edge9_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="header/input_output.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$input__output_8h.html",tooltip="a header file for input_output.cpp"];
+  Node1 -> Node10 [id="edge10_Node000001_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="header/color_printf.h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$color__printf_8h.html",tooltip="a header file for color_printf.cpp"];
 }

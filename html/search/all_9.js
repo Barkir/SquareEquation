@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['red_5fassert_2ecpp_0',['red_assert.cpp',['../red__assert_8cpp.html',1,'']]],
-  ['red_5fassert_5ffunc_1',['red_assert_func',['../red__assert_8cpp.html#ad68a1e0c659184ca10b20b6bf883c138',1,'red_assert.cpp']]]
+  ['let_20s_20start_20🧑‍🚀️_0',['Let&apos;s start 🧑‍🚀️',['../md__r_e_a_d_m_e.html#autotoc_md0',1,'']]],
+  ['line_20flags_1',['Command Line Flags',['../md__r_e_a_d_m_e.html#autotoc_md8',1,'']]]
 ];

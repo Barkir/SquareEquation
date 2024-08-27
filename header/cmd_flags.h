@@ -7,7 +7,7 @@
 #define HELP_H
 
 #include "constants_structures.h"
-#include "color_print.h"
+#include "color_printf.h"
 
 #define RED     "\x1b[31m"
 #define GREEN   "\x1b[32m"

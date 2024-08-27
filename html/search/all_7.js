@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['output_5fcmd_0',['output_cmd',['../cmd_8cpp.html#a4d2a2f895114a92ec970a68642454dcc',1,'cmd.cpp']]]
+  ['how_20to_20compile_0',['How to compile',['../md__r_e_a_d_m_e.html#autotoc_md2',1,'']]]
 ];

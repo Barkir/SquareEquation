@@ -25,11 +25,25 @@
 var NAVTREE =
 [
   [ "SquareEquation", "index.html", [
+    [ "README", "md__r_e_a_d_m_e.html", [
+      [ "Let's start 🧑‍🚀️", "md__r_e_a_d_m_e.html#autotoc_md0", null ],
+      [ "How to compile", "md__r_e_a_d_m_e.html#autotoc_md2", [
+        [ "Next steps", "md__r_e_a_d_m_e.html#autotoc_md3", null ]
+      ] ],
+      [ "Unit-testing 📝", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
+      [ "Other interesting features 🪶", "md__r_e_a_d_m_e.html#autotoc_md5", null ]
+    ] ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ]
+    ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ]
+        [ "Functions", "globals_func.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
@@ -37,7 +51,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"cmd_8cpp.html"
+"annotated.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

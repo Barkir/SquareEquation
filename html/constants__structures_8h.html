@@ -99,6 +99,7 @@ $(function(){initNavTree('constants__structures_8h.html',''); initResizable(true
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">constants_structures.h File Reference</div></div>
@@ -133,6 +134,11 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag a structure for storing flags  <a href="structflag.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:af022ae47fe4d946ae96d0b89a7ce047f" id="r_af022ae47fe4d946ae96d0b89a7ce047f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af022ae47fe4d946ae96d0b89a7ce047f">print_color</a>(COLOR,  STRING, ...)</td></tr>
+<tr class="separator:af022ae47fe4d946ae96d0b89a7ce047f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ac6a66a418b6646df5aa3c82d9fb39d3c" id="r_ac6a66a418b6646df5aa3c82d9fb39d3c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6a66a418b6646df5aa3c82d9fb39d3c">roots</a> { <b>INF_SOLUTIONS</b> = -1
@@ -148,16 +154,30 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ad34e7fb3c33543e9f3a1e48486fa7692"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum for storing cmd flags  <a href="#ad34e7fb3c33543e9f3a1e48486fa7692">More...</a><br /></td></tr>
 <tr class="separator:ad34e7fb3c33543e9f3a1e48486fa7692"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a6ba29a41c09c48f2188eaac366e90f" id="r_a5a6ba29a41c09c48f2188eaac366e90f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a6ba29a41c09c48f2188eaac366e90f">analyze_output</a> { <b>EXIT</b>
-, <b>CONTINUE</b>
+<tr class="memitem:a5a6ba29a41c09c48f2188eaac366e90f" id="r_a5a6ba29a41c09c48f2188eaac366e90f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a6ba29a41c09c48f2188eaac366e90f">analyze_output</a> { <b>CMD_EXIT</b>
+, <b>CMD_CONTINUE</b>
+, <b>CMD_ERROR</b>
 , <b>RET</b>
  }</td></tr>
 <tr class="memdesc:a5a6ba29a41c09c48f2188eaac366e90f"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum for cmd flag analyzing  <a href="#a5a6ba29a41c09c48f2188eaac366e90f">More...</a><br /></td></tr>
 <tr class="separator:a5a6ba29a41c09c48f2188eaac366e90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef6b19e44ac8de6daad3890bf299fa8" id="r_a6ef6b19e44ac8de6daad3890bf299fa8"><td class="memItemLeft" align="right" valign="top"><a id="a6ef6b19e44ac8de6daad3890bf299fa8" name="a6ef6b19e44ac8de6daad3890bf299fa8"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>enum_colors</b> { <br />
+&#160;&#160;<b>COLOR_PRINT_RED</b>
+, <b>COLOR_PRINT_GREEN</b>
+, <b>COLOR_PRINT_YELLOW</b>
+, <b>COLOR_PRINT_BLUE</b>
+, <br />
+&#160;&#160;<b>COLOR_PRINT_MAGENTA</b>
+, <b>COLOR_PRINT_CYAN</b>
+, <b>COLOR_PRINT_RESET</b>
+<br />
+ }</td></tr>
+<tr class="separator:a6ef6b19e44ac8de6daad3890bf299fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a3d8c24629d725b9ef8c238cf27c9b158" id="r_a3d8c24629d725b9ef8c238cf27c9b158"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d8c24629d725b9ef8c238cf27c9b158">eps</a> = 10e-5</td></tr>
+<tr class="memitem:a3d8c24629d725b9ef8c238cf27c9b158" id="r_a3d8c24629d725b9ef8c238cf27c9b158"><td class="memItemLeft" align="right" valign="top"><a id="a3d8c24629d725b9ef8c238cf27c9b158" name="a3d8c24629d725b9ef8c238cf27c9b158"></a>
+const double&#160;</td><td class="memItemRight" valign="bottom"><b>eps</b> = 10e-3</td></tr>
 <tr class="separator:a3d8c24629d725b9ef8c238cf27c9b158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebe95caad69b594383f9bee25984fe13" id="r_aebe95caad69b594383f9bee25984fe13"><td class="memItemLeft" align="right" valign="top"><a id="aebe95caad69b594383f9bee25984fe13" name="aebe95caad69b594383f9bee25984fe13"></a>
 const int&#160;</td><td class="memItemRight" valign="bottom"><b>TESTS_NUMBER</b> = 30</td></tr>
@@ -168,7 +188,44 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>flag_array_size<
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>a header file with all constants and structures </p>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="af022ae47fe4d946ae96d0b89a7ce047f" name="af022ae47fe4d946ae96d0b89a7ce047f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af022ae47fe4d946ae96d0b89a7ce047f">&#9670;&#160;</a></span>print_color</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define print_color</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>COLOR</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>STRING</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">printf(COLOR STRING RESET, __VA_ARGS__)</div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">print_color</td><td>macros for printing colorful text(not used) </td></tr>
+    <tr><td class="paramname">eps</td><td>a very small value (used for working with double) </td></tr>
+    <tr><td class="paramname">TESTS_NUMBER</td><td>a number of unit_tests </td></tr>
+    <tr><td class="paramname">flag_array_size</td><td>a size of flag_array structure array </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a5a6ba29a41c09c48f2188eaac366e90f" name="a5a6ba29a41c09c48f2188eaac366e90f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a6ba29a41c09c48f2188eaac366e90f">&#9670;&#160;</a></span>analyze_output</h2>
 
@@ -236,29 +293,6 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>flag_array_size<
     <tr><td class="paramname">NO_ROOTS</td><td>value for no solutions </td></tr>
     <tr><td class="paramname">ONE_ROOT</td><td>value for one root </td></tr>
     <tr><td class="paramname">TWO_ROOTS</td><td>value for two roots </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a3d8c24629d725b9ef8c238cf27c9b158" name="a3d8c24629d725b9ef8c238cf27c9b158"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d8c24629d725b9ef8c238cf27c9b158">&#9670;&#160;</a></span>eps</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const double eps = 10e-5</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">eps</td><td>a very small value (used for working with double) </td></tr>
-    <tr><td class="paramname">TESTS_NUMBER</td><td>a number of unit_tests </td></tr>
-    <tr><td class="paramname">flag_array_size</td><td>a size of flag_array structure array </td></tr>
   </table>
   </dd>
 </dl>

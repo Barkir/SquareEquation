@@ -29,7 +29,7 @@ int parse_cmd_args(char * w_flag, struct flag * flag_array, int size)
     {
         if (strcmp(w_flag, flag_array[i].name) == 0) {return flag_array[i].code;}
     }
-    return RET;
+    return CMD_RET;
 }
 
 /**

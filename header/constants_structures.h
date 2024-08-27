@@ -57,6 +57,7 @@ struct flag
     const char * name;
     int code;
 };
+
 /**
 * @brief enum for storing number of roots
 * @param INF_SOLUTIONS value for infinite solutions
@@ -64,6 +65,7 @@ struct flag
 * @param ONE_ROOT value for one root
 * @param TWO_ROOTS value for two roots
  */
+
 enum roots{
     INF_SOLUTIONS = -1,
     NO_ROOTS,
@@ -87,9 +89,9 @@ enum operation
 
 /**
 * @brief enum for cmd flag analyzing
-* @param EXIT flag for exit (program exit after --doc, --help or other flag)
-* @param CONTINUE value for flags that can be written before other flags
-* @param RET start value
+* @param CMD_EXIT flag for exit (program exit after --doc, --help or other flag)
+* @param CMD_CONTINUE value for flags that can be written before other flags
+* @param CMD_RET start value
 */
 
 enum analyze_output
@@ -97,7 +99,7 @@ enum analyze_output
     CMD_EXIT,
     CMD_CONTINUE,
     CMD_ERROR,
-    RET
+    CMD_RET
 };
 
 enum enum_colors

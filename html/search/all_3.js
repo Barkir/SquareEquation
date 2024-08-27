@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['enter_5fnumbers_0',['enter_numbers',['../input__output_8cpp.html#a49d40089c68931f47c9da00ea858b025',1,'input_output.cpp']]]
+  ['discriminant_0',['discriminant',['../solve__equation_8h.html#a2876dcc4846e2235854a720d47131b88',1,'discriminant(double a, double b, double c):&#160;solve_equation.cpp'],['../solve__equation_8cpp.html#a2876dcc4846e2235854a720d47131b88',1,'discriminant(double a, double b, double c):&#160;solve_equation.cpp']]]
 ];

@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['input_5foutput_2ecpp_0',['input_output.cpp',['../input__output_8cpp.html',1,'']]],
-  ['interchange_1',['interchange',['../solve__equation_8cpp.html#ac44fe699bcba20ea6e1d9610de04ec15',1,'solve_equation.cpp']]],
-  ['is_5fequal_2',['is_equal',['../solve__equation_8cpp.html#a5cf9cf5e86c145a2bc103e94d0eb54db',1,'solve_equation.cpp']]],
-  ['is_5fnull_3',['is_null',['../solve__equation_8cpp.html#a247978824ef960d655ab771781bbbcfa',1,'solve_equation.cpp']]]
+  ['features_20🪶_0',['Other interesting features 🪶',['../md__r_e_a_d_m_e.html#autotoc_md5',1,'']]],
+  ['flag_1',['flag',['../structflag.html',1,'']]],
+  ['flags_2',['Command Line Flags',['../md__r_e_a_d_m_e.html#autotoc_md8',1,'']]],
+  ['for_20freshmen_20🙋_20br_3',['This is a simple equation solver. It is the main task on MIPT Summer School for freshmen 🙋 &lt;br /&gt;',['../md__r_e_a_d_m_e.html#autotoc_md1',1,'']]],
+  ['freshmen_20🙋_20br_4',['This is a simple equation solver. It is the main task on MIPT Summer School for freshmen 🙋 &lt;br /&gt;',['../md__r_e_a_d_m_e.html#autotoc_md1',1,'']]]
 ];

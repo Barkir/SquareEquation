@@ -16,12 +16,12 @@
 #include "header/testing.h"
 #include "header/cmd_flag_structure.h"
 #include "header/cmd.h"
-#include "header/color_print.h"
+#include "header/color_printf.h"
 #include "header/red_assert.h"
 
 int main(int argc, char *argv[]){
-
-    int ret = RET;
+    // TODO: conditional compilation
+    int ret = CMD_RET;
 
     for (int i = 1; i < argc; i++)
     {
@@ -37,8 +37,9 @@ int main(int argc, char *argv[]){
                 color_printf(stderr, COLOR_PRINT_RED, "This flag doesn't exist");
                 return CMD_ERROR;
 
+            // TODO: default usage
             default:
-                color_printf(stderr, COLOR_PRINT_RED, "This flag doesn't exist");
+                color_printf(stderr, COLOR_PRINT_RED, "Something went wrong...");
                 return EXIT_FAILURE;
 
         }

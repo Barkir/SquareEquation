@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['solve_5fequation_2ecpp_0',['solve_equation.cpp',['../solve__equation_8cpp.html',1,'']]],
-  ['solve_5flinear_5fequation_1',['solve_linear_equation',['../solve__equation_8cpp.html#a68e3792d06ce7da11a042243ec03916f',1,'solve_equation.cpp']]],
-  ['solve_5fsquare_5fequation_2',['solve_square_equation',['../solve__equation_8cpp.html#adb544ab94d3a5fa092f9e9eab7480cb9',1,'solve_equation.cpp']]]
+  ['main_20task_20on_20mipt_20summer_20school_20for_20freshmen_20🙋_20br_0',['This is a simple equation solver. It is the main task on MIPT Summer School for freshmen 🙋 &lt;br /&gt;',['../md__r_e_a_d_m_e.html#autotoc_md1',1,'']]],
+  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mipt_20summer_20school_20for_20freshmen_20🙋_20br_2',['This is a simple equation solver. It is the main task on MIPT Summer School for freshmen 🙋 &lt;br /&gt;',['../md__r_e_a_d_m_e.html#autotoc_md1',1,'']]]
 ];

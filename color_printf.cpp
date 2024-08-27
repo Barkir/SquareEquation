@@ -8,10 +8,9 @@
 #endif
 
 #include <stdio.h>
-#include <stdarg.h>
 #include <io.h>
 
-#include "header/color_print.h"
+#include "header/color_printf.h"
 #include "header/constants_structures.h"
 
 

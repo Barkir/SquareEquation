@@ -19,6 +19,11 @@ struct \mbox{\hyperlink{structsolution}{solution}}
 \begin{DoxyCompactList}\small\item\em structure for storing roots and their amount \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structflag}{flag}}
 \begin{DoxyCompactList}\small\item\em flag a structure for storing flags \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{constants__structures_8h_af022ae47fe4d946ae96d0b89a7ce047f}{print\+\_\+color}}(COLOR,  STRING, ...)
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
@@ -33,15 +38,29 @@ enum \mbox{\hyperlink{constants__structures_8h_ad34e7fb3c33543e9f3a1e48486fa7692
 , {\bfseries CMD\+\_\+\+OUT}
  \}
 \begin{DoxyCompactList}\small\item\em enum for storing cmd flags \end{DoxyCompactList}\item 
-enum \mbox{\hyperlink{constants__structures_8h_a5a6ba29a41c09c48f2188eaac366e90f}{analyze\+\_\+output}} \{ {\bfseries EXIT}
-, {\bfseries CONTINUE}
+enum \mbox{\hyperlink{constants__structures_8h_a5a6ba29a41c09c48f2188eaac366e90f}{analyze\+\_\+output}} \{ {\bfseries CMD\+\_\+\+EXIT}
+, {\bfseries CMD\+\_\+\+CONTINUE}
+, {\bfseries CMD\+\_\+\+ERROR}
 , {\bfseries RET}
  \}
-\begin{DoxyCompactList}\small\item\em enum for cmd flag analyzing \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em enum for cmd flag analyzing \end{DoxyCompactList}\item 
+\Hypertarget{constants__structures_8h_a6ef6b19e44ac8de6daad3890bf299fa8}\label{constants__structures_8h_a6ef6b19e44ac8de6daad3890bf299fa8} 
+enum {\bfseries enum\+\_\+colors} \{ \newline
+{\bfseries COLOR\+\_\+\+PRINT\+\_\+\+RED}
+, {\bfseries COLOR\+\_\+\+PRINT\+\_\+\+GREEN}
+, {\bfseries COLOR\+\_\+\+PRINT\+\_\+\+YELLOW}
+, {\bfseries COLOR\+\_\+\+PRINT\+\_\+\+BLUE}
+, \newline
+{\bfseries COLOR\+\_\+\+PRINT\+\_\+\+MAGENTA}
+, {\bfseries COLOR\+\_\+\+PRINT\+\_\+\+CYAN}
+, {\bfseries COLOR\+\_\+\+PRINT\+\_\+\+RESET}
+ \}
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-const double \mbox{\hyperlink{constants__structures_8h_a3d8c24629d725b9ef8c238cf27c9b158}{eps}} = 10e-\/5
+\Hypertarget{constants__structures_8h_a3d8c24629d725b9ef8c238cf27c9b158}\label{constants__structures_8h_a3d8c24629d725b9ef8c238cf27c9b158} 
+const double {\bfseries eps} = 10e-\/3
 \item 
 \Hypertarget{constants__structures_8h_aebe95caad69b594383f9bee25984fe13}\label{constants__structures_8h_aebe95caad69b594383f9bee25984fe13} 
 const int {\bfseries TESTS\+\_\+\+NUMBER} = 30
@@ -54,6 +73,31 @@ const int {\bfseries flag\+\_\+array\+\_\+size} = 3
 \doxysubsection{Detailed Description}
 a header file with all constants and structures 
 
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{constants__structures_8h_af022ae47fe4d946ae96d0b89a7ce047f}\index{constants\_structures.h@{constants\_structures.h}!print\_color@{print\_color}}
+\index{print\_color@{print\_color}!constants\_structures.h@{constants\_structures.h}}
+\doxysubsubsection{\texorpdfstring{print\_color}{print\_color}}
+{\footnotesize\ttfamily \label{constants__structures_8h_af022ae47fe4d946ae96d0b89a7ce047f} 
+\#define print\+\_\+color(\begin{DoxyParamCaption}\item[{}]{COLOR}{, }\item[{}]{STRING}{, }\item[{}]{}...{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{printf(COLOR\ STRING\ RESET,\ \_\_VA\_ARGS\_\_)}
+
+\end{DoxyCode}
+
+\begin{DoxyParams}{Parameters}
+{\em print\+\_\+color} & macros for printing colorful text(not used) \\
+\hline
+{\em eps} & a very small value (used for working with double) \\
+\hline
+{\em TESTS\+\_\+\+NUMBER} & a number of unit\+\_\+tests \\
+\hline
+{\em flag\+\_\+array\+\_\+size} & a size of flag\+\_\+array structure array \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Enumeration Type Documentation}
@@ -114,23 +158,5 @@ enum for storing number of roots
 {\em ONE\+\_\+\+ROOT} & value for one root \\
 \hline
 {\em TWO\+\_\+\+ROOTS} & value for two roots \\
-\hline
-\end{DoxyParams}
-
-
-\doxysubsection{Variable Documentation}
-\Hypertarget{constants__structures_8h_a3d8c24629d725b9ef8c238cf27c9b158}\index{constants\_structures.h@{constants\_structures.h}!eps@{eps}}
-\index{eps@{eps}!constants\_structures.h@{constants\_structures.h}}
-\doxysubsubsection{\texorpdfstring{eps}{eps}}
-{\footnotesize\ttfamily \label{constants__structures_8h_a3d8c24629d725b9ef8c238cf27c9b158} 
-const double eps = 10e-\/5}
-
-
-\begin{DoxyParams}{Parameters}
-{\em eps} & a very small value (used for working with double) \\
-\hline
-{\em TESTS\+\_\+\+NUMBER} & a number of unit\+\_\+tests \\
-\hline
-{\em flag\+\_\+array\+\_\+size} & a size of flag\+\_\+array structure array \\
 \hline
 \end{DoxyParams}

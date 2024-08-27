@@ -3,5 +3,6 @@
 *.o
 *.exe.log
 *.exe.log.dmp
-Doxyfile
+html
+latex
 rnd_tests.txt

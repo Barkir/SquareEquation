@@ -6,95 +6,103 @@
 \DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ HELP\_H}}
 \DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ HELP\_H}}
 \DoxyCodeLine{00008\ }
-\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{colors_8h}{colors.h}}"{}}}
-\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{constants__structures_8h}{constants\_structures.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{constants__structures_8h}{constants\_structures.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}color\_print.h"{}}}
 \DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ doc\ =}
-\DoxyCodeLine{00013\ \textcolor{stringliteral}{"{}Instructions\ for\ SquareSolver:\ ...\ \(\backslash\)n"{}}}
-\DoxyCodeLine{00014\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ FILES\(\backslash\)n\(\backslash\)n"{}}}
-\DoxyCodeLine{00015\ \textcolor{stringliteral}{"{}\ \ \ -\/main.cpp\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ main\ file\(\backslash\)n"{}}}
-\DoxyCodeLine{00016\ \textcolor{stringliteral}{"{}\ \ \ -\/solve\_equation.cpp\ \ \ \ \ \ file\ for\ solving\ equations.\(\backslash\)n"{}}}
-\DoxyCodeLine{00017\ \textcolor{stringliteral}{"{}\ \ \ -\/input\_output.cpp\ \ \ \ \ \ \ \ file\ for\ user\ input/output\(\backslash\)n"{}}}
-\DoxyCodeLine{00018\ \textcolor{stringliteral}{"{}\ \ \ -\/testing.cpp\ \ \ \ \ \ \ \ \ \ \ \ \ file\ for\ testing\ the\ program\ using\ unit-\/tests\(\backslash\)n"{}}}
-\DoxyCodeLine{00019\ \textcolor{stringliteral}{"{}\ \ \ -\/cmd.cpp\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ file\ for\ input\ flags\ in\ cmd\(\backslash\)n"{}}}
-\DoxyCodeLine{00020\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
-\DoxyCodeLine{00021\ \textcolor{stringliteral}{"{}\ \ \ -\/solve\_equation.h\ \ \ \ \ \ \ \ header\ file\ for\ solve\_equation.cpp\(\backslash\)n"{}}}
-\DoxyCodeLine{00022\ \textcolor{stringliteral}{"{}\ \ \ -\/input\_output.h\ \ \ \ \ \ \ \ \ \ header\ file\ for\ input\_output.cpp\(\backslash\)n"{}}}
-\DoxyCodeLine{00023\ \textcolor{stringliteral}{"{}\ \ \ -\/testing.h\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ header\ file\ for\ testing.cpp\(\backslash\)n"{}}}
-\DoxyCodeLine{00024\ \textcolor{stringliteral}{"{}\ \ \ -\/cmd.h\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ header\ file\ for\ cmd.cpp\(\backslash\)n"{}}}
-\DoxyCodeLine{00025\ \textcolor{stringliteral}{"{}\ \ \ -\/tests.h\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ header\ file\ with\ reference\ roots\ and\ coefs\ (a,\ b,\ c,\ x1,\ x2)\(\backslash\)n"{}}}
-\DoxyCodeLine{00026\ \textcolor{stringliteral}{"{}\ \ \ -\/colors.h\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ header\ file\ with\ defined\ colors\ for\ colorful\ text\(\backslash\)n"{}}}
-\DoxyCodeLine{00027\ \textcolor{stringliteral}{"{}\ \ \ -\/constants\_structures.h\ \ header\ file\ with\ defined\ structures\ and\ constants\(\backslash\)n"{}}}
-\DoxyCodeLine{00028\ \textcolor{stringliteral}{"{}\ \ \ -\/cmd\_flags.h\ \ \ \ \ \ \ \ \ \ \ \ \ header\ file\ with\ defined\ text\ for\ flags\(\backslash\)n"{}}}
-\DoxyCodeLine{00029\ \textcolor{stringliteral}{"{}\ \ \ -\/cmd\_flag\_structure\ \ \ \ \ \ header\ file\ with\ a\ flag\ structure\ for\ cmd.cpp"{}}}
-\DoxyCodeLine{00030\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
-\DoxyCodeLine{00031\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ FUNCTIONS\(\backslash\)n\(\backslash\)n"{}}}
-\DoxyCodeLine{00032\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ solve\_equation.cpp/square\_equation.h\(\backslash\)n"{}}}
-\DoxyCodeLine{00033\ \textcolor{stringliteral}{"{}\ \ \ -\/discriminant\ \ \ \ \ \ \ \ \ \ \ \ function\ for\ finding\ a\ discriminant\(\backslash\)n"{}}}
-\DoxyCodeLine{00034\ \textcolor{stringliteral}{"{}\ \ \ -\/is\_null\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ true\ if\ double\ number\ equals\ zero\(\backslash\)n"{}}}
-\DoxyCodeLine{00035\ \textcolor{stringliteral}{"{}\ \ \ -\/is\_equal\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ returns\ true\ if\ double\ numbers\ are\ equal\(\backslash\)n"{}}}
-\DoxyCodeLine{00036\ \textcolor{stringliteral}{"{}\ \ \ -\/interchange\ \ \ \ \ \ \ \ \ \ \ \ \ interchanges\ the\ values\ of\ two\ double\ numbers\ (used\ to\ sort\ equation\ solutions)\(\backslash\)n"{}}}
-\DoxyCodeLine{00037\ \textcolor{stringliteral}{"{}\ \ \ -\/solve\_square\_equation\ \ \ function\ for\ solving\ square\ equation\(\backslash\)n"{}}}
-\DoxyCodeLine{00038\ \textcolor{stringliteral}{"{}\ \ \ -\/solve\_linear\_equation\ \ \ function\ for\ solving\ linear\ equation\(\backslash\)n\(\backslash\)n"{}}}
-\DoxyCodeLine{00039\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ input\_output.cpp/input\_output.h\(\backslash\)n"{}}}
-\DoxyCodeLine{00040\ \textcolor{stringliteral}{"{}\ \ \ -\/enter\_numbers\ \ \ \ \ \ \ \ \ \ \ function\ for\ entering\ numbers(merges\ 3\ get\_number()\ functions)\(\backslash\)n"{}}}
-\DoxyCodeLine{00041\ \textcolor{stringliteral}{"{}\ \ \ -\/get\_number\ \ \ \ \ \ \ \ \ \ \ \ \ \ function\ for\ getting\ a\ number\ from\ a\ user\ (a,\ b,\ c)\(\backslash\)n"{}}}
-\DoxyCodeLine{00042\ \textcolor{stringliteral}{"{}\ \ \ -\/print\_roots\ \ \ \ \ \ \ \ \ \ \ \ \ function\ for\ printing\ roots\ of\ the\ equation\(\backslash\)n\(\backslash\)n"{}}}
-\DoxyCodeLine{00043\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ testing.cpp/testing.h\(\backslash\)n"{}}}
-\DoxyCodeLine{00044\ \textcolor{stringliteral}{"{}\ \ \ -\/test\_init\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ function\ for\ initializing\ a\ single\ test\(\backslash\)n"{}}}
-\DoxyCodeLine{00045\ \textcolor{stringliteral}{"{}\ \ \ -\/all\_test\_init\ \ \ \ \ \ \ \ \ \ \ function\ for\ initializng\ a\ number\ of\ tests(calls\ a\ number\ of\ test\_init\ functions)\(\backslash\)n\(\backslash\)n"{}}}
-\DoxyCodeLine{00046\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ colors.h\(\backslash\)n"{}}}
-\DoxyCodeLine{00047\ \textcolor{stringliteral}{"{}\ \ \ -\/RED\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ red\ text\ color\(\backslash\)n"{}}}
-\DoxyCodeLine{00048\ \textcolor{stringliteral}{"{}\ \ \ -\/BLUE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ blue\ text\ color\(\backslash\)n"{}}}
-\DoxyCodeLine{00049\ \textcolor{stringliteral}{"{}\ \ \ -\/MAGENTA\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ magenta\ text\ color\(\backslash\)n"{}}}
-\DoxyCodeLine{00050\ \textcolor{stringliteral}{"{}\ \ \ -\/GREEN\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ green\ text\ color\(\backslash\)n"{}}}
-\DoxyCodeLine{00051\ \textcolor{stringliteral}{"{}\ \ \ -\/YELLOW\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ yellow\ text\ color\(\backslash\)n"{}}}
-\DoxyCodeLine{00052\ \textcolor{stringliteral}{"{}\ \ \ -\/CYAN\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cyan\ text\ color\(\backslash\)n"{}}}
-\DoxyCodeLine{00053\ \textcolor{stringliteral}{"{}\ \ \ -\/RESET\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ reset\ text\ color\(\backslash\)n\(\backslash\)n"{}}}
-\DoxyCodeLine{00054\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cmd\_flag\_structure.h\(\backslash\)n"{}}}
-\DoxyCodeLine{00055\ \textcolor{stringliteral}{"{}\ \ \ -\/flag\ flag\_array\ \ \ \ \ \ \ \ \ structure\ with\ defined\ flags\ for\ cmd.cpp\(\backslash\)n\(\backslash\)n"{}}}
-\DoxyCodeLine{00056\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ constants\_structures.h\(\backslash\)n"{}}}
-\DoxyCodeLine{00057\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ -\/-\/constants\(\backslash\)n"{}}}
-\DoxyCodeLine{00058\ \textcolor{stringliteral}{"{}\ \ \ -\/INF\_SOLUTIONS\ \ \ \ \ \ \ \ \ \ \ enum\ value\ for\ defining\ infinite\ solutions\(\backslash\)n"{}}}
-\DoxyCodeLine{00059\ \textcolor{stringliteral}{"{}\ \ \ -\/NO\_ROOTS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ enum\ value\ for\ defining\ no\ solutions\(\backslash\)n"{}}}
-\DoxyCodeLine{00060\ \textcolor{stringliteral}{"{}\ \ \ -\/ONE\_ROOT\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ enum\ value\ foe\ defining\ one\ root\(\backslash\)n"{}}}
-\DoxyCodeLine{00061\ \textcolor{stringliteral}{"{}\ \ \ -\/TWO\_ROOTS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ enum\ value\ for\ defining\ two\ solutions\(\backslash\)n"{}}}
-\DoxyCodeLine{00062\ \textcolor{stringliteral}{"{}\ \ \ -\/TESTS\_NUMBER\ \ \ \ \ \ \ \ \ \ \ \ constant\ value\ for\ defining\ tests\ number\(\backslash\)n"{}}}
-\DoxyCodeLine{00063\ \textcolor{stringliteral}{"{}\ \ \ -\/eps\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ constant\ value\ for\ defining\ a\ very\ small\ number\(\backslash\)n"{}}}
-\DoxyCodeLine{00064\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ -\/-\/structures\(\backslash\)n"{}}}
-\DoxyCodeLine{00065\ \textcolor{stringliteral}{"{}\ \ \ -\/equation\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ structure\ for\ defining\ equation\ coefs\(\backslash\)n"{}}}
-\DoxyCodeLine{00066\ \textcolor{stringliteral}{"{}\ \ \ -\/solution\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ structure\ for\ defining\ equation\ solutions\(\backslash\)n"{}}}
-\DoxyCodeLine{00067\ \textcolor{stringliteral}{"{}\ \ \ -\/flag\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ structure\ for\ defining\ flags\ and\ their\ enum\ values"{}};}
-\DoxyCodeLine{00068\ }
-\DoxyCodeLine{00069\ }
-\DoxyCodeLine{00070\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ help\ =}
-\DoxyCodeLine{00071\ BLUE\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ This\ is\ a\ help\ instruction\ for\ using\ Square\ Equation\ Solver"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n"{}}}
-\DoxyCodeLine{00072\ BLUE\ \textcolor{stringliteral}{"{}I."{}}\ RESET\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ The\ first\ step\ is\ to\ start\ the\ program.\(\backslash\)n"{}}}
-\DoxyCodeLine{00073\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ To\ do\ this,\ open\ cmd\ and\ move\ to\ directory\ where\ this\ project\ is\ located.\(\backslash\)n"{}}}
-\DoxyCodeLine{00074\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Then\ enter\ this\ "{}}\ YELLOW\ \textcolor{stringliteral}{"{}\(\backslash\)"{}g++\ -\/o\ a.exe\ main.cpp\ solve\_equation.cpp\ testing.cpp\ input\_output.cpp\(\backslash\)"{}"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
-\DoxyCodeLine{00075\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ To\ run\ the\ program\ type\ "{}}\ YELLOW\ \textcolor{stringliteral}{"{}\(\backslash\)"{}a\(\backslash\)"{}"{}}\ RESET\ \textcolor{stringliteral}{"{}\ in\ cmd\(\backslash\)n\(\backslash\)n"{}}}
-\DoxyCodeLine{00076\ BLUE\ \textcolor{stringliteral}{"{}II."{}}\ RESET\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ You\ will\ be\ suggested\ to\ enter\ the\ coefs\ of\ a\ square\ equation\ "{}}\ CYAN\ \textcolor{stringliteral}{"{}(a,\ b,\ c)"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
-\DoxyCodeLine{00077\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Please\ enter\ them\ one\ by\ one,\ when\ you\ tap\ "{}}\ CYAN\ \textcolor{stringliteral}{"{}Enter"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
-\DoxyCodeLine{00078\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ the\ program\ will\ suggest\ you\ to\ enter\ the\ next\ coef.\(\backslash\)n"{}}}
-\DoxyCodeLine{00079\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ If\ you\ enter\ the\ coef\ incorrectly,\ the\ program\(\backslash\)n"{}}}
-\DoxyCodeLine{00080\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ will\ warn\ you\ using\ this\ message:\ "{}}\ RED\ \textcolor{stringliteral}{"{}\(\backslash\)"{}NOT\ A\ NUMBER!\(\backslash\)"{}"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n"{}}}
-\DoxyCodeLine{00081\ BLUE\ \textcolor{stringliteral}{"{}III"{}}\ RESET\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ When\ you\ finish\ entering\ the\ coefs,\ the\ program\ will\ automatically\(\backslash\)n"{}}}
-\DoxyCodeLine{00082\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ find\ the\ solutions\ of\ the\ equation\ and\ you\ will\ see\ the\ result.\(\backslash\)n"{}}}
-\DoxyCodeLine{00083\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ The\ program\ prints:\ "{}}\ GREEN\ \textcolor{stringliteral}{"{}\(\backslash\)"{}No\ solutions.\(\backslash\)"{}"{}}\ RESET\ \textcolor{stringliteral}{"{},\ if\ there\ are\ no\ solutions.\(\backslash\)n\(\backslash\)n"{}}}
-\DoxyCodeLine{00084\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}}\ GREEN\ \textcolor{stringliteral}{"{}one\ solution"{}}\ RESET\ \textcolor{stringliteral}{"{}\ if\ the\ equation\ is\ linear\(\backslash\)n"{}}}
-\DoxyCodeLine{00085\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ or\ has\ two\ equal\ square\ solutions\(\backslash\)n\(\backslash\)n"{}}}
-\DoxyCodeLine{00086\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}}\ GREEN\ \textcolor{stringliteral}{"{}two\ solutions"{}}\ RESET\ \textcolor{stringliteral}{"{}\ if\ there\ are\ two\ of\ them\(\backslash\)n\(\backslash\)n"{}}}
-\DoxyCodeLine{00087\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}}\ GREEN\ \textcolor{stringliteral}{"{}\(\backslash\)"{}Infinite\ number\ of\ solutions\(\backslash\)"{}"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
-\DoxyCodeLine{00088\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ when\ a\ ==\ b\ ==\ c\ ==\ 0\(\backslash\)n"{}};}
-\DoxyCodeLine{00089\ }
-\DoxyCodeLine{00090\ }
-\DoxyCodeLine{00091\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ out\ =\ YELLOW\ \ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET}
-\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GREEN\ \ \ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET}
-\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MAGENTA\ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET}
-\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BLUE\ \ \ \ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET}
-\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ CYAN\ \ \ \ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET}
-\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ RED\ \ \ \ \ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET;}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ RED\ \ \ \ \ "{}\(\backslash\)x1b[31m"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ GREEN\ \ \ "{}\(\backslash\)x1b[32m"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ YELLOW\ \ "{}\(\backslash\)x1b[33m"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ BLUE\ \ \ \ "{}\(\backslash\)x1b[34m"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ MAGENTA\ "{}\(\backslash\)x1b[35m"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ CYAN\ \ \ \ "{}\(\backslash\)x1b[36m"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ RESET\ \ \ "{}\(\backslash\)x1b[0m"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ doc\ =}
+\DoxyCodeLine{00021\ \textcolor{stringliteral}{"{}Instructions\ for\ SquareSolver:\ ...\ \(\backslash\)n"{}}}
+\DoxyCodeLine{00022\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ FILES\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{00023\ \textcolor{stringliteral}{"{}\ \ \ -\/main.cpp\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ main\ file\(\backslash\)n"{}}}
+\DoxyCodeLine{00024\ \textcolor{stringliteral}{"{}\ \ \ -\/solve\_equation.cpp\ \ \ \ \ \ file\ for\ solving\ equations.\(\backslash\)n"{}}}
+\DoxyCodeLine{00025\ \textcolor{stringliteral}{"{}\ \ \ -\/input\_output.cpp\ \ \ \ \ \ \ \ file\ for\ user\ input/output\(\backslash\)n"{}}}
+\DoxyCodeLine{00026\ \textcolor{stringliteral}{"{}\ \ \ -\/testing.cpp\ \ \ \ \ \ \ \ \ \ \ \ \ file\ for\ testing\ the\ program\ using\ unit-\/tests\(\backslash\)n"{}}}
+\DoxyCodeLine{00027\ \textcolor{stringliteral}{"{}\ \ \ -\/cmd.cpp\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ file\ for\ input\ flags\ in\ cmd\(\backslash\)n"{}}}
+\DoxyCodeLine{00028\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00029\ \textcolor{stringliteral}{"{}\ \ \ -\/solve\_equation.h\ \ \ \ \ \ \ \ header\ file\ for\ solve\_equation.cpp\(\backslash\)n"{}}}
+\DoxyCodeLine{00030\ \textcolor{stringliteral}{"{}\ \ \ -\/input\_output.h\ \ \ \ \ \ \ \ \ \ header\ file\ for\ input\_output.cpp\(\backslash\)n"{}}}
+\DoxyCodeLine{00031\ \textcolor{stringliteral}{"{}\ \ \ -\/testing.h\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ header\ file\ for\ testing.cpp\(\backslash\)n"{}}}
+\DoxyCodeLine{00032\ \textcolor{stringliteral}{"{}\ \ \ -\/cmd.h\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ header\ file\ for\ cmd.cpp\(\backslash\)n"{}}}
+\DoxyCodeLine{00033\ \textcolor{stringliteral}{"{}\ \ \ -\/tests.h\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ header\ file\ with\ reference\ roots\ and\ coefs\ (a,\ b,\ c,\ x1,\ x2)\(\backslash\)n"{}}}
+\DoxyCodeLine{00034\ \textcolor{stringliteral}{"{}\ \ \ -\/colors.h\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ header\ file\ with\ defined\ colors\ for\ colorful\ text\(\backslash\)n"{}}}
+\DoxyCodeLine{00035\ \textcolor{stringliteral}{"{}\ \ \ -\/constants\_structures.h\ \ header\ file\ with\ defined\ structures\ and\ constants\(\backslash\)n"{}}}
+\DoxyCodeLine{00036\ \textcolor{stringliteral}{"{}\ \ \ -\/cmd\_flags.h\ \ \ \ \ \ \ \ \ \ \ \ \ header\ file\ with\ defined\ text\ for\ flags\(\backslash\)n"{}}}
+\DoxyCodeLine{00037\ \textcolor{stringliteral}{"{}\ \ \ -\/cmd\_flag\_structure\ \ \ \ \ \ header\ file\ with\ a\ flag\ structure\ for\ cmd.cpp"{}}}
+\DoxyCodeLine{00038\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00039\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ FUNCTIONS\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{00040\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ solve\_equation.cpp/square\_equation.h\(\backslash\)n"{}}}
+\DoxyCodeLine{00041\ \textcolor{stringliteral}{"{}\ \ \ -\/discriminant\ \ \ \ \ \ \ \ \ \ \ \ function\ for\ finding\ a\ discriminant\(\backslash\)n"{}}}
+\DoxyCodeLine{00042\ \textcolor{stringliteral}{"{}\ \ \ -\/is\_null\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ true\ if\ double\ number\ equals\ zero\(\backslash\)n"{}}}
+\DoxyCodeLine{00043\ \textcolor{stringliteral}{"{}\ \ \ -\/is\_equal\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ returns\ true\ if\ double\ numbers\ are\ equal\(\backslash\)n"{}}}
+\DoxyCodeLine{00044\ \textcolor{stringliteral}{"{}\ \ \ -\/interchange\ \ \ \ \ \ \ \ \ \ \ \ \ interchanges\ the\ values\ of\ two\ double\ numbers\ (used\ to\ sort\ equation\ solutions)\(\backslash\)n"{}}}
+\DoxyCodeLine{00045\ \textcolor{stringliteral}{"{}\ \ \ -\/solve\_square\_equation\ \ \ function\ for\ solving\ square\ equation\(\backslash\)n"{}}}
+\DoxyCodeLine{00046\ \textcolor{stringliteral}{"{}\ \ \ -\/solve\_linear\_equation\ \ \ function\ for\ solving\ linear\ equation\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{00047\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ input\_output.cpp/input\_output.h\(\backslash\)n"{}}}
+\DoxyCodeLine{00048\ \textcolor{stringliteral}{"{}\ \ \ -\/enter\_numbers\ \ \ \ \ \ \ \ \ \ \ function\ for\ entering\ numbers(merges\ 3\ get\_number()\ functions)\(\backslash\)n"{}}}
+\DoxyCodeLine{00049\ \textcolor{stringliteral}{"{}\ \ \ -\/get\_number\ \ \ \ \ \ \ \ \ \ \ \ \ \ function\ for\ getting\ a\ number\ from\ a\ user\ (a,\ b,\ c)\(\backslash\)n"{}}}
+\DoxyCodeLine{00050\ \textcolor{stringliteral}{"{}\ \ \ -\/print\_roots\ \ \ \ \ \ \ \ \ \ \ \ \ function\ for\ printing\ roots\ of\ the\ equation\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{00051\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ testing.cpp/testing.h\(\backslash\)n"{}}}
+\DoxyCodeLine{00052\ \textcolor{stringliteral}{"{}\ \ \ -\/test\_init\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ function\ for\ initializing\ a\ single\ test\(\backslash\)n"{}}}
+\DoxyCodeLine{00053\ \textcolor{stringliteral}{"{}\ \ \ -\/all\_test\_init\ \ \ \ \ \ \ \ \ \ \ function\ for\ initializng\ a\ number\ of\ tests(calls\ a\ number\ of\ test\_init\ functions)\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{00054\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ colors.h\(\backslash\)n"{}}}
+\DoxyCodeLine{00055\ \textcolor{stringliteral}{"{}\ \ \ -\/RED\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ red\ text\ color\(\backslash\)n"{}}}
+\DoxyCodeLine{00056\ \textcolor{stringliteral}{"{}\ \ \ -\/BLUE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ blue\ text\ color\(\backslash\)n"{}}}
+\DoxyCodeLine{00057\ \textcolor{stringliteral}{"{}\ \ \ -\/MAGENTA\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ magenta\ text\ color\(\backslash\)n"{}}}
+\DoxyCodeLine{00058\ \textcolor{stringliteral}{"{}\ \ \ -\/GREEN\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ green\ text\ color\(\backslash\)n"{}}}
+\DoxyCodeLine{00059\ \textcolor{stringliteral}{"{}\ \ \ -\/YELLOW\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ yellow\ text\ color\(\backslash\)n"{}}}
+\DoxyCodeLine{00060\ \textcolor{stringliteral}{"{}\ \ \ -\/CYAN\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cyan\ text\ color\(\backslash\)n"{}}}
+\DoxyCodeLine{00061\ \textcolor{stringliteral}{"{}\ \ \ -\/RESET\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ reset\ text\ color\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{00062\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cmd\_flag\_structure.h\(\backslash\)n"{}}}
+\DoxyCodeLine{00063\ \textcolor{stringliteral}{"{}\ \ \ -\/flag\ flag\_array\ \ \ \ \ \ \ \ \ structure\ with\ defined\ flags\ for\ cmd.cpp\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{00064\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ constants\_structures.h\(\backslash\)n"{}}}
+\DoxyCodeLine{00065\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ -\/-\/constants\(\backslash\)n"{}}}
+\DoxyCodeLine{00066\ \textcolor{stringliteral}{"{}\ \ \ -\/INF\_SOLUTIONS\ \ \ \ \ \ \ \ \ \ \ enum\ value\ for\ defining\ infinite\ solutions\(\backslash\)n"{}}}
+\DoxyCodeLine{00067\ \textcolor{stringliteral}{"{}\ \ \ -\/NO\_ROOTS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ enum\ value\ for\ defining\ no\ solutions\(\backslash\)n"{}}}
+\DoxyCodeLine{00068\ \textcolor{stringliteral}{"{}\ \ \ -\/ONE\_ROOT\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ enum\ value\ foe\ defining\ one\ root\(\backslash\)n"{}}}
+\DoxyCodeLine{00069\ \textcolor{stringliteral}{"{}\ \ \ -\/TWO\_ROOTS\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ enum\ value\ for\ defining\ two\ solutions\(\backslash\)n"{}}}
+\DoxyCodeLine{00070\ \textcolor{stringliteral}{"{}\ \ \ -\/TESTS\_NUMBER\ \ \ \ \ \ \ \ \ \ \ \ constant\ value\ for\ defining\ tests\ number\(\backslash\)n"{}}}
+\DoxyCodeLine{00071\ \textcolor{stringliteral}{"{}\ \ \ -\/eps\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ constant\ value\ for\ defining\ a\ very\ small\ number\(\backslash\)n"{}}}
+\DoxyCodeLine{00072\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ -\/-\/structures\(\backslash\)n"{}}}
+\DoxyCodeLine{00073\ \textcolor{stringliteral}{"{}\ \ \ -\/equation\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ structure\ for\ defining\ equation\ coefs\(\backslash\)n"{}}}
+\DoxyCodeLine{00074\ \textcolor{stringliteral}{"{}\ \ \ -\/solution\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ structure\ for\ defining\ equation\ solutions\(\backslash\)n"{}}}
+\DoxyCodeLine{00075\ \textcolor{stringliteral}{"{}\ \ \ -\/flag\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ structure\ for\ defining\ flags\ and\ their\ enum\ values"{}};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ help\ =}
+\DoxyCodeLine{00079\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ This\ is\ a\ help\ instruction\ for\ using\ Square\ Equation\ Solver"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{00080\ BLUE\ \textcolor{stringliteral}{"{}I."{}}\ RESET\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ The\ first\ step\ is\ to\ start\ the\ program.\(\backslash\)n"{}}}
+\DoxyCodeLine{00081\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ To\ do\ this,\ open\ cmd\ and\ move\ to\ directory\ where\ this\ project\ is\ located.\(\backslash\)n"{}}}
+\DoxyCodeLine{00082\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Then\ enter\ this\ "{}}\ YELLOW\ \textcolor{stringliteral}{"{}\(\backslash\)"{}g++\ -\/o\ a.exe\ main.cpp\ solve\_equation.cpp\ testing.cpp\ input\_output.cpp\(\backslash\)"{}"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00083\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ To\ run\ the\ program\ type\ "{}}\ YELLOW\ \textcolor{stringliteral}{"{}\(\backslash\)"{}a\(\backslash\)"{}"{}}\ RESET\ \textcolor{stringliteral}{"{}\ in\ cmd\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{00084\ BLUE\ \textcolor{stringliteral}{"{}II."{}}\ RESET\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ You\ will\ be\ suggested\ to\ enter\ the\ coefs\ of\ a\ square\ equation\ "{}}\ CYAN\ \textcolor{stringliteral}{"{}(a,\ b,\ c)"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00085\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Please\ enter\ them\ one\ by\ one,\ when\ you\ tap\ "{}}\ CYAN\ \textcolor{stringliteral}{"{}Enter"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00086\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ the\ program\ will\ suggest\ you\ to\ enter\ the\ next\ coef.\(\backslash\)n"{}}}
+\DoxyCodeLine{00087\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ If\ you\ enter\ the\ coef\ incorrectly,\ the\ program\(\backslash\)n"{}}}
+\DoxyCodeLine{00088\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ will\ warn\ you\ using\ this\ message:\ "{}}\ RED\ \textcolor{stringliteral}{"{}\(\backslash\)"{}NOT\ A\ NUMBER!\(\backslash\)"{}"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{00089\ BLUE\ \textcolor{stringliteral}{"{}III"{}}\ RESET\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ When\ you\ finish\ entering\ the\ coefs,\ the\ program\ will\ automatically\(\backslash\)n"{}}}
+\DoxyCodeLine{00090\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ find\ the\ solutions\ of\ the\ equation\ and\ you\ will\ see\ the\ result.\(\backslash\)n"{}}}
+\DoxyCodeLine{00091\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ The\ program\ prints:\ "{}}\ GREEN\ \textcolor{stringliteral}{"{}\(\backslash\)"{}No\ solutions.\(\backslash\)"{}"{}}\ RESET\ \textcolor{stringliteral}{"{},\ if\ there\ are\ no\ solutions.\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{00092\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}}\ GREEN\ \textcolor{stringliteral}{"{}one\ solution"{}}\ RESET\ \textcolor{stringliteral}{"{}\ if\ the\ equation\ is\ linear\(\backslash\)n"{}}}
+\DoxyCodeLine{00093\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ or\ has\ two\ equal\ square\ solutions\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{00094\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}}\ GREEN\ \textcolor{stringliteral}{"{}two\ solutions"{}}\ RESET\ \textcolor{stringliteral}{"{}\ if\ there\ are\ two\ of\ them\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{00095\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ "{}}\ GREEN\ \textcolor{stringliteral}{"{}\(\backslash\)"{}Infinite\ number\ of\ solutions\(\backslash\)"{}"{}}\ RESET\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00096\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ when\ a\ ==\ b\ ==\ c\ ==\ 0\(\backslash\)n"{}};}
 \DoxyCodeLine{00097\ }
-\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ out\ =\ YELLOW\ \ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GREEN\ \ \ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ MAGENTA\ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ BLUE\ \ \ \ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ CYAN\ \ \ \ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ RED\ \ \ \ \ \textcolor{stringliteral}{"{}OUT\(\backslash\)n"{}}\ RESET;}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

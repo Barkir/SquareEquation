@@ -3,9 +3,11 @@ var constants__structures_8h =
     [ "equation", "structequation.html", null ],
     [ "solution", "structsolution.html", null ],
     [ "flag", "structflag.html", null ],
+    [ "print_color", "constants__structures_8h.html#af022ae47fe4d946ae96d0b89a7ce047f", null ],
     [ "analyze_output", "constants__structures_8h.html#a5a6ba29a41c09c48f2188eaac366e90f", [
-      [ "EXIT", "constants__structures_8h.html#a5a6ba29a41c09c48f2188eaac366e90fa7a10b5d68d31711288e1fe0fa17dbf4f", null ],
-      [ "CONTINUE", "constants__structures_8h.html#a5a6ba29a41c09c48f2188eaac366e90fa49959dd441dcda75d6898cf2c68fb374", null ],
+      [ "CMD_EXIT", "constants__structures_8h.html#a5a6ba29a41c09c48f2188eaac366e90fa423988140dabaa461f133924ca772294", null ],
+      [ "CMD_CONTINUE", "constants__structures_8h.html#a5a6ba29a41c09c48f2188eaac366e90fa9dd4e84669c22fa6bd39291ccc5820f8", null ],
+      [ "CMD_ERROR", "constants__structures_8h.html#a5a6ba29a41c09c48f2188eaac366e90fa3e631e656523983cc0e572e93cae27c6", null ],
       [ "RET", "constants__structures_8h.html#a5a6ba29a41c09c48f2188eaac366e90fab2510768eaba5e52ba71678e19a65464", null ]
     ] ],
     [ "operation", "constants__structures_8h.html#ad34e7fb3c33543e9f3a1e48486fa7692", [
@@ -18,6 +20,5 @@ var constants__structures_8h =
       [ "NO_ROOTS", "constants__structures_8h.html#ac6a66a418b6646df5aa3c82d9fb39d3cab9a321da349ac1355b717745736ad90c", null ],
       [ "ONE_ROOT", "constants__structures_8h.html#ac6a66a418b6646df5aa3c82d9fb39d3ca6700c0f6efd23571cb22aefd2510b1cf", null ],
       [ "TWO_ROOTS", "constants__structures_8h.html#ac6a66a418b6646df5aa3c82d9fb39d3ca876622d3c0b008da13a3685c64714e81", null ]
-    ] ],
-    [ "eps", "constants__structures_8h.html#a3d8c24629d725b9ef8c238cf27c9b158", null ]
+    ] ]
 ];

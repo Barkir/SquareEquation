@@ -12,7 +12,7 @@
 #include "header/constants_structures.h"
 #include "header/tests.h"
 #include "header/input_output.h"
-#include "header/color_print.h"
+#include "header/color_printf.h"
 
 /**
 * @brief a function for running a single test

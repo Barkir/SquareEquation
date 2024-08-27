@@ -18,7 +18,7 @@ Include dependency graph for cmd.\+cpp\+:
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{cmd_8cpp_a37e232c07e3282bfa463a4d7f9518f63}{parse\+\_\+cmd\+\_\+args}} (char \texorpdfstring{$\ast$}{*}w\+\_\+flag, struct flag \texorpdfstring{$\ast$}{*}flag\+\_\+array, int size)
+int \mbox{\hyperlink{cmd_8cpp_a37e232c07e3282bfa463a4d7f9518f63}{parse\+\_\+cmd\+\_\+args}} (char \texorpdfstring{$\ast$}{*}w\+\_\+flag, struct \mbox{\hyperlink{structflag}{flag}} \texorpdfstring{$\ast$}{*}flag\+\_\+array, int size)
 \begin{DoxyCompactList}\small\item\em function for parsing command line arguments (converts a flag into enum) \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{cmd_8cpp_a4d2a2f895114a92ec970a68642454dcc}{output\+\_\+cmd}} (int code)
 \begin{DoxyCompactList}\small\item\em output\+\_\+cmd performs a flag using switch case \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -49,7 +49,7 @@ output\+\_\+cmd performs a flag using switch case
 \index{parse\_cmd\_args@{parse\_cmd\_args}!cmd.cpp@{cmd.cpp}}
 \doxysubsubsection{\texorpdfstring{parse\_cmd\_args()}{parse\_cmd\_args()}}
 {\footnotesize\ttfamily \label{cmd_8cpp_a37e232c07e3282bfa463a4d7f9518f63} 
-int parse\+\_\+cmd\+\_\+args (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{w\+\_\+flag}{, }\item[{struct flag \texorpdfstring{$\ast$}{*}}]{flag\+\_\+array}{, }\item[{int}]{size}{}\end{DoxyParamCaption})}
+int parse\+\_\+cmd\+\_\+args (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{w\+\_\+flag}{, }\item[{struct \mbox{\hyperlink{structflag}{flag}} \texorpdfstring{$\ast$}{*}}]{flag\+\_\+array}{, }\item[{int}]{size}{}\end{DoxyParamCaption})}
 
 
 
