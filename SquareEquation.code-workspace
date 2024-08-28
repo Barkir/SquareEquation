@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "SquareEquation",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.cpp": "cpp",
+			"cstdlib": "cpp",
+			"cmath": "cpp",
+			"optional": "cpp",
+			"functional": "cpp",
+			"limits": "cpp",
+			"tuple": "cpp",
+			"string": "cpp",
+			"random": "cpp"
+		}
+	}
+}
