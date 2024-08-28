@@ -42,7 +42,7 @@ int main(int argc, char *argv[]){
                 return EXIT_FAILURE;
         }
     }
-
+    red_assert(0, "error");
     if (ret == CMD_CONTINUE) {return 0;}
     system("python test_generator.py");                                             // Writes random tests in rnd_tests.txt
     if (all_test_init("rnd_tests.txt"))                                             // Checks the tests

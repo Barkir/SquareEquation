@@ -24,11 +24,10 @@
 
 void red_assert_func(int cond, const char * source_file, const char * source_func,  int source_line, const char * line, ...)
 {
-
-    color_printf(stderr, COLOR_PRINT_RED, "FILE: %s, FUNCTION: %s, LINE: %d\n", source_file, source_func, source_line);
     va_list ptr;
     va_start(ptr, line);
     if (!cond){
+        color_printf(stderr, COLOR_PRINT_RED, "FILE: %s, FUNCTION: %s, LINE: %d\n", source_file, source_func, source_line);
         color_printf(stderr, COLOR_PRINT_RED, "Assertion failed!\n");
         va_start(ptr, line);
         color_vprintf(COLOR_PRINT_RED, line, ptr);
